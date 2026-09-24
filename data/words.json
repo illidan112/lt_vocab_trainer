@@ -1,0 +1,22 @@
+[
+  {"id":"namas","word":"namas","translation":"дом","example":"Tai mano namas.","exampleTranslation":"Это мой дом.","symbol":"🏠"},
+  {"id":"vanduo","word":"vanduo","translation":"вода","example":"Aš geriu vandenį.","exampleTranslation":"Я пью воду.","symbol":"💧"},
+  {"id":"duona","word":"duona","translation":"хлеб","example":"Perku duoną.","exampleTranslation":"Я покупаю хлеб.","symbol":"🍞"},
+  {"id":"knyga","word":"knyga","translation":"книга","example":"Skaitau knygą.","exampleTranslation":"Я читаю книгу.","symbol":"📖"},
+  {"id":"katė","word":"katė","translation":"кошка","example":"Katė miega.","exampleTranslation":"Кошка спит.","symbol":"🐈"},
+  {"id":"šuo","word":"šuo","translation":"собака","example":"Šuo bėga.","exampleTranslation":"Собака бежит.","symbol":"🐕"},
+  {"id":"saulė","word":"saulė","translation":"солнце","example":"Šiandien šviečia saulė.","exampleTranslation":"Сегодня светит солнце.","symbol":"☀️"},
+  {"id":"medis","word":"medis","translation":"дерево","example":"Prie namo auga medis.","exampleTranslation":"Рядом с домом растёт дерево.","symbol":"🌳"},
+  {"id":"miestas","word":"miestas","translation":"город","example":"Šis miestas yra didelis.","exampleTranslation":"Этот город большой.","symbol":"🏙️"},
+  {"id":"draugas","word":"draugas","translation":"друг","example":"Jis yra mano draugas.","exampleTranslation":"Он мой друг.","symbol":"🤝"},
+  {"id":"mama","word":"mama","translation":"мама","example":"Mano mama dirba.","exampleTranslation":"Моя мама работает.","symbol":"👩"},
+  {"id":"vaikas","word":"vaikas","translation":"ребёнок","example":"Vaikas žaidžia.","exampleTranslation":"Ребёнок играет.","symbol":"🧒"},
+  {"id":"mokykla","word":"mokykla","translation":"школа","example":"Vaikas eina į mokyklą.","exampleTranslation":"Ребёнок идёт в школу.","symbol":"🏫"},
+  {"id":"diena","word":"diena","translation":"день","example":"Šiandien graži diena.","exampleTranslation":"Сегодня хороший день.","symbol":"🌤️"},
+  {"id":"naktis","word":"naktis","translation":"ночь","example":"Naktį aš miegu.","exampleTranslation":"Ночью я сплю.","symbol":"🌙"},
+  {"id":"obuolys","word":"obuolys","translation":"яблоко","example":"Valgau obuolį.","exampleTranslation":"Я ем яблоко.","symbol":"🍎"},
+  {"id":"pienas","word":"pienas","translation":"молоко","example":"Vaikas geria pieną.","exampleTranslation":"Ребёнок пьёт молоко.","symbol":"🥛"},
+  {"id":"automobilis","word":"automobilis","translation":"автомобиль","example":"Automobilis stovi prie namo.","exampleTranslation":"Автомобиль стоит возле дома.","symbol":"🚗"},
+  {"id":"langas","word":"langas","translation":"окно","example":"Atidaryk langą.","exampleTranslation":"Открой окно.","symbol":"🪟"},
+  {"id":"gėlė","word":"gėlė","translation":"цветок","example":"Ši gėlė yra graži.","exampleTranslation":"Этот цветок красивый.","symbol":"🌷"}
+]
