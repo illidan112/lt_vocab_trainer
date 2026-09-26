@@ -1,6 +1,7 @@
-const CACHE = 'lt-words-v0.1.1';
-const CORE = ['/', '/index.html', '/styles.css', '/js/app.js', '/js/core.js', '/data/words.json', '/manifest.webmanifest', '/icon.svg', '/icons/icon-192.png', '/icons/icon-512.png'];
-self.addEventListener('install', event => { event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE))); });
+const CACHE = 'lt-words-v0.1.3-themes';
+const CORE = ['/', '/index.html', '/styles.css?v=0.1.3', '/js/app.js', '/js/theme.js?v=0.1.3', '/js/core.js', '/data/words.json', '/manifest.webmanifest', '/icon.svg', '/icons/icon-192.png', '/icons/icon-512.png'];
+// Activate only after the complete new offline bundle has been cached.
+self.addEventListener('install', event => { event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', event => { event.waitUntil(Promise.all([caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('lt-words-') && key !== CACHE).map(key => caches.delete(key)))), self.clients.claim()])); });
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET' || new URL(event.request.url).origin !== self.location.origin) return;
