@@ -1,6 +1,8 @@
 import { STORAGE_KEY, emptyProgress, localDay, addDays, readProgress, writeProgress, addWord, dueIds, reviewWord, moveToEnd, importProgress } from './core.js';
 
 const $ = (selector) => document.querySelector(selector);
+const APP_VERSION = '0.1.5';
+$('#app-version').textContent = APP_VERSION;
 const content = $('#content');
 const notice = $('#notice');
 const allowedViews = new Set(['new', 'review', 'mine']);
@@ -91,7 +93,12 @@ content.addEventListener('click', event => {
     const position = Math.min(words.length - 1, Math.max(0, progress.position + (action === 'next' ? 1 : -1)));
     if (save({ ...progress, position })) { exampleVisible = false; render(); } return;
   }
-  if (action === 'add') { if (save(addWord(progress, words[progress.position].id, today()))) render(); return; }
+  if (action === 'add') {
+    const next = addWord(progress, words[progress.position].id, today());
+    const position = Math.min(progress.position + 1, words.length - 1);
+    if (save({ ...next, position })) { exampleVisible = false; render(); }
+    return;
+  }
   if (action === 'rate') {
     const id = queue[0]; const choice = button.dataset.choice;
     if (choice === 'again') queue = moveToEnd(queue, id);
@@ -128,8 +135,14 @@ $('#import').onchange = async event => {
 
 async function registerOffline() {
   if (!('serviceWorker' in navigator)) { $('#offline-label').textContent = 'Офлайн-режим недоступен.'; return; }
+  // An activated worker cannot replace JavaScript already running in this page.
+  const wasControlled = Boolean(navigator.serviceWorker.controller);
+  let reloading = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (wasControlled && !reloading) { reloading = true; location.reload(); }
+  });
   try {
-    await navigator.serviceWorker.register('/sw.js');
+    await navigator.serviceWorker.register('/sw.js', { updateViaCache: 'none' });
     const ready = await navigator.serviceWorker.ready;
     $('#offline-label').textContent = 'Приложение доступно офлайн после первой загрузки.';
     ready.update().catch(() => {});
