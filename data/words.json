@@ -14,15 +14,7 @@
     "translation": "дом",
     "example": "Tai mano namas.",
     "exampleTranslation": "Это мой дом.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🏠",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "namas",
-      "rank": 653,
-      "occurrences": 217
-    }
+    "symbol": "🏠"
   },
   {
     "id": "vanduo",
@@ -39,15 +31,7 @@
     "translation": "вода",
     "example": "Aš geriu vandenį.",
     "exampleTranslation": "Я пью воду.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "💧",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vanduo",
-      "rank": 122,
-      "occurrences": 861
-    }
+    "symbol": "💧"
   },
   {
     "id": "duona",
@@ -64,15 +48,7 @@
     "translation": "хлеб",
     "example": "Perku duoną.",
     "exampleTranslation": "Я покупаю хлеб.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🍞",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "duona",
-      "rank": 2374,
-      "occurrences": 57
-    }
+    "symbol": "🍞"
   },
   {
     "id": "knyga",
@@ -89,15 +65,7 @@
     "translation": "книга",
     "example": "Skaitau knygą.",
     "exampleTranslation": "Я читаю книгу.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "📖",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "knyga",
-      "rank": 188,
-      "occurrences": 613
-    }
+    "symbol": "📖"
   },
   {
     "id": "katė",
@@ -114,15 +82,7 @@
     "translation": "кошка",
     "example": "Katė miega.",
     "exampleTranslation": "Кошка спит.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🐈",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "katė",
-      "rank": 2890,
-      "occurrences": 44
-    }
+    "symbol": "🐈"
   },
   {
     "id": "šuo",
@@ -139,15 +99,7 @@
     "translation": "собака",
     "example": "Šuo bėga.",
     "exampleTranslation": "Собака бежит.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🐕",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "šuo",
-      "rank": 1356,
-      "occurrences": 105
-    }
+    "symbol": "🐕"
   },
   {
     "id": "saulė",
@@ -164,15 +116,7 @@
     "translation": "солнце",
     "example": "Šiandien šviečia saulė.",
     "exampleTranslation": "Сегодня светит солнце.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "☀️",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "saulė",
-      "rank": 564,
-      "occurrences": 247
-    }
+    "symbol": "☀️"
   },
   {
     "id": "medis",
@@ -189,15 +133,7 @@
     "translation": "дерево",
     "example": "Prie namo auga medis.",
     "exampleTranslation": "Рядом с домом растёт дерево.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🌳",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "medis",
-      "rank": 511,
-      "occurrences": 271
-    }
+    "symbol": "🌳"
   },
   {
     "id": "miestas",
@@ -214,15 +150,7 @@
     "translation": "город",
     "example": "Šis miestas yra didelis.",
     "exampleTranslation": "Этот город большой.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🏙️",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "miestas",
-      "rank": 145,
-      "occurrences": 751
-    }
+    "symbol": "🏙️"
   },
   {
     "id": "draugas",
@@ -239,15 +167,7 @@
     "translation": "друг",
     "example": "Jis yra mano draugas.",
     "exampleTranslation": "Он мой друг.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🤝",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "draugas",
-      "rank": 809,
-      "occurrences": 176
-    }
+    "symbol": "🤝"
   },
   {
     "id": "mama",
@@ -264,15 +184,7 @@
     "translation": "мама",
     "example": "Mano mama dirba.",
     "exampleTranslation": "Моя мама работает.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "👩",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "mama",
-      "rank": 896,
-      "occurrences": 158
-    }
+    "symbol": "👩"
   },
   {
     "id": "vaikas",
@@ -289,15 +201,7 @@
     "translation": "ребёнок",
     "example": "Vaikas žaidžia.",
     "exampleTranslation": "Ребёнок играет.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🧒",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vaikas",
-      "rank": 72,
-      "occurrences": 1225
-    }
+    "symbol": "🧒"
   },
   {
     "id": "mokykla",
@@ -314,15 +218,7 @@
     "translation": "школа",
     "example": "Vaikas eina į mokyklą.",
     "exampleTranslation": "Ребёнок идёт в школу.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🏫",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "mokykla",
-      "rank": 264,
-      "occurrences": 465
-    }
+    "symbol": "🏫"
   },
   {
     "id": "diena",
@@ -339,15 +235,7 @@
     "translation": "день",
     "example": "Šiandien graži diena.",
     "exampleTranslation": "Сегодня прекрасный день.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🌤️",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "diena",
-      "rank": 88,
-      "occurrences": 1085
-    }
+    "symbol": "🌤️"
   },
   {
     "id": "naktis",
@@ -364,15 +252,7 @@
     "translation": "ночь",
     "example": "Naktį aš miegu.",
     "exampleTranslation": "Ночью я сплю.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🌙",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "naktis",
-      "rank": 529,
-      "occurrences": 262
-    }
+    "symbol": "🌙"
   },
   {
     "id": "obuolys",
@@ -389,15 +269,7 @@
     "translation": "яблоко",
     "example": "Valgau obuolį.",
     "exampleTranslation": "Я ем яблоко.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🍎",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "obuolys",
-      "rank": 3311,
-      "occurrences": 37
-    }
+    "symbol": "🍎"
   },
   {
     "id": "pienas",
@@ -414,15 +286,7 @@
     "translation": "молоко",
     "example": "Vaikas geria pieną.",
     "exampleTranslation": "Ребёнок пьёт молоко.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🥛",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "pienas",
-      "rank": 737,
-      "occurrences": 193
-    }
+    "symbol": "🥛"
   },
   {
     "id": "automobilis",
@@ -439,15 +303,7 @@
     "translation": "автомобиль",
     "example": "Automobilis stovi prie namo.",
     "exampleTranslation": "Автомобиль стоит возле дома.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🚗",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "automobilis",
-      "rank": 525,
-      "occurrences": 263
-    }
+    "symbol": "🚗"
   },
   {
     "id": "langas",
@@ -464,15 +320,7 @@
     "translation": "окно",
     "example": "Atidaryk langą.",
     "exampleTranslation": "Открой окно.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🪟",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "langas",
-      "rank": 640,
-      "occurrences": 221
-    }
+    "symbol": "🪟"
   },
   {
     "id": "gėlė",
@@ -489,15 +337,7 @@
     "translation": "цветок",
     "example": "Ši gėlė yra graži.",
     "exampleTranslation": "Этот цветок красивый.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "symbol": "🌷",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "gėlė",
-      "rank": 1746,
-      "occurrences": 81
-    }
+    "symbol": "🌷"
   },
   {
     "id": "žmogus",
@@ -513,15 +353,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "человек",
     "example": "Čia gyvena geras žmogus.",
-    "exampleTranslation": "Здесь живёт хороший человек.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "žmogus",
-      "rank": 20,
-      "occurrences": 3647
-    }
+    "exampleTranslation": "Здесь живёт хороший человек."
   },
   {
     "id": "moteris",
@@ -537,15 +369,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "женщина",
     "example": "Moteris laukia autobuso.",
-    "exampleTranslation": "Женщина ждёт автобус.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "moteris",
-      "rank": 205,
-      "occurrences": 577
-    }
+    "exampleTranslation": "Женщина ждёт автобус."
   },
   {
     "id": "vyras",
@@ -561,15 +385,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "мужчина; муж",
     "example": "Mano vyras dirba mokykloje.",
-    "exampleTranslation": "Мой муж работает в школе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vyras",
-      "rank": 214,
-      "occurrences": 558
-    }
+    "exampleTranslation": "Мой муж работает в школе."
   },
   {
     "id": "šeima",
@@ -585,15 +401,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "семья",
     "example": "Mano šeima gyvena Vilniuje.",
-    "exampleTranslation": "Моя семья живёт в Вильнюсе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "šeima",
-      "rank": 254,
-      "occurrences": 479
-    }
+    "exampleTranslation": "Моя семья живёт в Вильнюсе."
   },
   {
     "id": "tėvas",
@@ -609,15 +417,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "отец",
     "example": "Tėvas skaito knygą.",
-    "exampleTranslation": "Отец читает книгу.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "tėvas",
-      "rank": 364,
-      "occurrences": 350
-    }
+    "exampleTranslation": "Отец читает книгу."
   },
   {
     "id": "sūnus",
@@ -633,15 +433,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "сын",
     "example": "Mano sūnus mokosi.",
-    "exampleTranslation": "Мой сын учится.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "sūnus",
-      "rank": 527,
-      "occurrences": 263
-    }
+    "exampleTranslation": "Мой сын учится."
   },
   {
     "id": "duktė",
@@ -657,15 +449,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "дочь",
     "example": "Mano duktė jau namie.",
-    "exampleTranslation": "Моя дочь уже дома.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "duktė",
-      "rank": 2792,
-      "occurrences": 46
-    }
+    "exampleTranslation": "Моя дочь уже дома."
   },
   {
     "id": "brolis",
@@ -681,15 +465,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "брат",
     "example": "Brolis gamina vakarienę.",
-    "exampleTranslation": "Брат готовит ужин.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "brolis",
-      "rank": 610,
-      "occurrences": 230
-    }
+    "exampleTranslation": "Брат готовит ужин."
   },
   {
     "id": "sesuo",
@@ -705,15 +481,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "сестра",
     "example": "Mano sesuo gyvena Kaune.",
-    "exampleTranslation": "Моя сестра живёт в Каунасе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "sesuo",
-      "rank": 770,
-      "occurrences": 185
-    }
+    "exampleTranslation": "Моя сестра живёт в Каунасе."
   },
   {
     "id": "senelis",
@@ -729,15 +497,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "дедушка",
     "example": "Senelis geria arbatą.",
-    "exampleTranslation": "Дедушка пьёт чай.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "senelis",
-      "rank": 3073,
-      "occurrences": 41
-    }
+    "exampleTranslation": "Дедушка пьёт чай."
   },
   {
     "id": "senelė",
@@ -753,15 +513,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "бабушка",
     "example": "Senelė kepa duoną.",
-    "exampleTranslation": "Бабушка печёт хлеб.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "senelė",
-      "rank": 2915,
-      "occurrences": 44
-    }
+    "exampleTranslation": "Бабушка печёт хлеб."
   },
   {
     "id": "vardas",
@@ -777,15 +529,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "имя",
     "example": "Koks tavo vardas?",
-    "exampleTranslation": "Как тебя зовут?",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vardas",
-      "rank": 282,
-      "occurrences": 441
-    }
+    "exampleTranslation": "Как тебя зовут?"
   },
   {
     "id": "pavardė",
@@ -801,15 +545,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "фамилия",
     "example": "Kokia jūsų pavardė?",
-    "exampleTranslation": "Какая у вас фамилия?",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "pavardė",
-      "rank": 1298,
-      "occurrences": 110
-    }
+    "exampleTranslation": "Какая у вас фамилия?"
   },
   {
     "id": "amžius",
@@ -825,15 +561,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "возраст",
     "example": "Koks jūsų amžius?",
-    "exampleTranslation": "Какой у вас возраст?",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "amžius",
-      "rank": 303,
-      "occurrences": 408
-    }
+    "exampleTranslation": "Какой у вас возраст?"
   },
   {
     "id": "šalis",
@@ -849,15 +577,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "страна",
     "example": "Lietuva yra mano šalis.",
-    "exampleTranslation": "Литва — моя страна.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "šalis",
-      "rank": 101,
-      "occurrences": 971
-    }
+    "exampleTranslation": "Литва — моя страна."
   },
   {
     "id": "kalba",
@@ -873,15 +593,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "язык; речь",
     "example": "Lietuvių kalba man patinka.",
-    "exampleTranslation": "Мне нравится литовский язык.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kalba",
-      "rank": 149,
-      "occurrences": 732
-    }
+    "exampleTranslation": "Мне нравится литовский язык."
   },
   {
     "id": "darbas",
@@ -897,15 +609,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "работа",
     "example": "Mano darbas prasideda devintą.",
-    "exampleTranslation": "Моя работа начинается в девять.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "darbas",
-      "rank": 15,
-      "occurrences": 4243
-    }
+    "exampleTranslation": "Моя работа начинается в девять."
   },
   {
     "id": "gydytojas",
@@ -921,15 +625,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "врач (мужчина)",
     "example": "Gydytojas dirba ligoninėje.",
-    "exampleTranslation": "Врач работает в больнице.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "gydytojas",
-      "rank": 455,
-      "occurrences": 291
-    }
+    "exampleTranslation": "Врач работает в больнице."
   },
   {
     "id": "mokytojas",
@@ -945,15 +641,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "учитель (мужчина)",
     "example": "Mokytojas aiškina užduotį.",
-    "exampleTranslation": "Учитель объясняет задание.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "mokytojas",
-      "rank": 732,
-      "occurrences": 194
-    }
+    "exampleTranslation": "Учитель объясняет задание."
   },
   {
     "id": "studentas",
@@ -969,15 +657,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "студент",
     "example": "Studentas skaito tekstą.",
-    "exampleTranslation": "Студент читает текст.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "studentas",
-      "rank": 788,
-      "occurrences": 180
-    }
+    "exampleTranslation": "Студент читает текст."
   },
   {
     "id": "kaimynas",
@@ -993,15 +673,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "сосед",
     "example": "Kaimynas turi šunį.",
-    "exampleTranslation": "У соседа есть собака.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kaimynas",
-      "rank": 1030,
-      "occurrences": 140
-    }
+    "exampleTranslation": "У соседа есть собака."
   },
   {
     "id": "butas",
@@ -1017,15 +689,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "квартира",
     "example": "Mūsų butas yra mažas.",
-    "exampleTranslation": "Наша квартира маленькая.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "butas",
-      "rank": 1318,
-      "occurrences": 108
-    }
+    "exampleTranslation": "Наша квартира маленькая."
   },
   {
     "id": "kambarys",
@@ -1041,15 +705,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "комната",
     "example": "Šis kambarys labai šviesus.",
-    "exampleTranslation": "Эта комната очень светлая.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kambarys",
-      "rank": 600,
-      "occurrences": 235
-    }
+    "exampleTranslation": "Эта комната очень светлая."
   },
   {
     "id": "virtuvė",
@@ -1065,15 +721,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "кухня",
     "example": "Virtuvėje yra stalas.",
-    "exampleTranslation": "На кухне есть стол.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "virtuvė",
-      "rank": 1794,
-      "occurrences": 79
-    }
+    "exampleTranslation": "На кухне есть стол."
   },
   {
     "id": "vonia",
@@ -1089,15 +737,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "ванна",
     "example": "Vonioje yra šilto vandens.",
-    "exampleTranslation": "В ванне есть тёплая вода.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vonia",
-      "rank": 2030,
-      "occurrences": 69
-    }
+    "exampleTranslation": "В ванне есть тёплая вода."
   },
   {
     "id": "durys",
@@ -1113,15 +753,7 @@
     "grammarNote": "мн. ч.; родительный мн. ч.; ж. р.",
     "translation": "дверь; двери",
     "example": "Durys yra atviros.",
-    "exampleTranslation": "Дверь открыта.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "durys",
-      "rank": 389,
-      "occurrences": 331
-    }
+    "exampleTranslation": "Дверь открыта."
   },
   {
     "id": "stalas",
@@ -1137,15 +769,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "стол",
     "example": "Ant stalo yra knyga.",
-    "exampleTranslation": "На столе лежит книга.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "stalas",
-      "rank": 713,
-      "occurrences": 200
-    }
+    "exampleTranslation": "На столе лежит книга."
   },
   {
     "id": "kėdė",
@@ -1161,15 +785,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "стул",
     "example": "Prie stalo stovi kėdė.",
-    "exampleTranslation": "У стола стоит стул.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kėdė",
-      "rank": 2281,
-      "occurrences": 60
-    }
+    "exampleTranslation": "У стола стоит стул."
   },
   {
     "id": "lova",
@@ -1185,15 +801,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "кровать",
     "example": "Lova stovi prie lango.",
-    "exampleTranslation": "Кровать стоит у окна.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "lova",
-      "rank": 766,
-      "occurrences": 185
-    }
+    "exampleTranslation": "Кровать стоит у окна."
   },
   {
     "id": "spinta",
@@ -1209,15 +817,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "шкаф",
     "example": "Drabužiai yra spintoje.",
-    "exampleTranslation": "Одежда находится в шкафу.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "spinta",
-      "rank": 5132,
-      "occurrences": 21
-    }
+    "exampleTranslation": "Одежда находится в шкафу."
   },
   {
     "id": "raktas",
@@ -1233,15 +833,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "ключ",
     "example": "Kur yra mano raktas?",
-    "exampleTranslation": "Где мой ключ?",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "raktas",
-      "rank": 4005,
-      "occurrences": 29
-    }
+    "exampleTranslation": "Где мой ключ?"
   },
   {
     "id": "telefonas",
@@ -1257,15 +849,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "телефон",
     "example": "Mano telefonas neveikia.",
-    "exampleTranslation": "Мой телефон не работает.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "telefonas",
-      "rank": 1218,
-      "occurrences": 117
-    }
+    "exampleTranslation": "Мой телефон не работает."
   },
   {
     "id": "kompiuteris",
@@ -1281,15 +865,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "компьютер",
     "example": "Man reikia kompiuterio.",
-    "exampleTranslation": "Мне нужен компьютер.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kompiuteris",
-      "rank": 590,
-      "occurrences": 239
-    }
+    "exampleTranslation": "Мне нужен компьютер."
   },
   {
     "id": "adresas",
@@ -1305,15 +881,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "адрес",
     "example": "Parašykite savo adresą.",
-    "exampleTranslation": "Напишите свой адрес.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "adresas",
-      "rank": 2869,
-      "occurrences": 44
-    }
+    "exampleTranslation": "Напишите свой адрес."
   },
   {
     "id": "gatvė",
@@ -1329,15 +897,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "улица",
     "example": "Ši gatvė labai ilga.",
-    "exampleTranslation": "Эта улица очень длинная.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "gatvė",
-      "rank": 635,
-      "occurrences": 223
-    }
+    "exampleTranslation": "Эта улица очень длинная."
   },
   {
     "id": "kelias",
@@ -1353,15 +913,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "дорога",
     "example": "Šis kelias veda į miestą.",
-    "exampleTranslation": "Эта дорога ведёт в город.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kelias",
-      "rank": 288,
-      "occurrences": 430
-    }
+    "exampleTranslation": "Эта дорога ведёт в город."
   },
   {
     "id": "parduotuvė",
@@ -1377,15 +929,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "магазин",
     "example": "Parduotuvė atsidaro aštuntą.",
-    "exampleTranslation": "Магазин открывается в восемь.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "parduotuvė",
-      "rank": 1511,
-      "occurrences": 94
-    }
+    "exampleTranslation": "Магазин открывается в восемь."
   },
   {
     "id": "turgus",
@@ -1401,15 +945,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "рынок",
     "example": "Turguje perku daržoves.",
-    "exampleTranslation": "На рынке я покупаю овощи.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "turgus",
-      "rank": 3502,
-      "occurrences": 35
-    }
+    "exampleTranslation": "На рынке я покупаю овощи."
   },
   {
     "id": "vaistinė",
@@ -1425,15 +961,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "аптека",
     "example": "Vaistinė yra prie ligoninės.",
-    "exampleTranslation": "Аптека находится рядом с больницей.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vaistinė",
-      "rank": 4374,
-      "occurrences": 26
-    }
+    "exampleTranslation": "Аптека находится рядом с больницей."
   },
   {
     "id": "ligoninė",
@@ -1449,15 +977,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "больница",
     "example": "Jis dirba ligoninėje.",
-    "exampleTranslation": "Он работает в больнице.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "ligoninė",
-      "rank": 469,
-      "occurrences": 287
-    }
+    "exampleTranslation": "Он работает в больнице."
   },
   {
     "id": "bankas",
@@ -1473,15 +993,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "банк",
     "example": "Bankas šiandien nedirba.",
-    "exampleTranslation": "Банк сегодня не работает.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "bankas",
-      "rank": 576,
-      "occurrences": 242
-    }
+    "exampleTranslation": "Банк сегодня не работает."
   },
   {
     "id": "paštas",
@@ -1497,15 +1009,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "почта",
     "example": "Paštas yra šalia banko.",
-    "exampleTranslation": "Почта находится рядом с банком.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "paštas",
-      "rank": 2145,
-      "occurrences": 65
-    }
+    "exampleTranslation": "Почта находится рядом с банком."
   },
   {
     "id": "kavinė",
@@ -1521,15 +1025,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "кафе",
     "example": "Susitinkame kavinėje.",
-    "exampleTranslation": "Мы встречаемся в кафе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kavinė",
-      "rank": 3868,
-      "occurrences": 30
-    }
+    "exampleTranslation": "Мы встречаемся в кафе."
   },
   {
     "id": "restoranas",
@@ -1545,15 +1041,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "ресторан",
     "example": "Restoranas yra miesto centre.",
-    "exampleTranslation": "Ресторан находится в центре города.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "restoranas",
-      "rank": 3258,
-      "occurrences": 38
-    }
+    "exampleTranslation": "Ресторан находится в центре города."
   },
   {
     "id": "viešbutis",
@@ -1569,15 +1057,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "гостиница",
     "example": "Mūsų viešbutis yra prie jūros.",
-    "exampleTranslation": "Наша гостиница находится у моря.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "viešbutis",
-      "rank": 2336,
-      "occurrences": 59
-    }
+    "exampleTranslation": "Наша гостиница находится у моря."
   },
   {
     "id": "stotis",
@@ -1593,15 +1073,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "вокзал; станция",
     "example": "Stotis yra netoli centro.",
-    "exampleTranslation": "Вокзал находится недалеко от центра.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "stotis",
-      "rank": 1281,
-      "occurrences": 112
-    }
+    "exampleTranslation": "Вокзал находится недалеко от центра."
   },
   {
     "id": "stotelė",
@@ -1617,15 +1089,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "остановка",
     "example": "Autobuso stotelė yra čia.",
-    "exampleTranslation": "Автобусная остановка находится здесь.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "stotelė",
-      "rank": 4962,
-      "occurrences": 22
-    }
+    "exampleTranslation": "Автобусная остановка находится здесь."
   },
   {
     "id": "autobusas",
@@ -1641,15 +1105,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "автобус",
     "example": "Autobusas atvažiuoja laiku.",
-    "exampleTranslation": "Автобус приезжает вовремя.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "autobusas",
-      "rank": 1481,
-      "occurrences": 95
-    }
+    "exampleTranslation": "Автобус приезжает вовремя."
   },
   {
     "id": "traukinys",
@@ -1665,15 +1121,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "поезд",
     "example": "Traukinys išvyksta ryte.",
-    "exampleTranslation": "Поезд отправляется утром.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "traukinys",
-      "rank": 2824,
-      "occurrences": 46
-    }
+    "exampleTranslation": "Поезд отправляется утром."
   },
   {
     "id": "lėktuvas",
@@ -1689,15 +1137,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "самолёт",
     "example": "Lėktuvas jau atskrido.",
-    "exampleTranslation": "Самолёт уже прилетел.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "lėktuvas",
-      "rank": 3239,
-      "occurrences": 38
-    }
+    "exampleTranslation": "Самолёт уже прилетел."
   },
   {
     "id": "dviratis",
@@ -1713,15 +1153,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "велосипед",
     "example": "Į darbą važiuoju dviračiu.",
-    "exampleTranslation": "На работу я езжу на велосипеде.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "dviratis",
-      "rank": 4054,
-      "occurrences": 28
-    }
+    "exampleTranslation": "На работу я езжу на велосипеде."
   },
   {
     "id": "bilietas",
@@ -1737,15 +1169,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "билет",
     "example": "Man reikia vieno bilieto.",
-    "exampleTranslation": "Мне нужен один билет.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "bilietas",
-      "rank": 5401,
-      "occurrences": 19
-    }
+    "exampleTranslation": "Мне нужен один билет."
   },
   {
     "id": "kelionė",
@@ -1761,15 +1185,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "поездка; путешествие",
     "example": "Kelionė buvo trumpa.",
-    "exampleTranslation": "Поездка была короткой.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kelionė",
-      "rank": 885,
-      "occurrences": 160
-    }
+    "exampleTranslation": "Поездка была короткой."
   },
   {
     "id": "maistas",
@@ -1785,15 +1201,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "еда",
     "example": "Maistas labai skanus.",
-    "exampleTranslation": "Еда очень вкусная.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "maistas",
-      "rank": 680,
-      "occurrences": 208
-    }
+    "exampleTranslation": "Еда очень вкусная."
   },
   {
     "id": "mėsa",
@@ -1809,15 +1217,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "мясо",
     "example": "Aš nevalgau mėsos.",
-    "exampleTranslation": "Я не ем мясо.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "mėsa",
-      "rank": 1627,
-      "occurrences": 87
-    }
+    "exampleTranslation": "Я не ем мясо."
   },
   {
     "id": "žuvis",
@@ -1833,15 +1233,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "рыба",
     "example": "Šiandien valgome žuvį.",
-    "exampleTranslation": "Сегодня мы едим рыбу.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "žuvis",
-      "rank": 544,
-      "occurrences": 257
-    }
+    "exampleTranslation": "Сегодня мы едим рыбу."
   },
   {
     "id": "kiaušinis",
@@ -1857,15 +1249,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "яйцо",
     "example": "Pusryčiams valgau kiaušinį.",
-    "exampleTranslation": "На завтрак я ем яйцо.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kiaušinis",
-      "rank": 3300,
-      "occurrences": 37
-    }
+    "exampleTranslation": "На завтрак я ем яйцо."
   },
   {
     "id": "sūris",
@@ -1881,15 +1265,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "сыр",
     "example": "Perku duonos ir sūrio.",
-    "exampleTranslation": "Я покупаю хлеб и сыр.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "sūris",
-      "rank": 4967,
-      "occurrences": 22
-    }
+    "exampleTranslation": "Я покупаю хлеб и сыр."
   },
   {
     "id": "sviestas",
@@ -1905,15 +1281,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "сливочное масло",
     "example": "Sviestas yra šaldytuve.",
-    "exampleTranslation": "Масло находится в холодильнике.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "sviestas",
-      "rank": 3909,
-      "occurrences": 30
-    }
+    "exampleTranslation": "Масло находится в холодильнике."
   },
   {
     "id": "bulvė",
@@ -1929,15 +1297,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "картофелина; картофель",
     "example": "Sriubai reikia bulvių.",
-    "exampleTranslation": "Для супа нужен картофель.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "bulvė",
-      "rank": 1386,
-      "occurrences": 102
-    }
+    "exampleTranslation": "Для супа нужен картофель."
   },
   {
     "id": "pomidoras",
@@ -1953,15 +1313,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "помидор",
     "example": "Supjaustyk pomidorą.",
-    "exampleTranslation": "Нарежь помидор.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "pomidoras",
-      "rank": 5512,
-      "occurrences": 19
-    }
+    "exampleTranslation": "Нарежь помидор."
   },
   {
     "id": "agurkas",
@@ -1977,15 +1329,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "огурец",
     "example": "Agurkas yra žalias.",
-    "exampleTranslation": "Огурец зелёный.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "agurkas",
-      "rank": 5176,
-      "occurrences": 20
-    }
+    "exampleTranslation": "Огурец зелёный."
   },
   {
     "id": "vaisius",
@@ -2001,15 +1345,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "фрукт",
     "example": "Obuolys yra vaisius.",
-    "exampleTranslation": "Яблоко — это фрукт.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vaisius",
-      "rank": 1684,
-      "occurrences": 85
-    }
+    "exampleTranslation": "Яблоко — это фрукт."
   },
   {
     "id": "daržovė",
@@ -2025,15 +1361,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "овощ",
     "example": "Kasdien valgau daržoves.",
-    "exampleTranslation": "Я каждый день ем овощи.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "daržovė",
-      "rank": 2460,
-      "occurrences": 54
-    }
+    "exampleTranslation": "Я каждый день ем овощи."
   },
   {
     "id": "cukrus",
@@ -2049,15 +1377,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "сахар",
     "example": "Geriu arbatą be cukraus.",
-    "exampleTranslation": "Я пью чай без сахара.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "cukrus",
-      "rank": 2832,
-      "occurrences": 45
-    }
+    "exampleTranslation": "Я пью чай без сахара."
   },
   {
     "id": "druska",
@@ -2073,15 +1393,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "соль",
     "example": "Sriubai trūksta druskos.",
-    "exampleTranslation": "В супе не хватает соли.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "druska",
-      "rank": 2878,
-      "occurrences": 44
-    }
+    "exampleTranslation": "В супе не хватает соли."
   },
   {
     "id": "arbata",
@@ -2097,15 +1409,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "чай",
     "example": "Ar norite arbatos?",
-    "exampleTranslation": "Вы хотите чаю?",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "arbata",
-      "rank": 2157,
-      "occurrences": 64
-    }
+    "exampleTranslation": "Вы хотите чаю?"
   },
   {
     "id": "kava",
@@ -2121,15 +1425,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "кофе",
     "example": "Ryte geriu kavą.",
-    "exampleTranslation": "Утром я пью кофе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kava",
-      "rank": 1595,
-      "occurrences": 89
-    }
+    "exampleTranslation": "Утром я пью кофе."
   },
   {
     "id": "sultys",
@@ -2145,15 +1441,7 @@
     "grammarNote": "мн. ч.; родительный мн. ч.; ж. р.",
     "translation": "сок",
     "example": "Šios sultys labai saldžios.",
-    "exampleTranslation": "Этот сок очень сладкий.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "sultys",
-      "rank": 3265,
-      "occurrences": 38
-    }
+    "exampleTranslation": "Этот сок очень сладкий."
   },
   {
     "id": "sriuba",
@@ -2169,15 +1457,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "суп",
     "example": "Sriuba dar karšta.",
-    "exampleTranslation": "Суп ещё горячий.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "sriuba",
-      "rank": 5533,
-      "occurrences": 19
-    }
+    "exampleTranslation": "Суп ещё горячий."
   },
   {
     "id": "pusryčiai",
@@ -2193,15 +1473,7 @@
     "grammarNote": "мн. ч.; родительный мн. ч.; м. р.",
     "translation": "завтрак",
     "example": "Pusryčiai jau paruošti.",
-    "exampleTranslation": "Завтрак уже готов.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "pusryčiai",
-      "rank": 8062,
-      "occurrences": 11
-    }
+    "exampleTranslation": "Завтрак уже готов."
   },
   {
     "id": "pietūs",
@@ -2217,15 +1489,7 @@
     "grammarNote": "мн. ч.; родительный мн. ч.; м. р.",
     "translation": "обед",
     "example": "Pietūs bus pirmą valandą.",
-    "exampleTranslation": "Обед будет в час.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "pietūs",
-      "rank": 794,
-      "occurrences": 179
-    }
+    "exampleTranslation": "Обед будет в час."
   },
   {
     "id": "vakarienė",
@@ -2241,15 +1505,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "ужин",
     "example": "Vakarienė bus namie.",
-    "exampleTranslation": "Ужин будет дома.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vakarienė",
-      "rank": 4806,
-      "occurrences": 23
-    }
+    "exampleTranslation": "Ужин будет дома."
   },
   {
     "id": "lėkštė",
@@ -2265,15 +1521,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "тарелка",
     "example": "Lėkštė yra ant stalo.",
-    "exampleTranslation": "Тарелка стоит на столе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "lėkštė",
-      "rank": 4300,
-      "occurrences": 26
-    }
+    "exampleTranslation": "Тарелка стоит на столе."
   },
   {
     "id": "puodelis",
@@ -2289,15 +1537,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "чашка",
     "example": "Tai mano puodelis.",
-    "exampleTranslation": "Это моя чашка.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "puodelis",
-      "rank": 2950,
-      "occurrences": 43
-    }
+    "exampleTranslation": "Это моя чашка."
   },
   {
     "id": "šaukštas",
@@ -2313,15 +1553,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "ложка",
     "example": "Man reikia šaukšto.",
-    "exampleTranslation": "Мне нужна ложка.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "šaukštas",
-      "rank": 3568,
-      "occurrences": 34
-    }
+    "exampleTranslation": "Мне нужна ложка."
   },
   {
     "id": "peilis",
@@ -2337,15 +1569,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "нож",
     "example": "Peilis yra virtuvėje.",
-    "exampleTranslation": "Нож находится на кухне.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "peilis",
-      "rank": 1696,
-      "occurrences": 84
-    }
+    "exampleTranslation": "Нож находится на кухне."
   },
   {
     "id": "kaina",
@@ -2361,15 +1585,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "цена",
     "example": "Kokia šios knygos kaina?",
-    "exampleTranslation": "Какова цена этой книги?",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kaina",
-      "rank": 449,
-      "occurrences": 295
-    }
+    "exampleTranslation": "Какова цена этой книги?"
   },
   {
     "id": "pinigai",
@@ -2385,15 +1601,7 @@
     "grammarNote": "мн. ч.; родительный мн. ч.; м. р.",
     "translation": "деньги",
     "example": "Pinigai yra piniginėje.",
-    "exampleTranslation": "Деньги находятся в кошельке.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "pinigas",
-      "rank": 329,
-      "occurrences": 380
-    }
+    "exampleTranslation": "Деньги находятся в кошельке."
   },
   {
     "id": "sąskaita",
@@ -2409,15 +1617,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "счёт",
     "example": "Prašau sąskaitos.",
-    "exampleTranslation": "Счёт, пожалуйста.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "sąskaita",
-      "rank": 1145,
-      "occurrences": 126
-    }
+    "exampleTranslation": "Счёт, пожалуйста."
   },
   {
     "id": "laikas",
@@ -2433,15 +1633,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "время",
     "example": "Dabar neturiu laiko.",
-    "exampleTranslation": "Сейчас у меня нет времени.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "laikas",
-      "rank": 40,
-      "occurrences": 2056
-    }
+    "exampleTranslation": "Сейчас у меня нет времени."
   },
   {
     "id": "valanda",
@@ -2457,15 +1649,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "час",
     "example": "Susitinkame penktą valandą.",
-    "exampleTranslation": "Мы встречаемся в пять часов.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "valanda",
-      "rank": 404,
-      "occurrences": 322
-    }
+    "exampleTranslation": "Мы встречаемся в пять часов."
   },
   {
     "id": "minutė",
@@ -2481,15 +1665,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "минута",
     "example": "Palaukite vieną minutę.",
-    "exampleTranslation": "Подождите одну минуту.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "minutė",
-      "rank": 681,
-      "occurrences": 208
-    }
+    "exampleTranslation": "Подождите одну минуту."
   },
   {
     "id": "savaitė",
@@ -2505,15 +1681,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "неделя",
     "example": "Šią savaitę dirbu namie.",
-    "exampleTranslation": "На этой неделе я работаю дома.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "savaitė",
-      "rank": 447,
-      "occurrences": 299
-    }
+    "exampleTranslation": "На этой неделе я работаю дома."
   },
   {
     "id": "mėnuo",
@@ -2529,15 +1697,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "месяц",
     "example": "Kitą mėnesį važiuosime į Kauną.",
-    "exampleTranslation": "В следующем месяце мы поедем в Каунас.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "mėnuo",
-      "rank": 224,
-      "occurrences": 537
-    }
+    "exampleTranslation": "В следующем месяце мы поедем в Каунас."
   },
   {
     "id": "metai",
@@ -2553,15 +1713,7 @@
     "grammarNote": "мн. ч.; родительный мн. ч.; м. р.",
     "translation": "год; годы",
     "example": "Šie metai buvo geri.",
-    "exampleTranslation": "Этот год был хорошим.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "metai",
-      "rank": 33,
-      "occurrences": 2469
-    }
+    "exampleTranslation": "Этот год был хорошим."
   },
   {
     "id": "rytas",
@@ -2577,15 +1729,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "утро",
     "example": "Rytas buvo šaltas.",
-    "exampleTranslation": "Утро было холодным.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "rytas",
-      "rank": 426,
-      "occurrences": 309
-    }
+    "exampleTranslation": "Утро было холодным."
   },
   {
     "id": "vakaras",
@@ -2601,15 +1745,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "вечер",
     "example": "Vakarą praleidžiame namie.",
-    "exampleTranslation": "Мы проводим вечер дома.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vakaras",
-      "rank": 491,
-      "occurrences": 278
-    }
+    "exampleTranslation": "Мы проводим вечер дома."
   },
   {
     "id": "savaitgalis",
@@ -2625,15 +1761,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "выходные",
     "example": "Savaitgalį važiuosime prie jūros.",
-    "exampleTranslation": "На выходных мы поедем к морю.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "savaitgalis",
-      "rank": 3259,
-      "occurrences": 38
-    }
+    "exampleTranslation": "На выходных мы поедем к морю."
   },
   {
     "id": "pavasaris",
@@ -2649,15 +1777,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "весна",
     "example": "Pavasarį žydi gėlės.",
-    "exampleTranslation": "Весной цветут цветы.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "pavasaris",
-      "rank": 1313,
-      "occurrences": 109
-    }
+    "exampleTranslation": "Весной цветут цветы."
   },
   {
     "id": "vasara",
@@ -2673,15 +1793,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "лето",
     "example": "Vasarą daug keliaujame.",
-    "exampleTranslation": "Летом мы много путешествуем.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vasara",
-      "rank": 758,
-      "occurrences": 188
-    }
+    "exampleTranslation": "Летом мы много путешествуем."
   },
   {
     "id": "ruduo",
@@ -2697,15 +1809,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "осень",
     "example": "Rudenį dažnai lyja.",
-    "exampleTranslation": "Осенью часто идёт дождь.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "ruduo",
-      "rank": 1233,
-      "occurrences": 116
-    }
+    "exampleTranslation": "Осенью часто идёт дождь."
   },
   {
     "id": "žiema",
@@ -2721,15 +1825,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "зима",
     "example": "Žiemą čia šalta.",
-    "exampleTranslation": "Зимой здесь холодно.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "žiema",
-      "rank": 984,
-      "occurrences": 147
-    }
+    "exampleTranslation": "Зимой здесь холодно."
   },
   {
     "id": "oras",
@@ -2745,15 +1841,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "погода; воздух",
     "example": "Šiandien oras geras.",
-    "exampleTranslation": "Сегодня хорошая погода.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "oras",
-      "rank": 481,
-      "occurrences": 282
-    }
+    "exampleTranslation": "Сегодня хорошая погода."
   },
   {
     "id": "lietus",
@@ -2769,15 +1857,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "дождь",
     "example": "Lauke lyja lietus.",
-    "exampleTranslation": "На улице идёт дождь.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "lietus",
-      "rank": 2258,
-      "occurrences": 61
-    }
+    "exampleTranslation": "На улице идёт дождь."
   },
   {
     "id": "sniegas",
@@ -2793,15 +1873,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "снег",
     "example": "Ant žemės yra sniego.",
-    "exampleTranslation": "На земле лежит снег.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "sniegas",
-      "rank": 1022,
-      "occurrences": 141
-    }
+    "exampleTranslation": "На земле лежит снег."
   },
   {
     "id": "vėjas",
@@ -2817,15 +1889,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "ветер",
     "example": "Šiandien pučia stiprus vėjas.",
-    "exampleTranslation": "Сегодня дует сильный ветер.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vėjas",
-      "rank": 1025,
-      "occurrences": 141
-    }
+    "exampleTranslation": "Сегодня дует сильный ветер."
   },
   {
     "id": "jūra",
@@ -2841,15 +1905,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "море",
     "example": "Vasarą važiuojame prie jūros.",
-    "exampleTranslation": "Летом мы ездим к морю.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "jūra",
-      "rank": 704,
-      "occurrences": 202
-    }
+    "exampleTranslation": "Летом мы ездим к морю."
   },
   {
     "id": "ežeras",
@@ -2865,15 +1921,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "озеро",
     "example": "Prie miesto yra ežeras.",
-    "exampleTranslation": "Рядом с городом есть озеро.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "ežeras",
-      "rank": 1171,
-      "occurrences": 122
-    }
+    "exampleTranslation": "Рядом с городом есть озеро."
   },
   {
     "id": "upė",
@@ -2889,15 +1937,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "река",
     "example": "Per miestą teka upė.",
-    "exampleTranslation": "Через город течёт река.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "upė",
-      "rank": 724,
-      "occurrences": 197
-    }
+    "exampleTranslation": "Через город течёт река."
   },
   {
     "id": "miškas",
@@ -2913,15 +1953,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "лес",
     "example": "Miške auga daug medžių.",
-    "exampleTranslation": "В лесу растёт много деревьев.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "miškas",
-      "rank": 460,
-      "occurrences": 290
-    }
+    "exampleTranslation": "В лесу растёт много деревьев."
   },
   {
     "id": "parkas",
@@ -2937,15 +1969,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "парк",
     "example": "Vakare einame į parką.",
-    "exampleTranslation": "Вечером мы идём в парк.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "parkas",
-      "rank": 1468,
-      "occurrences": 97
-    }
+    "exampleTranslation": "Вечером мы идём в парк."
   },
   {
     "id": "galva",
@@ -2961,15 +1985,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "голова",
     "example": "Man skauda galvą.",
-    "exampleTranslation": "У меня болит голова.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "galva",
-      "rank": 198,
-      "occurrences": 587
-    }
+    "exampleTranslation": "У меня болит голова."
   },
   {
     "id": "ranka",
@@ -2985,15 +2001,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "рука",
     "example": "Prieš valgį plauname rankas.",
-    "exampleTranslation": "Перед едой мы моем руки.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "ranka",
-      "rank": 138,
-      "occurrences": 802
-    }
+    "exampleTranslation": "Перед едой мы моем руки."
   },
   {
     "id": "koja",
@@ -3009,15 +2017,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "нога",
     "example": "Man skauda koją.",
-    "exampleTranslation": "У меня болит нога.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "koja",
-      "rank": 360,
-      "occurrences": 353
-    }
+    "exampleTranslation": "У меня болит нога."
   },
   {
     "id": "akis",
@@ -3033,15 +2033,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "глаз",
     "example": "Mano akys mėlynos.",
-    "exampleTranslation": "У меня голубые глаза.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "akis",
-      "rank": 211,
-      "occurrences": 572
-    }
+    "exampleTranslation": "У меня голубые глаза."
   },
   {
     "id": "ausis",
@@ -3057,15 +2049,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "ухо",
     "example": "Vaikui skauda ausį.",
-    "exampleTranslation": "У ребёнка болит ухо.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "ausis",
-      "rank": 1385,
-      "occurrences": 102
-    }
+    "exampleTranslation": "У ребёнка болит ухо."
   },
   {
     "id": "dantis",
@@ -3081,15 +2065,7 @@
     "grammarNote": "им. и род. ед. ч.; м. р.",
     "translation": "зуб",
     "example": "Kas rytą valau dantis.",
-    "exampleTranslation": "Каждое утро я чищу зубы.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "dantis",
-      "rank": 1189,
-      "occurrences": 120
-    }
+    "exampleTranslation": "Каждое утро я чищу зубы."
   },
   {
     "id": "sveikata",
@@ -3105,15 +2081,7 @@
     "grammarNote": "им. и род. ед. ч.; ж. р.",
     "translation": "здоровье",
     "example": "Sveikata man labai svarbi.",
-    "exampleTranslation": "Здоровье для меня очень важно.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "sveikata",
-      "rank": 497,
-      "occurrences": 276
-    }
+    "exampleTranslation": "Здоровье для меня очень важно."
   },
   {
     "id": "vaistai",
@@ -3129,15 +2097,7 @@
     "grammarNote": "мн. ч.; родительный мн. ч.; м. р.",
     "translation": "лекарство; лекарства",
     "example": "Vaistus perku vaistinėje.",
-    "exampleTranslation": "Лекарства я покупаю в аптеке.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vaistas",
-      "rank": 583,
-      "occurrences": 241
-    }
+    "exampleTranslation": "Лекарства я покупаю в аптеке."
   },
   {
     "id": "būti",
@@ -3152,15 +2112,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "быть",
     "example": "Šiandien esu namie.",
-    "exampleTranslation": "Сегодня я дома.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "būti",
-      "rank": 3,
-      "occurrences": 17128
-    }
+    "exampleTranslation": "Сегодня я дома."
   },
   {
     "id": "turėti",
@@ -3175,15 +2127,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "иметь",
     "example": "Turiu du bilietus.",
-    "exampleTranslation": "У меня есть два билета.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "turėti",
-      "rank": 18,
-      "occurrences": 3863
-    }
+    "exampleTranslation": "У меня есть два билета."
   },
   {
     "id": "gyventi",
@@ -3198,15 +2142,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "жить",
     "example": "Gyvenu Vilniuje.",
-    "exampleTranslation": "Я живу в Вильнюсе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "gyventi",
-      "rank": 163,
-      "occurrences": 678
-    }
+    "exampleTranslation": "Я живу в Вильнюсе."
   },
   {
     "id": "dirbti",
@@ -3221,15 +2157,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "работать",
     "example": "Dirbu nuo devintos valandos.",
-    "exampleTranslation": "Я работаю с девяти часов.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "dirbti",
-      "rank": 124,
-      "occurrences": 850
-    }
+    "exampleTranslation": "Я работаю с девяти часов."
   },
   {
     "id": "mokytis",
@@ -3244,15 +2172,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "учиться",
     "example": "Mokausi lietuvių kalbos.",
-    "exampleTranslation": "Я учу литовский язык.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "mokytis",
-      "rank": 953,
-      "occurrences": 150
-    }
+    "exampleTranslation": "Я учу литовский язык."
   },
   {
     "id": "kalbėti",
@@ -3267,15 +2187,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "говорить; разговаривать",
     "example": "Mes kalbame lietuviškai.",
-    "exampleTranslation": "Мы говорим по-литовски.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kalbėti",
-      "rank": 144,
-      "occurrences": 753
-    }
+    "exampleTranslation": "Мы говорим по-литовски."
   },
   {
     "id": "suprasti",
@@ -3290,15 +2202,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "понимать",
     "example": "Suprantu šį žodį.",
-    "exampleTranslation": "Я понимаю это слово.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "suprasti",
-      "rank": 192,
-      "occurrences": 604
-    }
+    "exampleTranslation": "Я понимаю это слово."
   },
   {
     "id": "žinoti",
@@ -3313,15 +2217,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "знать",
     "example": "Žinau tavo adresą.",
-    "exampleTranslation": "Я знаю твой адрес.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "žinoti",
-      "rank": 68,
-      "occurrences": 1259
-    }
+    "exampleTranslation": "Я знаю твой адрес."
   },
   {
     "id": "norėti",
@@ -3336,15 +2232,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "хотеть",
     "example": "Noriu gerti.",
-    "exampleTranslation": "Я хочу пить.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "norėti",
-      "rank": 63,
-      "occurrences": 1350
-    }
+    "exampleTranslation": "Я хочу пить."
   },
   {
     "id": "galėti",
@@ -3359,15 +2247,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "мочь",
     "example": "Ar galite padėti?",
-    "exampleTranslation": "Вы можете помочь?",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "galėti",
-      "rank": 11,
-      "occurrences": 5181
-    }
+    "exampleTranslation": "Вы можете помочь?"
   },
   {
     "id": "eiti",
@@ -3382,15 +2262,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "идти",
     "example": "Einu į parduotuvę.",
-    "exampleTranslation": "Я иду в магазин.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "eiti",
-      "rank": 203,
-      "occurrences": 579
-    }
+    "exampleTranslation": "Я иду в магазин."
   },
   {
     "id": "ateiti",
@@ -3405,15 +2277,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "прийти; приходить",
     "example": "Draugas ateina pas mane.",
-    "exampleTranslation": "Друг приходит ко мне.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "ateiti",
-      "rank": 321,
-      "occurrences": 385
-    }
+    "exampleTranslation": "Друг приходит ко мне."
   },
   {
     "id": "išeiti",
@@ -3428,15 +2292,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "выйти; уходить",
     "example": "Išeinu iš namų aštuntą.",
-    "exampleTranslation": "Я выхожу из дома в восемь.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "išeiti",
-      "rank": 448,
-      "occurrences": 295
-    }
+    "exampleTranslation": "Я выхожу из дома в восемь."
   },
   {
     "id": "važiuoti",
@@ -3451,15 +2307,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "ехать",
     "example": "Važiuoju į darbą autobusu.",
-    "exampleTranslation": "Я еду на работу на автобусе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "važiuoti",
-      "rank": 1068,
-      "occurrences": 136
-    }
+    "exampleTranslation": "Я еду на работу на автобусе."
   },
   {
     "id": "atvažiuoti",
@@ -3474,15 +2322,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "приехать; приезжать",
     "example": "Autobusas atvažiuoja devintą.",
-    "exampleTranslation": "Автобус приезжает в девять.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "atvažiuoti",
-      "rank": 1758,
-      "occurrences": 80
-    }
+    "exampleTranslation": "Автобус приезжает в девять."
   },
   {
     "id": "išvažiuoti",
@@ -3497,15 +2337,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "уехать; уезжать",
     "example": "Rytoj išvažiuojame į Kauną.",
-    "exampleTranslation": "Завтра мы уезжаем в Каунас.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "išvažiuoti",
-      "rank": 2523,
-      "occurrences": 52
-    }
+    "exampleTranslation": "Завтра мы уезжаем в Каунас."
   },
   {
     "id": "grįžti",
@@ -3520,15 +2352,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "возвращаться; вернуться",
     "example": "Grįžtu namo vakare.",
-    "exampleTranslation": "Я возвращаюсь домой вечером.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "grįžti",
-      "rank": 317,
-      "occurrences": 392
-    }
+    "exampleTranslation": "Я возвращаюсь домой вечером."
   },
   {
     "id": "keliauti",
@@ -3543,15 +2367,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "путешествовать",
     "example": "Vasarą daug keliaujame.",
-    "exampleTranslation": "Летом мы много путешествуем.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "keliauti",
-      "rank": 1888,
-      "occurrences": 74
-    }
+    "exampleTranslation": "Летом мы много путешествуем."
   },
   {
     "id": "vaikščioti",
@@ -3566,15 +2382,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "гулять; ходить",
     "example": "Mėgstu vaikščioti parke.",
-    "exampleTranslation": "Я люблю гулять в парке.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vaikščioti",
-      "rank": 2087,
-      "occurrences": 67
-    }
+    "exampleTranslation": "Я люблю гулять в парке."
   },
   {
     "id": "bėgti",
@@ -3589,15 +2397,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "бежать",
     "example": "Vaikas bėga į kiemą.",
-    "exampleTranslation": "Ребёнок бежит во двор.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "bėgti",
-      "rank": 1252,
-      "occurrences": 113
-    }
+    "exampleTranslation": "Ребёнок бежит во двор."
   },
   {
     "id": "laukti",
@@ -3612,15 +2412,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "ждать",
     "example": "Laukiu autobuso.",
-    "exampleTranslation": "Я жду автобус.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "laukti",
-      "rank": 371,
-      "occurrences": 344
-    }
+    "exampleTranslation": "Я жду автобус."
   },
   {
     "id": "sėdėti",
@@ -3635,15 +2427,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "сидеть",
     "example": "Sėdžiu prie lango.",
-    "exampleTranslation": "Я сижу у окна.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "sėdėti",
-      "rank": 761,
-      "occurrences": 187
-    }
+    "exampleTranslation": "Я сижу у окна."
   },
   {
     "id": "stovėti",
@@ -3658,15 +2442,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "стоять",
     "example": "Automobilis stovi kieme.",
-    "exampleTranslation": "Машина стоит во дворе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "stovėti",
-      "rank": 596,
-      "occurrences": 236
-    }
+    "exampleTranslation": "Машина стоит во дворе."
   },
   {
     "id": "gulėti",
@@ -3681,15 +2457,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "лежать",
     "example": "Knyga guli ant stalo.",
-    "exampleTranslation": "Книга лежит на столе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "gulėti",
-      "rank": 1062,
-      "occurrences": 136
-    }
+    "exampleTranslation": "Книга лежит на столе."
   },
   {
     "id": "miegoti",
@@ -3704,15 +2472,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "спать",
     "example": "Vaikas jau miega.",
-    "exampleTranslation": "Ребёнок уже спит.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "miegoti",
-      "rank": 1466,
-      "occurrences": 97
-    }
+    "exampleTranslation": "Ребёнок уже спит."
   },
   {
     "id": "atsikelti",
@@ -3727,15 +2487,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "вставать (после сна)",
     "example": "Atsikeliu septintą valandą.",
-    "exampleTranslation": "Я встаю в семь часов.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "atsikelti",
-      "rank": 4827,
-      "occurrences": 22
-    }
+    "exampleTranslation": "Я встаю в семь часов."
   },
   {
     "id": "valgyti",
@@ -3750,15 +2502,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "есть; кушать",
     "example": "Valgau sriubą.",
-    "exampleTranslation": "Я ем суп.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "valgyti",
-      "rank": 1196,
-      "occurrences": 120
-    }
+    "exampleTranslation": "Я ем суп."
   },
   {
     "id": "gerti",
@@ -3773,15 +2517,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "пить",
     "example": "Geriu vandenį.",
-    "exampleTranslation": "Я пью воду.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "gerti",
-      "rank": 1100,
-      "occurrences": 131
-    }
+    "exampleTranslation": "Я пью воду."
   },
   {
     "id": "gaminti",
@@ -3796,15 +2532,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "готовить; изготавливать",
     "example": "Gaminu vakarienę.",
-    "exampleTranslation": "Я готовлю ужин.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "gaminti",
-      "rank": 501,
-      "occurrences": 275
-    }
+    "exampleTranslation": "Я готовлю ужин."
   },
   {
     "id": "virti",
@@ -3819,15 +2547,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "варить; кипеть",
     "example": "Verdu sriubą.",
-    "exampleTranslation": "Я варю суп.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "virti",
-      "rank": 2637,
-      "occurrences": 50
-    }
+    "exampleTranslation": "Я варю суп."
   },
   {
     "id": "kepti",
@@ -3842,15 +2562,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "печь; жарить",
     "example": "Mama kepa duoną.",
-    "exampleTranslation": "Мама печёт хлеб.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kepti",
-      "rank": 4182,
-      "occurrences": 27
-    }
+    "exampleTranslation": "Мама печёт хлеб."
   },
   {
     "id": "pirkti",
@@ -3865,15 +2577,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "покупать",
     "example": "Perku pieną ir duoną.",
-    "exampleTranslation": "Я покупаю молоко и хлеб.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "pirkti",
-      "rank": 779,
-      "occurrences": 182
-    }
+    "exampleTranslation": "Я покупаю молоко и хлеб."
   },
   {
     "id": "parduoti",
@@ -3888,15 +2592,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "продавать; продать",
     "example": "Parduotuvėje parduoda duoną.",
-    "exampleTranslation": "В магазине продают хлеб.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "parduoti",
-      "rank": 725,
-      "occurrences": 196
-    }
+    "exampleTranslation": "В магазине продают хлеб."
   },
   {
     "id": "mokėti",
@@ -3911,15 +2607,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "платить; уметь",
     "example": "Už bilietą moku du eurus.",
-    "exampleTranslation": "За билет я плачу два евро.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "mokėti",
-      "rank": 416,
-      "occurrences": 315
-    }
+    "exampleTranslation": "За билет я плачу два евро."
   },
   {
     "id": "kainuoti",
@@ -3934,15 +2622,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "стоить",
     "example": "Kiek kainuoja bilietas?",
-    "exampleTranslation": "Сколько стоит билет?",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kainuoti",
-      "rank": 1523,
-      "occurrences": 93
-    }
+    "exampleTranslation": "Сколько стоит билет?"
   },
   {
     "id": "imti",
@@ -3957,15 +2637,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "брать",
     "example": "Imu knygą nuo stalo.",
-    "exampleTranslation": "Я беру книгу со стола.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "imti",
-      "rank": 132,
-      "occurrences": 826
-    }
+    "exampleTranslation": "Я беру книгу со стола."
   },
   {
     "id": "duoti",
@@ -3980,15 +2652,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "давать; дать",
     "example": "Duodu vaikui obuolį.",
-    "exampleTranslation": "Я даю ребёнку яблоко.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "duoti",
-      "rank": 354,
-      "occurrences": 357
-    }
+    "exampleTranslation": "Я даю ребёнку яблоко."
   },
   {
     "id": "dėti",
@@ -4003,15 +2667,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "класть; ставить",
     "example": "Dedu knygą ant stalo.",
-    "exampleTranslation": "Я кладу книгу на стол.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "dėti",
-      "rank": 1483,
-      "occurrences": 95
-    }
+    "exampleTranslation": "Я кладу книгу на стол."
   },
   {
     "id": "nešti",
@@ -4026,15 +2682,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "нести",
     "example": "Nešu krepšį namo.",
-    "exampleTranslation": "Я несу сумку домой.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "nešti",
-      "rank": 1509,
-      "occurrences": 94
-    }
+    "exampleTranslation": "Я несу сумку домой."
   },
   {
     "id": "ieškoti",
@@ -4049,15 +2697,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "искать",
     "example": "Ieškau savo rakto.",
-    "exampleTranslation": "Я ищу свой ключ.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "ieškoti",
-      "rank": 397,
-      "occurrences": 325
-    }
+    "exampleTranslation": "Я ищу свой ключ."
   },
   {
     "id": "rasti",
@@ -4072,15 +2712,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "найти; находить",
     "example": "Radau savo telefoną.",
-    "exampleTranslation": "Я нашёл свой телефон.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "rasti",
-      "rank": 290,
-      "occurrences": 421
-    }
+    "exampleTranslation": "Я нашёл свой телефон."
   },
   {
     "id": "matyti",
@@ -4095,15 +2727,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "видеть",
     "example": "Pro langą matau parką.",
-    "exampleTranslation": "Из окна я вижу парк.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "matyti",
-      "rank": 167,
-      "occurrences": 664
-    }
+    "exampleTranslation": "Из окна я вижу парк."
   },
   {
     "id": "žiūrėti",
@@ -4118,15 +2742,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "смотреть",
     "example": "Žiūrime filmą.",
-    "exampleTranslation": "Мы смотрим фильм.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "žiūrėti",
-      "rank": 405,
-      "occurrences": 322
-    }
+    "exampleTranslation": "Мы смотрим фильм."
   },
   {
     "id": "girdėti",
@@ -4141,15 +2757,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "слышать",
     "example": "Girdžiu muziką.",
-    "exampleTranslation": "Я слышу музыку.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "girdėti",
-      "rank": 763,
-      "occurrences": 186
-    }
+    "exampleTranslation": "Я слышу музыку."
   },
   {
     "id": "klausyti",
@@ -4164,15 +2772,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "слушать",
     "example": "Klausau muzikos.",
-    "exampleTranslation": "Я слушаю музыку.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "klausyti",
-      "rank": 2566,
-      "occurrences": 51
-    }
+    "exampleTranslation": "Я слушаю музыку."
   },
   {
     "id": "skaityti",
@@ -4187,15 +2787,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "читать",
     "example": "Vakare skaitau knygą.",
-    "exampleTranslation": "Вечером я читаю книгу.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "skaityti",
-      "rank": 632,
-      "occurrences": 225
-    }
+    "exampleTranslation": "Вечером я читаю книгу."
   },
   {
     "id": "rašyti",
@@ -4210,15 +2802,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "писать",
     "example": "Rašau laišką draugui.",
-    "exampleTranslation": "Я пишу письмо другу.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "rašyti",
-      "rank": 273,
-      "occurrences": 452
-    }
+    "exampleTranslation": "Я пишу письмо другу."
   },
   {
     "id": "klausti",
@@ -4233,15 +2817,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "спрашивать",
     "example": "Klausiu mokytojo.",
-    "exampleTranslation": "Я спрашиваю учителя.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "klausti",
-      "rank": 1103,
-      "occurrences": 131
-    }
+    "exampleTranslation": "Я спрашиваю учителя."
   },
   {
     "id": "atsakyti",
@@ -4256,15 +2832,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "отвечать; ответить",
     "example": "Atsakau į klausimą.",
-    "exampleTranslation": "Я отвечаю на вопрос.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "atsakyti",
-      "rank": 443,
-      "occurrences": 302
-    }
+    "exampleTranslation": "Я отвечаю на вопрос."
   },
   {
     "id": "sakyti",
@@ -4279,15 +2847,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "говорить; сказать",
     "example": "Jis sako tiesą.",
-    "exampleTranslation": "Он говорит правду.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "sakyti",
-      "rank": 90,
-      "occurrences": 1069
-    }
+    "exampleTranslation": "Он говорит правду."
   },
   {
     "id": "pasakoti",
@@ -4302,15 +2862,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "рассказывать",
     "example": "Ji pasakoja apie kelionę.",
-    "exampleTranslation": "Она рассказывает о поездке.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "pasakoti",
-      "rank": 973,
-      "occurrences": 148
-    }
+    "exampleTranslation": "Она рассказывает о поездке."
   },
   {
     "id": "skambinti",
@@ -4325,15 +2877,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "звонить",
     "example": "Skambinu mamai.",
-    "exampleTranslation": "Я звоню маме.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "skambinti",
-      "rank": 2082,
-      "occurrences": 67
-    }
+    "exampleTranslation": "Я звоню маме."
   },
   {
     "id": "prašyti",
@@ -4348,15 +2892,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "просить",
     "example": "Prašau pagalbos.",
-    "exampleTranslation": "Я прошу помощи.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "prašyti",
-      "rank": 339,
-      "occurrences": 371
-    }
+    "exampleTranslation": "Я прошу помощи."
   },
   {
     "id": "padėti",
@@ -4371,15 +2907,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "помогать; помочь",
     "example": "Padedu draugui.",
-    "exampleTranslation": "Я помогаю другу.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "padėti",
-      "rank": 155,
-      "occurrences": 713
-    }
+    "exampleTranslation": "Я помогаю другу."
   },
   {
     "id": "pradėti",
@@ -4394,15 +2922,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "начинать; начать",
     "example": "Pradedu darbą devintą.",
-    "exampleTranslation": "Я начинаю работу в девять.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "pradėti",
-      "rank": 113,
-      "occurrences": 900
-    }
+    "exampleTranslation": "Я начинаю работу в девять."
   },
   {
     "id": "baigti",
@@ -4417,15 +2937,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "заканчивать; закончить",
     "example": "Baigiu darbą penktą.",
-    "exampleTranslation": "Я заканчиваю работу в пять.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "baigti",
-      "rank": 316,
-      "occurrences": 393
-    }
+    "exampleTranslation": "Я заканчиваю работу в пять."
   },
   {
     "id": "atidaryti",
@@ -4440,15 +2952,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "открывать; открыть",
     "example": "Atidarykite langą.",
-    "exampleTranslation": "Откройте окно.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "atidaryti",
-      "rank": 1425,
-      "occurrences": 99
-    }
+    "exampleTranslation": "Откройте окно."
   },
   {
     "id": "uždaryti",
@@ -4463,15 +2967,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "закрывать; закрыть",
     "example": "Uždarykite duris.",
-    "exampleTranslation": "Закройте дверь.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "uždaryti",
-      "rank": 1900,
-      "occurrences": 74
-    }
+    "exampleTranslation": "Закройте дверь."
   },
   {
     "id": "plauti",
@@ -4486,15 +2982,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "мыть",
     "example": "Plaunu rankas.",
-    "exampleTranslation": "Я мою руки.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "plauti",
-      "rank": 2173,
-      "occurrences": 64
-    }
+    "exampleTranslation": "Я мою руки."
   },
   {
     "id": "valyti",
@@ -4509,15 +2997,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "чистить; убирать",
     "example": "Ryte valau dantis.",
-    "exampleTranslation": "Утром я чищу зубы.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "valyti",
-      "rank": 2000,
-      "occurrences": 70
-    }
+    "exampleTranslation": "Утром я чищу зубы."
   },
   {
     "id": "rengtis",
@@ -4532,15 +3012,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "одеваться; собираться",
     "example": "Vaikas rengiasi pats.",
-    "exampleTranslation": "Ребёнок одевается сам.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "rengtis",
-      "rank": 1993,
-      "occurrences": 70
-    }
+    "exampleTranslation": "Ребёнок одевается сам."
   },
   {
     "id": "ilsėtis",
@@ -4555,15 +3027,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "отдыхать",
     "example": "Sekmadienį ilsiuosi.",
-    "exampleTranslation": "В воскресенье я отдыхаю.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "ilsėtis",
-      "rank": 2836,
-      "occurrences": 45
-    }
+    "exampleTranslation": "В воскресенье я отдыхаю."
   },
   {
     "id": "žaisti",
@@ -4578,15 +3042,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "играть",
     "example": "Vaikai žaidžia kieme.",
-    "exampleTranslation": "Дети играют во дворе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "žaisti",
-      "rank": 731,
-      "occurrences": 195
-    }
+    "exampleTranslation": "Дети играют во дворе."
   },
   {
     "id": "sportuoti",
@@ -4601,15 +3057,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "заниматься спортом",
     "example": "Sportuoju tris kartus per savaitę.",
-    "exampleTranslation": "Я занимаюсь спортом три раза в неделю.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "sportuoti",
-      "rank": 15779,
-      "occurrences": 4
-    }
+    "exampleTranslation": "Я занимаюсь спортом три раза в неделю."
   },
   {
     "id": "patikti",
@@ -4624,15 +3072,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "нравиться",
     "example": "Man patinka ši knyga.",
-    "exampleTranslation": "Мне нравится эта книга.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "patikti",
-      "rank": 1366,
-      "occurrences": 104
-    }
+    "exampleTranslation": "Мне нравится эта книга."
   },
   {
     "id": "mėgti",
@@ -4647,15 +3087,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "любить (занятие, еду)",
     "example": "Mėgstu skaityti.",
-    "exampleTranslation": "Я люблю читать.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "mėgti",
-      "rank": 987,
-      "occurrences": 146
-    }
+    "exampleTranslation": "Я люблю читать."
   },
   {
     "id": "mylėti",
@@ -4670,15 +3102,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "любить (человека)",
     "example": "Myliu savo šeimą.",
-    "exampleTranslation": "Я люблю свою семью.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "mylėti",
-      "rank": 1167,
-      "occurrences": 123
-    }
+    "exampleTranslation": "Я люблю свою семью."
   },
   {
     "id": "galvoti",
@@ -4693,15 +3117,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "думать",
     "example": "Galvoju apie atostogas.",
-    "exampleTranslation": "Я думаю об отпуске.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "galvoti",
-      "rank": 679,
-      "occurrences": 208
-    }
+    "exampleTranslation": "Я думаю об отпуске."
   },
   {
     "id": "prisiminti",
@@ -4716,15 +3132,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "помнить; вспоминать",
     "example": "Prisimenu tavo vardą.",
-    "exampleTranslation": "Я помню твоё имя.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "prisiminti",
-      "rank": 626,
-      "occurrences": 227
-    }
+    "exampleTranslation": "Я помню твоё имя."
   },
   {
     "id": "užmiršti",
@@ -4739,15 +3147,7 @@
     "grammarNote": "инфинитив; 3-е лицо настоящего; 3-е лицо прошедшего однократного",
     "translation": "забывать; забыть",
     "example": "Užmiršau savo raktą.",
-    "exampleTranslation": "Я забыл свой ключ.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "užmiršti",
-      "rank": 1517,
-      "occurrences": 94
-    }
+    "exampleTranslation": "Я забыл свой ключ."
   },
   {
     "id": "geras",
@@ -4761,15 +3161,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "хороший",
     "example": "Tai gera knyga.",
-    "exampleTranslation": "Это хорошая книга.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "geras",
-      "rank": 105,
-      "occurrences": 941
-    }
+    "exampleTranslation": "Это хорошая книга."
   },
   {
     "id": "blogas",
@@ -4783,15 +3175,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "плохой",
     "example": "Šiandien blogas oras.",
-    "exampleTranslation": "Сегодня плохая погода.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "blogas",
-      "rank": 673,
-      "occurrences": 210
-    }
+    "exampleTranslation": "Сегодня плохая погода."
   },
   {
     "id": "didelis",
@@ -4805,15 +3189,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "большой",
     "example": "Mūsų namas didelis.",
-    "exampleTranslation": "Наш дом большой.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "didelis",
-      "rank": 53,
-      "occurrences": 1696
-    }
+    "exampleTranslation": "Наш дом большой."
   },
   {
     "id": "mažas",
@@ -4827,15 +3203,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "маленький",
     "example": "Tai mažas kambarys.",
-    "exampleTranslation": "Это маленькая комната.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "mažas",
-      "rank": 156,
-      "occurrences": 706
-    }
+    "exampleTranslation": "Это маленькая комната."
   },
   {
     "id": "naujas",
@@ -4849,15 +3217,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "новый",
     "example": "Turiu naują telefoną.",
-    "exampleTranslation": "У меня новый телефон.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "naujas",
-      "rank": 64,
-      "occurrences": 1349
-    }
+    "exampleTranslation": "У меня новый телефон."
   },
   {
     "id": "senas",
@@ -4871,15 +3231,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "старый",
     "example": "Šis namas labai senas.",
-    "exampleTranslation": "Этот дом очень старый.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "senas",
-      "rank": 172,
-      "occurrences": 650
-    }
+    "exampleTranslation": "Этот дом очень старый."
   },
   {
     "id": "jaunas",
@@ -4893,15 +3245,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "молодой",
     "example": "Čia dirba jauna gydytoja.",
-    "exampleTranslation": "Здесь работает молодая врач.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "jaunas",
-      "rank": 432,
-      "occurrences": 307
-    }
+    "exampleTranslation": "Здесь работает молодая врач."
   },
   {
     "id": "gražus",
@@ -4915,15 +3259,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "красивый",
     "example": "Koks gražus miestas!",
-    "exampleTranslation": "Какой красивый город!",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "gražus",
-      "rank": 613,
-      "occurrences": 229
-    }
+    "exampleTranslation": "Какой красивый город!"
   },
   {
     "id": "ilgas",
@@ -4937,15 +3273,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "длинный",
     "example": "Ši gatvė ilga.",
-    "exampleTranslation": "Эта улица длинная.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "ilgas",
-      "rank": 336,
-      "occurrences": 374
-    }
+    "exampleTranslation": "Эта улица длинная."
   },
   {
     "id": "trumpas",
@@ -4959,15 +3287,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "короткий",
     "example": "Kelionė buvo trumpa.",
-    "exampleTranslation": "Поездка была короткой.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "trumpas",
-      "rank": 844,
-      "occurrences": 169
-    }
+    "exampleTranslation": "Поездка была короткой."
   },
   {
     "id": "aukštas",
@@ -4981,15 +3301,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "высокий",
     "example": "Prie namo auga aukštas medis.",
-    "exampleTranslation": "У дома растёт высокое дерево.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "aukštas",
-      "rank": 181,
-      "occurrences": 627
-    }
+    "exampleTranslation": "У дома растёт высокое дерево."
   },
   {
     "id": "žemas",
@@ -5003,15 +3315,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "низкий",
     "example": "Šis stalas per žemas.",
-    "exampleTranslation": "Этот стол слишком низкий.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "žemas",
-      "rank": 1106,
-      "occurrences": 131
-    }
+    "exampleTranslation": "Этот стол слишком низкий."
   },
   {
     "id": "šiltas",
@@ -5025,15 +3329,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "тёплый",
     "example": "Vanduo yra šiltas.",
-    "exampleTranslation": "Вода тёплая.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "šiltas",
-      "rank": 1086,
-      "occurrences": 134
-    }
+    "exampleTranslation": "Вода тёплая."
   },
   {
     "id": "šaltas",
@@ -5047,15 +3343,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "холодный",
     "example": "Pienas dar šaltas.",
-    "exampleTranslation": "Молоко ещё холодное.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "šaltas",
-      "rank": 891,
-      "occurrences": 159
-    }
+    "exampleTranslation": "Молоко ещё холодное."
   },
   {
     "id": "karštas",
@@ -5069,15 +3357,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "горячий",
     "example": "Arbata labai karšta.",
-    "exampleTranslation": "Чай очень горячий.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "karštas",
-      "rank": 1343,
-      "occurrences": 106
-    }
+    "exampleTranslation": "Чай очень горячий."
   },
   {
     "id": "skanus",
@@ -5091,15 +3371,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "вкусный",
     "example": "Sriuba buvo skani.",
-    "exampleTranslation": "Суп был вкусным.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "skanus",
-      "rank": 6539,
-      "occurrences": 15
-    }
+    "exampleTranslation": "Суп был вкусным."
   },
   {
     "id": "saldus",
@@ -5113,15 +3385,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "сладкий",
     "example": "Šis obuolys saldus.",
-    "exampleTranslation": "Это яблоко сладкое.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "saldus",
-      "rank": 5333,
-      "occurrences": 20
-    }
+    "exampleTranslation": "Это яблоко сладкое."
   },
   {
     "id": "brangus",
@@ -5135,15 +3399,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "дорогой",
     "example": "Šis viešbutis per brangus.",
-    "exampleTranslation": "Эта гостиница слишком дорогая.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "brangus",
-      "rank": 849,
-      "occurrences": 167
-    }
+    "exampleTranslation": "Эта гостиница слишком дорогая."
   },
   {
     "id": "pigus",
@@ -5157,15 +3413,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "дешёвый; недорогой",
     "example": "Šis bilietas pigus.",
-    "exampleTranslation": "Этот билет недорогой.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "pigus",
-      "rank": 2419,
-      "occurrences": 56
-    }
+    "exampleTranslation": "Этот билет недорогой."
   },
   {
     "id": "lengvas",
@@ -5179,15 +3427,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "лёгкий",
     "example": "Šis krepšys lengvas.",
-    "exampleTranslation": "Эта сумка лёгкая.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "lengvas",
-      "rank": 847,
-      "occurrences": 168
-    }
+    "exampleTranslation": "Эта сумка лёгкая."
   },
   {
     "id": "sunkus",
@@ -5201,15 +3441,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "тяжёлый; трудный",
     "example": "Užduotis buvo sunki.",
-    "exampleTranslation": "Задание было трудным.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "sunkus",
-      "rank": 199,
-      "occurrences": 587
-    }
+    "exampleTranslation": "Задание было трудным."
   },
   {
     "id": "greitas",
@@ -5223,15 +3455,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "быстрый",
     "example": "Šis traukinys greitas.",
-    "exampleTranslation": "Этот поезд быстрый.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "greitas",
-      "rank": 2071,
-      "occurrences": 67
-    }
+    "exampleTranslation": "Этот поезд быстрый."
   },
   {
     "id": "lėtas",
@@ -5245,15 +3469,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "медленный",
     "example": "Mano kompiuteris labai lėtas.",
-    "exampleTranslation": "Мой компьютер очень медленный.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "lėtas",
-      "rank": 4888,
-      "occurrences": 22
-    }
+    "exampleTranslation": "Мой компьютер очень медленный."
   },
   {
     "id": "švarus",
@@ -5267,15 +3483,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "чистый",
     "example": "Kambarys jau švarus.",
-    "exampleTranslation": "Комната уже чистая.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "švarus",
-      "rank": 1419,
-      "occurrences": 100
-    }
+    "exampleTranslation": "Комната уже чистая."
   },
   {
     "id": "nešvarus",
@@ -5289,15 +3497,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "грязный",
     "example": "Šie batai nešvarūs.",
-    "exampleTranslation": "Эти ботинки грязные.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "nešvarus",
-      "rank": 3795,
-      "occurrences": 31
-    }
+    "exampleTranslation": "Эти ботинки грязные."
   },
   {
     "id": "sveikas",
@@ -5311,15 +3511,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "здоровый",
     "example": "Vaikas jau sveikas.",
-    "exampleTranslation": "Ребёнок уже здоров.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "sveikas",
-      "rank": 960,
-      "occurrences": 150
-    }
+    "exampleTranslation": "Ребёнок уже здоров."
   },
   {
     "id": "ramus",
@@ -5333,15 +3525,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "спокойный",
     "example": "Šis vakaras ramus.",
-    "exampleTranslation": "Этот вечер спокойный.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "ramus",
-      "rank": 1179,
-      "occurrences": 122
-    }
+    "exampleTranslation": "Этот вечер спокойный."
   },
   {
     "id": "linksmas",
@@ -5355,15 +3539,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "весёлый",
     "example": "Mano brolis labai linksmas.",
-    "exampleTranslation": "Мой брат очень весёлый.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "linksmas",
-      "rank": 2382,
-      "occurrences": 57
-    }
+    "exampleTranslation": "Мой брат очень весёлый."
   },
   {
     "id": "liūdnas",
@@ -5377,15 +3553,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "грустный",
     "example": "Ši daina liūdna.",
-    "exampleTranslation": "Эта песня грустная.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "liūdnas",
-      "rank": 2227,
-      "occurrences": 62
-    }
+    "exampleTranslation": "Эта песня грустная."
   },
   {
     "id": "įdomus",
@@ -5399,15 +3567,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "интересный",
     "example": "Šis filmas įdomus.",
-    "exampleTranslation": "Этот фильм интересный.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "įdomus",
-      "rank": 688,
-      "occurrences": 207
-    }
+    "exampleTranslation": "Этот фильм интересный."
   },
   {
     "id": "svarbus",
@@ -5421,15 +3581,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "важный",
     "example": "Tai svarbus klausimas.",
-    "exampleTranslation": "Это важный вопрос.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "svarbus",
-      "rank": 80,
-      "occurrences": 1157
-    }
+    "exampleTranslation": "Это важный вопрос."
   },
   {
     "id": "laisvas",
@@ -5443,15 +3595,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "свободный",
     "example": "Ar ši vieta laisva?",
-    "exampleTranslation": "Это место свободно?",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "laisvas",
-      "rank": 474,
-      "occurrences": 285
-    }
+    "exampleTranslation": "Это место свободно?"
   },
   {
     "id": "pilnas",
@@ -5465,15 +3609,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "полный",
     "example": "Autobusas pilnas žmonių.",
-    "exampleTranslation": "Автобус полон людей.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "pilnas",
-      "rank": 1579,
-      "occurrences": 90
-    }
+    "exampleTranslation": "Автобус полон людей."
   },
   {
     "id": "tuščias",
@@ -5487,15 +3623,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "пустой",
     "example": "Puodelis jau tuščias.",
-    "exampleTranslation": "Чашка уже пустая.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "tuščias",
-      "rank": 1328,
-      "occurrences": 108
-    }
+    "exampleTranslation": "Чашка уже пустая."
   },
   {
     "id": "baltas",
@@ -5509,15 +3637,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "белый",
     "example": "Mano marškiniai balti.",
-    "exampleTranslation": "Моя рубашка белая.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "baltas",
-      "rank": 603,
-      "occurrences": 234
-    }
+    "exampleTranslation": "Моя рубашка белая."
   },
   {
     "id": "juodas",
@@ -5531,15 +3651,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "чёрный",
     "example": "Šis automobilis juodas.",
-    "exampleTranslation": "Этот автомобиль чёрный.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "juodas",
-      "rank": 618,
-      "occurrences": 228
-    }
+    "exampleTranslation": "Этот автомобиль чёрный."
   },
   {
     "id": "raudonas",
@@ -5553,15 +3665,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "красный",
     "example": "Pomidoras raudonas.",
-    "exampleTranslation": "Помидор красный.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "raudonas",
-      "rank": 889,
-      "occurrences": 159
-    }
+    "exampleTranslation": "Помидор красный."
   },
   {
     "id": "žalias",
@@ -5575,15 +3679,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "зелёный",
     "example": "Vasarą medžiai žali.",
-    "exampleTranslation": "Летом деревья зелёные.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "žalias",
-      "rank": 1341,
-      "occurrences": 107
-    }
+    "exampleTranslation": "Летом деревья зелёные."
   },
   {
     "id": "mėlynas",
@@ -5597,15 +3693,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "синий; голубой",
     "example": "Mano akys mėlynos.",
-    "exampleTranslation": "У меня голубые глаза.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "mėlynas",
-      "rank": 1889,
-      "occurrences": 74
-    }
+    "exampleTranslation": "У меня голубые глаза."
   },
   {
     "id": "geltonas",
@@ -5619,15 +3707,7 @@
     "grammarNote": "мужской и женский род, им. ед. ч.",
     "translation": "жёлтый",
     "example": "Ši gėlė geltona.",
-    "exampleTranslation": "Этот цветок жёлтый.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "geltonas",
-      "rank": 2069,
-      "occurrences": 67
-    }
+    "exampleTranslation": "Этот цветок жёлтый."
   },
   {
     "id": "čia",
@@ -5638,15 +3718,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "здесь; сюда",
     "example": "Ateik čia.",
-    "exampleTranslation": "Иди сюда.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "čia",
-      "rank": 47,
-      "occurrences": 1794
-    }
+    "exampleTranslation": "Иди сюда."
   },
   {
     "id": "ten",
@@ -5657,15 +3729,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "там; туда",
     "example": "Mano draugas gyvena ten.",
-    "exampleTranslation": "Мой друг живёт там.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "ten",
-      "rank": 180,
-      "occurrences": 633
-    }
+    "exampleTranslation": "Мой друг живёт там."
   },
   {
     "id": "kur",
@@ -5676,15 +3740,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "где; куда",
     "example": "Kur yra stotis?",
-    "exampleTranslation": "Где находится вокзал?",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kur",
-      "rank": 96,
-      "occurrences": 1002
-    }
+    "exampleTranslation": "Где находится вокзал?"
   },
   {
     "id": "kada",
@@ -5695,15 +3751,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "когда",
     "example": "Kada grįši namo?",
-    "exampleTranslation": "Когда ты вернёшься домой?",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kada",
-      "rank": 478,
-      "occurrences": 282
-    }
+    "exampleTranslation": "Когда ты вернёшься домой?"
   },
   {
     "id": "kaip",
@@ -5714,15 +3762,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "как",
     "example": "Kaip tu gyveni?",
-    "exampleTranslation": "Как ты поживаешь?",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kaip",
-      "rank": 176,
-      "occurrences": 641
-    }
+    "exampleTranslation": "Как ты поживаешь?"
   },
   {
     "id": "dabar",
@@ -5733,15 +3773,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "сейчас",
     "example": "Dabar dirbu.",
-    "exampleTranslation": "Сейчас я работаю.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "dabar",
-      "rank": 65,
-      "occurrences": 1319
-    }
+    "exampleTranslation": "Сейчас я работаю."
   },
   {
     "id": "šiandien",
@@ -5752,15 +3784,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "сегодня",
     "example": "Šiandien einame į kiną.",
-    "exampleTranslation": "Сегодня мы идём в кино.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "šiandien",
-      "rank": 322,
-      "occurrences": 385
-    }
+    "exampleTranslation": "Сегодня мы идём в кино."
   },
   {
     "id": "vakar",
@@ -5771,15 +3795,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "вчера",
     "example": "Vakar buvau namie.",
-    "exampleTranslation": "Вчера я был дома.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vakar",
-      "rank": 938,
-      "occurrences": 152
-    }
+    "exampleTranslation": "Вчера я был дома."
   },
   {
     "id": "rytoj",
@@ -5790,15 +3806,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "завтра",
     "example": "Rytoj važiuosiu į Kauną.",
-    "exampleTranslation": "Завтра я поеду в Каунас.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "rytoj",
-      "rank": 1532,
-      "occurrences": 93
-    }
+    "exampleTranslation": "Завтра я поеду в Каунас."
   },
   {
     "id": "anksti",
@@ -5809,15 +3817,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "рано",
     "example": "Ryte atsikeliu anksti.",
-    "exampleTranslation": "Утром я встаю рано.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "anksti",
-      "rank": 370,
-      "occurrences": 345
-    }
+    "exampleTranslation": "Утром я встаю рано."
   },
   {
     "id": "vėlai",
@@ -5828,15 +3828,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "поздно",
     "example": "Šiandien grįšiu vėlai.",
-    "exampleTranslation": "Сегодня я вернусь поздно.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vėlai",
-      "rank": 221,
-      "occurrences": 539
-    }
+    "exampleTranslation": "Сегодня я вернусь поздно."
   },
   {
     "id": "visada",
@@ -5847,15 +3839,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "всегда",
     "example": "Visada geriu arbatą be cukraus.",
-    "exampleTranslation": "Я всегда пью чай без сахара.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "visada",
-      "rank": 465,
-      "occurrences": 289
-    }
+    "exampleTranslation": "Я всегда пью чай без сахара."
   },
   {
     "id": "dažnai",
@@ -5866,15 +3850,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "часто",
     "example": "Dažnai einu į parką.",
-    "exampleTranslation": "Я часто хожу в парк.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "dažnai",
-      "rank": 95,
-      "occurrences": 1006
-    }
+    "exampleTranslation": "Я часто хожу в парк."
   },
   {
     "id": "kartais",
@@ -5885,15 +3861,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "иногда",
     "example": "Kartais važiuoju dviračiu.",
-    "exampleTranslation": "Иногда я езжу на велосипеде.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kartais",
-      "rank": 286,
-      "occurrences": 433
-    }
+    "exampleTranslation": "Иногда я езжу на велосипеде."
   },
   {
     "id": "retai",
@@ -5904,15 +3872,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "редко",
     "example": "Retai žiūriu televizorių.",
-    "exampleTranslation": "Я редко смотрю телевизор.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "retai",
-      "rank": 1045,
-      "occurrences": 138
-    }
+    "exampleTranslation": "Я редко смотрю телевизор."
   },
   {
     "id": "niekada",
@@ -5923,15 +3883,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "никогда",
     "example": "Niekada negeriu kavos vakare.",
-    "exampleTranslation": "Я никогда не пью кофе вечером.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "niekada",
-      "rank": 1124,
-      "occurrences": 128
-    }
+    "exampleTranslation": "Я никогда не пью кофе вечером."
   },
   {
     "id": "jau",
@@ -5942,15 +3894,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "уже",
     "example": "Vakarienė jau paruošta.",
-    "exampleTranslation": "Ужин уже готов.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "jau",
-      "rank": 32,
-      "occurrences": 2501
-    }
+    "exampleTranslation": "Ужин уже готов."
   },
   {
     "id": "vėl",
@@ -5961,15 +3905,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "снова",
     "example": "Rytoj vėl susitiksime.",
-    "exampleTranslation": "Завтра мы снова встретимся.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "vėl",
-      "rank": 166,
-      "occurrences": 668
-    }
+    "exampleTranslation": "Завтра мы снова встретимся."
   },
   {
     "id": "gerai",
@@ -5980,15 +3916,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "хорошо",
     "example": "Jaučiuosi gerai.",
-    "exampleTranslation": "Я хорошо себя чувствую.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "gerai",
-      "rank": 93,
-      "occurrences": 1015
-    }
+    "exampleTranslation": "Я хорошо себя чувствую."
   },
   {
     "id": "blogai",
@@ -5999,15 +3927,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "плохо",
     "example": "Šiandien miegojau blogai.",
-    "exampleTranslation": "Сегодня я плохо спал.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "blogai",
-      "rank": 1521,
-      "occurrences": 93
-    }
+    "exampleTranslation": "Сегодня я плохо спал."
   },
   {
     "id": "greitai",
@@ -6018,15 +3938,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "быстро; скоро",
     "example": "Autobusas greitai atvažiuos.",
-    "exampleTranslation": "Автобус скоро приедет.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "greitai",
-      "rank": 253,
-      "occurrences": 479
-    }
+    "exampleTranslation": "Автобус скоро приедет."
   },
   {
     "id": "lėtai",
@@ -6037,15 +3949,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "медленно",
     "example": "Prašau kalbėti lėtai.",
-    "exampleTranslation": "Пожалуйста, говорите медленно.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "lėtai",
-      "rank": 1809,
-      "occurrences": 78
-    }
+    "exampleTranslation": "Пожалуйста, говорите медленно."
   },
   {
     "id": "daug",
@@ -6056,15 +3960,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "много",
     "example": "Šiandien turiu daug darbo.",
-    "exampleTranslation": "Сегодня у меня много работы.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "daug",
-      "rank": 35,
-      "occurrences": 2179
-    }
+    "exampleTranslation": "Сегодня у меня много работы."
   },
   {
     "id": "mažai",
@@ -6075,15 +3971,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "мало",
     "example": "Turiu mažai laiko.",
-    "exampleTranslation": "У меня мало времени.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "mažai",
-      "rank": 256,
-      "occurrences": 478
-    }
+    "exampleTranslation": "У меня мало времени."
   },
   {
     "id": "labai",
@@ -6094,15 +3982,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "очень",
     "example": "Man labai patinka ši knyga.",
-    "exampleTranslation": "Мне очень нравится эта книга.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "labai",
-      "rank": 31,
-      "occurrences": 2546
-    }
+    "exampleTranslation": "Мне очень нравится эта книга."
   },
   {
     "id": "toli",
@@ -6113,15 +3993,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "далеко",
     "example": "Stotis yra toli.",
-    "exampleTranslation": "Вокзал находится далеко.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "toli",
-      "rank": 210,
-      "occurrences": 575
-    }
+    "exampleTranslation": "Вокзал находится далеко."
   },
   {
     "id": "arti",
@@ -6132,15 +4004,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "близко",
     "example": "Parduotuvė yra arti.",
-    "exampleTranslation": "Магазин находится близко.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "arti",
-      "rank": 2454,
-      "occurrences": 54
-    }
+    "exampleTranslation": "Магазин находится близко."
   },
   {
     "id": "kartu",
@@ -6151,15 +4015,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "вместе",
     "example": "Pietaujame kartu.",
-    "exampleTranslation": "Мы обедаем вместе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kartu",
-      "rank": 225,
-      "occurrences": 535
-    }
+    "exampleTranslation": "Мы обедаем вместе."
   },
   {
     "id": "namie",
@@ -6170,15 +4026,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "дома (где?)",
     "example": "Vakare būsiu namie.",
-    "exampleTranslation": "Вечером я буду дома.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "namie",
-      "rank": 2106,
-      "occurrences": 66
-    }
+    "exampleTranslation": "Вечером я буду дома."
   },
   {
     "id": "namo",
@@ -6189,15 +4037,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "домой (куда?)",
     "example": "Einu namo.",
-    "exampleTranslation": "Я иду домой.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "namo",
-      "rank": 1309,
-      "occurrences": 109
-    }
+    "exampleTranslation": "Я иду домой."
   },
   {
     "id": "ant",
@@ -6212,15 +4052,7 @@
     "grammarNote": "Падеж указан по литовской грамматике.",
     "translation": "на",
     "example": "Knyga yra ant stalo.",
-    "exampleTranslation": "Книга лежит на столе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "ant",
-      "rank": 81,
-      "occurrences": 1135
-    }
+    "exampleTranslation": "Книга лежит на столе."
   },
   {
     "id": "apie",
@@ -6235,15 +4067,7 @@
     "grammarNote": "Падеж указан по литовской грамматике.",
     "translation": "о; об; около (примерно)",
     "example": "Kalbame apie kelionę.",
-    "exampleTranslation": "Мы говорим о поездке.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "apie",
-      "rank": 29,
-      "occurrences": 2759
-    }
+    "exampleTranslation": "Мы говорим о поездке."
   },
   {
     "id": "be",
@@ -6258,15 +4082,7 @@
     "grammarNote": "Падеж указан по литовской грамматике.",
     "translation": "без",
     "example": "Geriu kavą be cukraus.",
-    "exampleTranslation": "Я пью кофе без сахара.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "be",
-      "rank": 108,
-      "occurrences": 917
-    }
+    "exampleTranslation": "Я пью кофе без сахара."
   },
   {
     "id": "dėl",
@@ -6281,15 +4097,7 @@
     "grammarNote": "Падеж указан по литовской грамматике.",
     "translation": "из-за; по поводу",
     "example": "Dėl lietaus liekame namie.",
-    "exampleTranslation": "Из-за дождя мы остаёмся дома.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "dėl",
-      "rank": 46,
-      "occurrences": 1802
-    }
+    "exampleTranslation": "Из-за дождя мы остаёмся дома."
   },
   {
     "id": "į",
@@ -6304,15 +4112,7 @@
     "grammarNote": "Падеж указан по литовской грамматике.",
     "translation": "в; на (направление)",
     "example": "Einu į mokyklą.",
-    "exampleTranslation": "Я иду в школу.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "į",
-      "rank": 5,
-      "occurrences": 8369
-    }
+    "exampleTranslation": "Я иду в школу."
   },
   {
     "id": "iš",
@@ -6327,15 +4127,7 @@
     "grammarNote": "Падеж указан по литовской грамматике.",
     "translation": "из",
     "example": "Grįžtu iš parduotuvės.",
-    "exampleTranslation": "Я возвращаюсь из магазина.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "iš",
-      "rank": 12,
-      "occurrences": 5015
-    }
+    "exampleTranslation": "Я возвращаюсь из магазина."
   },
   {
     "id": "iki",
@@ -6350,15 +4142,7 @@
     "grammarNote": "Падеж указан по литовской грамматике.",
     "translation": "до",
     "example": "Dirbu iki penktos valandos.",
-    "exampleTranslation": "Я работаю до пяти часов.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "iki",
-      "rank": 76,
-      "occurrences": 1188
-    }
+    "exampleTranslation": "Я работаю до пяти часов."
   },
   {
     "id": "nuo",
@@ -6373,15 +4157,7 @@
     "grammarNote": "Падеж указан по литовской грамматике.",
     "translation": "от; с (начальный момент)",
     "example": "Dirbu nuo devintos valandos.",
-    "exampleTranslation": "Я работаю с девяти часов.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "nuo",
-      "rank": 25,
-      "occurrences": 2878
-    }
+    "exampleTranslation": "Я работаю с девяти часов."
   },
   {
     "id": "pas",
@@ -6396,15 +4172,7 @@
     "grammarNote": "Падеж указан по литовской грамматике.",
     "translation": "к; у (человека)",
     "example": "Einu pas gydytoją.",
-    "exampleTranslation": "Я иду к врачу.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "pas",
-      "rank": 347,
-      "occurrences": 361
-    }
+    "exampleTranslation": "Я иду к врачу."
   },
   {
     "id": "per",
@@ -6419,15 +4187,7 @@
     "grammarNote": "Падеж указан по литовской грамматике.",
     "translation": "через; за (период)",
     "example": "Einame per parką.",
-    "exampleTranslation": "Мы идём через парк.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "per",
-      "rank": 48,
-      "occurrences": 1774
-    }
+    "exampleTranslation": "Мы идём через парк."
   },
   {
     "id": "prie",
@@ -6442,15 +4202,7 @@
     "grammarNote": "Падеж указан по литовской грамматике.",
     "translation": "у; возле",
     "example": "Laukiu prie stoties.",
-    "exampleTranslation": "Я жду у вокзала.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "prie",
-      "rank": 50,
-      "occurrences": 1757
-    }
+    "exampleTranslation": "Я жду у вокзала."
   },
   {
     "id": "prieš",
@@ -6465,15 +4217,7 @@
     "grammarNote": "Падеж указан по литовской грамматике.",
     "translation": "перед; до; против",
     "example": "Prieš vakarienę einu pasivaikščioti.",
-    "exampleTranslation": "Перед ужином я иду гулять.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "prieš",
-      "rank": 126,
-      "occurrences": 845
-    }
+    "exampleTranslation": "Перед ужином я иду гулять."
   },
   {
     "id": "su",
@@ -6488,15 +4232,7 @@
     "grammarNote": "Падеж указан по литовской грамматике.",
     "translation": "с (кем-либо, чем-либо)",
     "example": "Gyvenu su šeima.",
-    "exampleTranslation": "Я живу с семьёй.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "su",
-      "rank": 9,
-      "occurrences": 5533
-    }
+    "exampleTranslation": "Я живу с семьёй."
   },
   {
     "id": "po",
@@ -6513,15 +4249,7 @@
     "grammarNote": "Падеж указан по литовской грамматике.",
     "translation": "после (+ род.); по (+ вин.); под (+ твор.)",
     "example": "Po darbo einu namo. Vaikštau po miestą. Katė miega po stalu.",
-    "exampleTranslation": "После работы я иду домой. Я гуляю по городу. Кошка спит под столом.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "po",
-      "rank": 44,
-      "occurrences": 1993
-    }
+    "exampleTranslation": "После работы я иду домой. Я гуляю по городу. Кошка спит под столом."
   },
   {
     "id": "už",
@@ -6537,15 +4265,7 @@
     "grammarNote": "Падеж указан по литовской грамматике.",
     "translation": "за (место, + род.); за (плата, + вин.)",
     "example": "Už namo yra sodas. Moku už bilietą.",
-    "exampleTranslation": "За домом находится сад. Я плачу за билет.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "už",
-      "rank": 37,
-      "occurrences": 2102
-    }
+    "exampleTranslation": "За домом находится сад. Я плачу за билет."
   },
   {
     "id": "aš",
@@ -6556,11 +4276,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "я",
     "example": "Aš gyvenu Vilniuje.",
-    "exampleTranslation": "Я живу в Вильнюсе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": null,
-    "frequencyNote": "Отдельная частота карточки не указана: источник объединяет формы личных местоимений в парадигмы."
+    "exampleTranslation": "Я живу в Вильнюсе."
   },
   {
     "id": "tu",
@@ -6571,11 +4287,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "ты",
     "example": "Ar tu kalbi lietuviškai?",
-    "exampleTranslation": "Ты говоришь по-литовски?",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": null,
-    "frequencyNote": "Отдельная частота карточки не указана: источник объединяет формы личных местоимений в парадигмы."
+    "exampleTranslation": "Ты говоришь по-литовски?"
   },
   {
     "id": "jis",
@@ -6586,11 +4298,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "он",
     "example": "Jis dirba namie.",
-    "exampleTranslation": "Он работает дома.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": null,
-    "frequencyNote": "Отдельная частота карточки не указана: источник объединяет формы личных местоимений в парадигмы."
+    "exampleTranslation": "Он работает дома."
   },
   {
     "id": "ji",
@@ -6601,11 +4309,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "она",
     "example": "Ji skaito knygą.",
-    "exampleTranslation": "Она читает книгу.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": null,
-    "frequencyNote": "Отдельная частота карточки не указана: источник объединяет формы личных местоимений в парадигмы."
+    "exampleTranslation": "Она читает книгу."
   },
   {
     "id": "mes",
@@ -6616,11 +4320,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "мы",
     "example": "Mes mokomės kartu.",
-    "exampleTranslation": "Мы учимся вместе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": null,
-    "frequencyNote": "Отдельная частота карточки не указана: источник объединяет формы личных местоимений в парадигмы."
+    "exampleTranslation": "Мы учимся вместе."
   },
   {
     "id": "jūs",
@@ -6631,11 +4331,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "вы; Вы",
     "example": "Ar jūs turite laiko?",
-    "exampleTranslation": "У вас есть время?",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": null,
-    "frequencyNote": "Отдельная частота карточки не указана: источник объединяет формы личных местоимений в парадигмы."
+    "exampleTranslation": "У вас есть время?"
   },
   {
     "id": "jie",
@@ -6646,11 +4342,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "они (мужской род или смешанная группа)",
     "example": "Jie laukia autobuso.",
-    "exampleTranslation": "Они ждут автобус.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": null,
-    "frequencyNote": "Отдельная частота карточки не указана: источник объединяет формы личных местоимений в парадигмы."
+    "exampleTranslation": "Они ждут автобус."
   },
   {
     "id": "jos",
@@ -6661,11 +4353,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "они (женский род)",
     "example": "Jos kalba lietuviškai.",
-    "exampleTranslation": "Они говорят по-литовски.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": null,
-    "frequencyNote": "Отдельная частота карточки не указана: источник объединяет формы личных местоимений в парадигмы."
+    "exampleTranslation": "Они говорят по-литовски."
   },
   {
     "id": "ir",
@@ -6676,15 +4364,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "и",
     "example": "Perku duoną ir pieną.",
-    "exampleTranslation": "Я покупаю хлеб и молоко.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "ir",
-      "rank": 1,
-      "occurrences": 28174
-    }
+    "exampleTranslation": "Я покупаю хлеб и молоко."
   },
   {
     "id": "bet",
@@ -6695,15 +4375,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "но",
     "example": "Noriu eiti, bet neturiu laiko.",
-    "exampleTranslation": "Я хочу пойти, но у меня нет времени.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "bet",
-      "rank": 27,
-      "occurrences": 2810
-    }
+    "exampleTranslation": "Я хочу пойти, но у меня нет времени."
   },
   {
     "id": "arba",
@@ -6714,15 +4386,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "или",
     "example": "Galime važiuoti autobusu arba traukiniu.",
-    "exampleTranslation": "Мы можем поехать на автобусе или на поезде.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "arba",
-      "rank": 39,
-      "occurrences": 2061
-    }
+    "exampleTranslation": "Мы можем поехать на автобусе или на поезде."
   },
   {
     "id": "nes",
@@ -6733,15 +4397,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "потому что",
     "example": "Lieku namie, nes sergu.",
-    "exampleTranslation": "Я остаюсь дома, потому что болею.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "nes",
-      "rank": 60,
-      "occurrences": 1406
-    }
+    "exampleTranslation": "Я остаюсь дома, потому что болею."
   },
   {
     "id": "kad",
@@ -6752,15 +4408,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "что; чтобы",
     "example": "Žinau, kad jis namie.",
-    "exampleTranslation": "Я знаю, что он дома.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "kad",
-      "rank": 6,
-      "occurrences": 7487
-    }
+    "exampleTranslation": "Я знаю, что он дома."
   },
   {
     "id": "taip",
@@ -6771,15 +4419,7 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "да",
     "example": "Taip, aš suprantu.",
-    "exampleTranslation": "Да, я понимаю.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "taip",
-      "rank": 489,
-      "occurrences": 278
-    }
+    "exampleTranslation": "Да, я понимаю."
   },
   {
     "id": "ne",
@@ -6790,14 +4430,6 @@
     "grammarNote": "Форма и часть речи даны для значения в примере.",
     "translation": "нет; не",
     "example": "Ne, aš nenoriu kavos.",
-    "exampleTranslation": "Нет, я не хочу кофе.",
-    "level": "A1-A2",
-    "levelBasis": "editorial_selection",
-    "frequency": {
-      "source": "utka2009",
-      "corpusLemma": "ne",
-      "rank": 28,
-      "occurrences": 2791
-    }
+    "exampleTranslation": "Нет, я не хочу кофе."
   }
 ]
