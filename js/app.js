@@ -26,7 +26,8 @@ const due = () => dueIds(progress, today(), allowedIds());
 const symbol = word => word.image ? `<img src="${escape(word.image)}" alt="${escape(word.translation)}" width="110" height="110">` : escape(word.symbol || '📝');
 const formsLine = word => {
   const forms = Object.values(word.forms || {});
-  return forms.length ? `<p class="word-forms muted" lang="lt">${escape(forms.join(', '))}</p>` : '';
+  if (forms.length) return `<p class="word-forms muted" lang="lt">${escape(forms.join(', '))}</p>`;
+  return word.grammarNote ? `<p class="word-forms grammar-note muted">${escape(word.grammarNote)}</p>` : '';
 };
 
 function message(text) { notice.textContent = text; notice.hidden = false; }

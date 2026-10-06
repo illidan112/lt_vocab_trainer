@@ -51,15 +51,16 @@ const checkCard = (word, headingSelector = '.card h1', hasTranslation = true) =>
   const forms = doc.querySelector('.word-forms');
   const values = Object.values(word.forms || {});
   if (!values.length) {
-    assert(!forms, 'Empty forms should not render a line');
-    return;
+    assert(forms?.textContent === word.grammarNote, 'Grammar note not displayed for empty forms');
+    assert(forms.getAttribute('lang') !== 'lt', 'Grammar note is incorrectly marked as Lithuanian');
+  } else {
+    assert(forms?.textContent === values.join(', '), 'Not all forms are displayed');
   }
-  assert(forms?.textContent === values.join(', '), 'Not all forms are displayed');
   assert(heading.nextElementSibling === forms, 'Forms must follow displayWord');
   const style = frame.contentWindow.getComputedStyle(forms);
   assert(style.display !== 'none' && style.visibility === 'visible', 'Forms are hidden');
   assert(parseFloat(style.fontSize) < parseFloat(frame.contentWindow.getComputedStyle(heading).fontSize), 'Forms font is not smaller');
-  assert(style.whiteSpace === 'nowrap', 'Forms can wrap onto multiple lines');
+  assert(style.whiteSpace === (values.length ? 'nowrap' : 'normal'), 'Forms or grammar note have incorrect wrapping');
   assert(forms.getBoundingClientRect().height > 0, 'Forms line has no height');
   assert(forms.getBoundingClientRect().top >= heading.getBoundingClientRect().bottom - 1, 'Forms overlap the heading');
   if (hasTranslation) {
