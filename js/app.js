@@ -1,7 +1,7 @@
 import { STORAGE_KEY, emptyProgress, localDay, addDays, readProgress, writeProgress, addWord, dueIds, reviewWord, moveToEnd, importProgress } from './core.js';
 
 const $ = (selector) => document.querySelector(selector);
-const APP_VERSION = '0.1.5';
+const APP_VERSION = '0.1.7';
 $('#app-version').textContent = APP_VERSION;
 const content = $('#content');
 const notice = $('#notice');
@@ -24,6 +24,11 @@ const byId = id => words.find(word => word.id === id);
 const allowedIds = () => new Set(words.map(word => word.id));
 const due = () => dueIds(progress, today(), allowedIds());
 const symbol = word => word.image ? `<img src="${escape(word.image)}" alt="${escape(word.translation)}" width="110" height="110">` : escape(word.symbol || '📝');
+const formsLine = word => {
+  const forms = Object.values(word.forms || {});
+  if (forms.length) return `<p class="word-forms muted" lang="lt">${escape(forms.join(', '))}</p>`;
+  return word.grammarNote ? `<p class="word-forms grammar-note muted">${escape(word.grammarNote)}</p>` : '';
+};
 
 function message(text) { notice.textContent = text; notice.hidden = false; }
 function clearMessage() { notice.hidden = true; notice.textContent = ''; }
@@ -47,7 +52,7 @@ function renderNew() {
   const position = Math.min(progress.position, words.length - 1);
   const word = words[position];
   const added = progress.words[word.id];
-  content.innerHTML = `<p class="eyebrow">Новые слова</p><article class="panel card"><div class="illustration" aria-hidden="true">${symbol(word)}</div><h1 lang="lt">${escape(word.displayWord || word.word)}</h1><p class="translation">${escape(word.translation)}</p><p class="example" lang="lt">${escape(word.example)}</p><p class="example-translation">${exampleVisible ? escape(word.exampleTranslation) : ' '}</p><div class="actions"><button class="secondary" data-action="translate">${exampleVisible ? 'Скрыть перевод' : 'Перевод примера'}</button><button class="secondary" data-action="speak" data-id="${escape(word.id)}">🔊 Слушать</button><button class="primary" data-action="add" ${added ? 'disabled' : ''}>${added ? 'Уже добавлено' : 'Изучать'}</button></div></article><div class="navigation"><button data-action="previous" ${position === 0 ? 'disabled' : ''}>← Назад</button><span>${position + 1} из ${words.length}</span><button data-action="next" ${position === words.length - 1 ? 'disabled' : ''}>Далее →</button></div>`;
+  content.innerHTML = `<p class="eyebrow">Новые слова</p><article class="panel card"><div class="illustration" aria-hidden="true">${symbol(word)}</div><h1 lang="lt">${escape(word.displayWord || word.word)}</h1>${formsLine(word)}<p class="translation">${escape(word.translation)}</p><p class="example" lang="lt">${escape(word.example)}</p><p class="example-translation">${exampleVisible ? escape(word.exampleTranslation) : ' '}</p><div class="actions"><button class="secondary" data-action="translate">${exampleVisible ? 'Скрыть перевод' : 'Перевод примера'}</button><button class="secondary" data-action="speak" data-id="${escape(word.id)}">🔊 Слушать</button><button class="primary" data-action="add" ${added ? 'disabled' : ''}>${added ? 'Уже добавлено' : 'Изучать'}</button></div></article><div class="navigation"><button data-action="previous" ${position === 0 ? 'disabled' : ''}>← Назад</button><span>${position + 1} из ${words.length}</span><button data-action="next" ${position === words.length - 1 ? 'disabled' : ''}>Далее →</button></div>`;
 }
 function renderReview() {
   if (!queue.length) {
@@ -56,7 +61,7 @@ function renderReview() {
   }
   const word = byId(queue[0]);
   if (!word) { queue.shift(); renderReview(); return; }
-  content.innerHTML = `<p class="eyebrow">Повторение · осталось ${queue.length}</p><article class="panel card"><div class="illustration" aria-hidden="true">${symbol(word)}</div><p class="review-prompt">Вспомните слово по-литовски</p><p class="review-face">${escape(word.translation)}</p>${revealed ? `<div class="answer"><h2 lang="lt">${escape(word.displayWord || word.word)}</h2><p class="example" lang="lt">${escape(word.example)}</p><p class="example-translation">${escape(word.exampleTranslation)}</p><button class="secondary" data-action="speak" data-id="${escape(word.id)}">🔊 Слушать</button><div class="choices"><button data-action="rate" data-choice="again">Не помню · сегодня</button><button data-action="rate" data-choice="1">Трудно · 1 день</button><button data-action="rate" data-choice="3">Нормально · 3 дня</button><button data-action="rate" data-choice="7">Легко · 7 дней</button><button data-action="rate" data-choice="learned">Выучено</button></div></div>` : `<div class="actions"><button class="primary" data-action="reveal">Показать ответ</button></div>`}</article><p class="hint">Можно перейти в другой раздел и продолжить позже.</p>`;
+  content.innerHTML = `<p class="eyebrow">Повторение · осталось ${queue.length}</p><article class="panel card"><div class="illustration" aria-hidden="true">${symbol(word)}</div><p class="review-prompt">Вспомните слово по-литовски</p><p class="review-face">${escape(word.translation)}</p>${revealed ? `<div class="answer"><h2 lang="lt">${escape(word.displayWord || word.word)}</h2>${formsLine(word)}<p class="example" lang="lt">${escape(word.example)}</p><p class="example-translation">${escape(word.exampleTranslation)}</p><button class="secondary" data-action="speak" data-id="${escape(word.id)}">🔊 Слушать</button><div class="choices"><button data-action="rate" data-choice="again">Не помню · сегодня</button><button data-action="rate" data-choice="1">Трудно · 1 день</button><button data-action="rate" data-choice="3">Нормально · 3 дня</button><button data-action="rate" data-choice="7">Легко · 7 дней</button><button data-action="rate" data-choice="learned">Выучено</button></div></div>` : `<div class="actions"><button class="primary" data-action="reveal">Показать ответ</button></div>`}</article><p class="hint">Можно перейти в другой раздел и продолжить позже.</p>`;
 }
 function renderMine() {
   const entries = Object.entries(progress.words).filter(([id]) => byId(id)).sort((a, b) => (a[1].status === b[1].status ? a[1].nextReviewDate.localeCompare(b[1].nextReviewDate) : a[1].status === 'learning' ? -1 : 1));
@@ -151,7 +156,7 @@ async function registerOffline() {
 
 async function start() {
   try {
-    const response = await fetch('/data/words.json'); if (!response.ok) throw Error('Словарь не загрузился. Проверьте подключение и обновите страницу.');
+    const response = await fetch('/data/words.json', { cache: 'no-store' }); if (!response.ok) throw Error('Словарь не загрузился. Проверьте подключение и обновите страницу.');
     words = await response.json();
     if (!Array.isArray(words) || !words.length || words.some(word => !word.id || !word.word || !word.translation || !word.example)) throw Error('Файл словаря повреждён.');
     if (demo) { const label = document.createElement('p'); label.className = 'hint'; label.textContent = `Режим проверки · дата ${today()} · отдельный временный прогресс`; content.before(label); }
