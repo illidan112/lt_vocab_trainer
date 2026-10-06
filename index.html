@@ -9,18 +9,18 @@
   <meta name="description" content="Литовские слова: карточки и повторение">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="/manifest.webmanifest">
-  <link rel="stylesheet" href="/styles.css?v=0.1.6">
+  <link rel="stylesheet" href="/styles.css?v=0.1.7">
   <title>Литовские слова</title>
 </head>
 <body>
   <main class="app">
-    <header class="topbar"><div class="brand"><span class="mark" aria-hidden="true">LT</span><div><strong>Литовские слова</strong><small>Карточки · версия <span id="app-version">0.1.6</span></small></div></div><div class="topbar-actions"><button id="backup" class="quiet" type="button">Резервная копия</button><button id="theme-toggle" class="quiet theme-toggle" type="button" aria-label="Тёмная тема" aria-pressed="false" title="Включить тёмную тему"><span aria-hidden="true">☾</span></button></div></header>
+    <header class="topbar"><div class="brand"><span class="mark" aria-hidden="true">LT</span><div><strong>Литовские слова</strong><small>Карточки · версия <span id="app-version">0.1.7</span></small></div></div><div class="topbar-actions"><button id="backup" class="quiet" type="button">Резервная копия</button><button id="theme-toggle" class="quiet theme-toggle" type="button" aria-label="Тёмная тема" aria-pressed="false" title="Включить тёмную тему"><span aria-hidden="true">☾</span></button></div></header>
     <nav class="tabs" aria-label="Разделы"><button type="button" data-view="new" class="active">Новые слова</button><button type="button" data-view="review">Повторить <span id="due-tab">0</span></button><button type="button" data-view="mine">Мои слова</button></nav>
     <p id="notice" role="status" aria-live="polite" hidden></p>
     <div id="content" aria-live="polite"></div>
     <footer>Прогресс хранится на этом устройстве. <span id="offline-label">Проверяем офлайн-доступ…</span></footer>
   </main>
   <dialog id="backup-dialog"><form method="dialog" class="dialog-body"><div class="dialog-head"><h2>Резервная копия</h2><button value="cancel" aria-label="Закрыть" class="close">×</button></div><p>Сохраните файл на устройство, чтобы перенести прогресс или восстановить его после очистки браузера.</p><button type="button" id="export" class="primary">Скачать прогресс</button><label class="import-label">Восстановить из файла<input type="file" accept="application/json,.json" id="import"></label><p class="muted">Восстановление заменит текущий прогресс.</p></form></dialog>
-  <script type="module" src="/js/app.js?v=0.1.6"></script>
+  <script type="module" src="/js/app.js?v=0.1.7"></script>
 </body>
 </html>

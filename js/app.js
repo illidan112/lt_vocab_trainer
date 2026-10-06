@@ -1,7 +1,7 @@
 import { STORAGE_KEY, emptyProgress, localDay, addDays, readProgress, writeProgress, addWord, dueIds, reviewWord, moveToEnd, importProgress } from './core.js';
 
 const $ = (selector) => document.querySelector(selector);
-const APP_VERSION = '0.1.6';
+const APP_VERSION = '0.1.7';
 $('#app-version').textContent = APP_VERSION;
 const content = $('#content');
 const notice = $('#notice');
@@ -155,7 +155,7 @@ async function registerOffline() {
 
 async function start() {
   try {
-    const response = await fetch('/data/words.json'); if (!response.ok) throw Error('Словарь не загрузился. Проверьте подключение и обновите страницу.');
+    const response = await fetch('/data/words.json', { cache: 'no-store' }); if (!response.ok) throw Error('Словарь не загрузился. Проверьте подключение и обновите страницу.');
     words = await response.json();
     if (!Array.isArray(words) || !words.length || words.some(word => !word.id || !word.word || !word.translation || !word.example)) throw Error('Файл словаря повреждён.');
     if (demo) { const label = document.createElement('p'); label.className = 'hint'; label.textContent = `Режим проверки · дата ${today()} · отдельный временный прогресс`; content.before(label); }

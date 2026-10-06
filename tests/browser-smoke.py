@@ -123,7 +123,23 @@ const checkCard = (word, headingSelector = '.card h1', hasTranslation = true) =>
   assert(counter().startsWith(String(words.length) + ' '), 'Controlled reload failed');
   checkCard(words.at(-1));
   assert(frame.contentDocument.getElementById('app-version').textContent === expectedVersion, 'Controlled reload uses an old version');
-  result.textContent = 'PASS: version ' + expectedVersion + ', forms layout in light/dark themes and review, raktas, empty forms, navigation, progress persistence, theme persistence, last card, current offline assets, service worker reload';
+  const savedProgress = localStorage.getItem(STORAGE_KEY);
+  const oldDictionary = words.slice(0, Math.min(300, words.length - 1));
+  await cache.put('/data/words.json', new Response(JSON.stringify(oldDictionary), { headers: { 'Content-Type': 'application/json' } }));
+  await reload();
+  assert(counter().startsWith(String(words.length) + ' ') && counter().endsWith(' ' + words.length), 'Old cached dictionary limits the card count');
+  assert(localStorage.getItem(STORAGE_KEY) === savedProgress, 'Dictionary refresh changed study progress');
+  assert((await (await cache.match('/data/words.json')).json()).length === words.length, 'Offline dictionary was not refreshed');
+  await fetch('/__dictionary-offline', { method: 'POST' });
+  try {
+    await reload();
+    assert(counter().startsWith(String(words.length) + ' ') && counter().endsWith(' ' + words.length), 'Updated dictionary is unavailable offline');
+    checkCard(words.at(-1));
+    assert(localStorage.getItem(STORAGE_KEY) === savedProgress, 'Offline reload changed study progress');
+  } finally {
+    await fetch('/__dictionary-online', { method: 'POST' });
+  }
+  result.textContent = 'PASS: version ' + expectedVersion + ', ' + words.length + ' words, forms layout in light/dark themes and review, raktas, empty forms, navigation, progress persistence, theme persistence, last card, current offline assets, service worker reload, stale dictionary refresh, dictionary fallback when server is unavailable';
 })().catch(error => { result.textContent = 'FAIL: ' + error.stack; })
   .then(() => fetch('/__result', { method: 'POST', body: result.textContent }));
 </script>'''.replace(b'__APP_VERSION__', json.dumps(APP_VERSION).encode('utf-8'))
@@ -131,11 +147,17 @@ const checkCard = (word, headingSelector = '.card h1', hasTranslation = true) =>
 
 finished = threading.Event()
 summary = ''
+dictionary_available = True
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def do_POST(self):
-        global summary
+        global summary, dictionary_available
+        if self.path in ('/__dictionary-offline', '/__dictionary-online'):
+            dictionary_available = self.path == '/__dictionary-online'
+            self.send_response(204)
+            self.end_headers()
+            return
         if self.path != '/__result':
             self.send_error(404)
             return
@@ -145,7 +167,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         finished.set()
 
     def do_GET(self):
-        if self.path == '/__smoke':
+        if self.path == '/data/words.json' and not dictionary_available:
+            self.send_error(503, 'Dictionary unavailable for offline fallback check')
+        elif self.path == '/__smoke':
             self.send_response(200)
             self.send_header('Content-Type', 'text/html; charset=utf-8')
             self.end_headers()
