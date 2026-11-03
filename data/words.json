@@ -3454,7 +3454,7 @@
       "feminine": "sunki"
     },
     "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
-    "translation": "тяжёлый; трудный; тяжелый, трудный",
+    "translation": "тяжелый, трудный",
     "example": "Užduotis buvo sunki.",
     "exampleTranslation": "Задание было трудным."
   },
@@ -30751,5 +30751,3191 @@
     "translation": "выстирать",
     "example": "Ji išskalbė drabužius.",
     "exampleTranslation": "Она выстирала одежду."
+  },
+  {
+    "id": "bala",
+    "word": "bala",
+    "displayWord": "balà",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "bala",
+      "genitive": "balos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "лужа",
+    "example": "Po lietaus kieme liko didelė bala.",
+    "exampleTranslation": "После дождя во дворе осталась большая лужа.",
+    "symbol": "💧"
+  },
+  {
+    "id": "pūga",
+    "word": "pūga",
+    "displayWord": "pūgà",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "pūga",
+      "genitive": "pūgos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "метель",
+    "example": "Už lango siaučia pūga.",
+    "exampleTranslation": "За окном бушует метель.",
+    "symbol": "🌨️"
+  },
+  {
+    "id": "šlapdriba",
+    "word": "šlapdriba",
+    "displayWord": "šlãpdriba",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šlapdriba",
+      "genitive": "šlapdribos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "мокрый снег; снег с дождём",
+    "example": "Šiandien krinta šlapdriba.",
+    "exampleTranslation": "Сегодня идёт мокрый снег с дождём.",
+    "symbol": "🌨️"
+  },
+  {
+    "id": "audra",
+    "word": "audra",
+    "displayWord": "áudra",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "audra",
+      "genitive": "audros",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "буря",
+    "example": "Vakare prasidėjo audra.",
+    "exampleTranslation": "Вечером началась буря.",
+    "symbol": "⛈️"
+  },
+  {
+    "id": "temperatūra",
+    "word": "temperatūra",
+    "displayWord": "temperatūrà",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "temperatūra",
+      "genitive": "temperatūros",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "температура",
+    "example": "Šiandien oro temperatūra yra dešimt laipsnių.",
+    "exampleTranslation": "Сегодня температура воздуха — десять градусов.",
+    "symbol": "🌡️"
+  },
+  {
+    "id": "laipsnis",
+    "word": "laipsnis",
+    "displayWord": "láipsnis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "laipsnis",
+      "genitive": "laipsnio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "градус",
+    "example": "Lauke tik vienas laipsnis šilumos.",
+    "exampleTranslation": "На улице всего один градус тепла.",
+    "symbol": "🌡️"
+  },
+  {
+    "id": "šiluma",
+    "word": "šiluma",
+    "displayWord": "šilumà",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šiluma",
+      "genitive": "šilumos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "тепло",
+    "example": "Pavasarį visi laukia šilumos.",
+    "exampleTranslation": "Весной все ждут тепла.",
+    "symbol": "☀️"
+  },
+  {
+    "id": "šaltis",
+    "word": "šaltis",
+    "displayWord": "šal̃tis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šaltis",
+      "genitive": "šalčio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "холод",
+    "example": "Žiemą čia būna didelis šaltis.",
+    "exampleTranslation": "Зимой здесь бывают сильные морозы.",
+    "symbol": "❄️"
+  },
+  {
+    "id": "krituliai",
+    "word": "krituliai",
+    "displayWord": "krituliaĩ",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "krituliai",
+      "genitive": "kritulių",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род.",
+    "translation": "осадки",
+    "example": "Rytoj numatomi gausūs krituliai.",
+    "exampleTranslation": "Завтра ожидаются обильные осадки.",
+    "symbol": "🌧️"
+  },
+  {
+    "id": "perkūnija",
+    "word": "perkūnija",
+    "displayWord": "perkū́nija",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "perkūnija",
+      "genitive": "perkūnijos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "гроза",
+    "example": "Naktį prasidėjo perkūnija.",
+    "exampleTranslation": "Ночью началась гроза.",
+    "symbol": "⛈️"
+  },
+  {
+    "id": "griaustinis",
+    "word": "griaustinis",
+    "displayWord": "griaustìnis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "griaustinis",
+      "genitive": "griaustinio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "гром",
+    "example": "Tolumoje girdisi griaustinis.",
+    "exampleTranslation": "Вдалеке слышен гром.",
+    "symbol": "⛈️"
+  },
+  {
+    "id": "žaibas",
+    "word": "žaibas",
+    "displayWord": "žaĩbas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "žaibas",
+      "genitive": "žaibo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "молния",
+    "example": "Danguje blykstelėjo žaibas.",
+    "exampleTranslation": "В небе сверкнула молния.",
+    "symbol": "⚡"
+  },
+  {
+    "id": "pragiedruliai",
+    "word": "pragiedruliai",
+    "displayWord": "prãgiedruliai",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "pragiedruliai",
+      "genitive": "pragiedrulių",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род.",
+    "translation": "прояснения",
+    "example": "Po pietų bus pragiedrulių.",
+    "exampleTranslation": "После обеда будут прояснения.",
+    "symbol": "🌤️"
+  },
+  {
+    "id": "vaivorykštė",
+    "word": "vaivorykštė",
+    "displayWord": "vaivórykštė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "vaivorykštė",
+      "genitive": "vaivorykštės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "радуга",
+    "example": "Po lietaus pasirodė vaivorykštė.",
+    "exampleTranslation": "После дождя появилась радуга.",
+    "symbol": "🌈"
+  },
+  {
+    "id": "rūkas",
+    "word": "rūkas",
+    "displayWord": "rū̃kas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "rūkas",
+      "genitive": "rūko",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "туман",
+    "example": "Ryte virš upės tvyro rūkas.",
+    "exampleTranslation": "Утром над рекой стоит туман.",
+    "symbol": "🌫️"
+  },
+  {
+    "id": "debesuotas",
+    "word": "debesuotas",
+    "displayWord": "debesúotas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "debesuotas",
+      "feminine": "debesuota"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "облачный",
+    "example": "Dangus šiandien debesuotas.",
+    "exampleTranslation": "Сегодня небо облачное.",
+    "symbol": "☁️"
+  },
+  {
+    "id": "giedras",
+    "word": "giedras",
+    "displayWord": "giẽdras",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "giedras",
+      "feminine": "giedra"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "ясный",
+    "example": "Šiandien dangus giedras.",
+    "exampleTranslation": "Сегодня небо ясное.",
+    "symbol": "☀️"
+  },
+  {
+    "id": "lietingas",
+    "word": "lietingas",
+    "displayWord": "lietìngas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "lietingas",
+      "feminine": "lietinga"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "дождливый",
+    "example": "Šis ruduo labai lietingas.",
+    "exampleTranslation": "Эта осень очень дождливая.",
+    "symbol": "🌧️"
+  },
+  {
+    "id": "saulėtas",
+    "word": "saulėtas",
+    "displayWord": "saulė́tas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "saulėtas",
+      "feminine": "saulėta"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "солнечный",
+    "example": "Šiandien saulėtas rytas.",
+    "exampleTranslation": "Сегодня солнечное утро.",
+    "symbol": "☀️"
+  },
+  {
+    "id": "slidus",
+    "word": "slidus",
+    "displayWord": "slidùs",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "slidus",
+      "feminine": "slidi"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "скользкий",
+    "example": "Po lietaus kelias slidus.",
+    "exampleTranslation": "После дождя дорога скользкая.",
+    "symbol": "⚠️"
+  },
+  {
+    "id": "šlapias",
+    "word": "šlapias",
+    "displayWord": "šlãpias",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "šlapias",
+      "feminine": "šlapia"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "мокрый",
+    "example": "Mano paltas dar šlapias.",
+    "exampleTranslation": "Моё пальто ещё мокрое.",
+    "symbol": "💧"
+  },
+  {
+    "id": "tirštas",
+    "word": "tirštas",
+    "displayWord": "tir̃štas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "tirštas",
+      "feminine": "tiršta"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "густой",
+    "example": "Ryte buvo tirštas rūkas.",
+    "exampleTranslation": "Утром был густой туман.",
+    "symbol": "🌫️"
+  },
+  {
+    "id": "vėjuotas",
+    "word": "vėjuotas",
+    "displayWord": "vėjúotas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "vėjuotas",
+      "feminine": "vėjuota"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "ветреный",
+    "example": "Šiandien oras vėjuotas.",
+    "exampleTranslation": "Сегодня ветреная погода.",
+    "symbol": "🌬️"
+  },
+  {
+    "id": "šiaurė",
+    "word": "šiaurė",
+    "displayWord": "šiáurė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šiaurė",
+      "genitive": "šiaurės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "север",
+    "example": "Vėjas pučia iš šiaurės.",
+    "exampleTranslation": "Ветер дует с севера.",
+    "symbol": "🧭"
+  },
+  {
+    "id": "pietūs_south",
+    "word": "pietūs",
+    "displayWord": "piẽtūs",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "pietūs",
+      "genitive": "pietų",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род. Сторона света «юг»; используется множественное число. Отдельная карточка от pietūs в значении «обед».",
+    "translation": "юг",
+    "example": "Paukščiai rudenį skrenda į pietus.",
+    "exampleTranslation": "Осенью птицы летят на юг.",
+    "symbol": "🧭"
+  },
+  {
+    "id": "rytai",
+    "word": "rytai",
+    "displayWord": "rytaĩ",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "rytai",
+      "genitive": "rytų",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род. Здесь обозначает сторону света.",
+    "translation": "восток",
+    "example": "Saulė teka rytuose.",
+    "exampleTranslation": "Солнце встаёт на востоке.",
+    "symbol": "🌅"
+  },
+  {
+    "id": "vakarai",
+    "word": "vakarai",
+    "displayWord": "vakaraĩ",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "vakarai",
+      "genitive": "vakarų",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род. Здесь обозначает сторону света.",
+    "translation": "запад",
+    "example": "Saulė leidžiasi vakaruose.",
+    "exampleTranslation": "Солнце заходит на западе.",
+    "symbol": "🌇"
+  },
+  {
+    "id": "kai kur",
+    "word": "kai kur",
+    "displayWord": "kaĩ kur̃",
+    "partOfSpeech": "adverb",
+    "forms": {},
+    "grammarNote": "Наречное сочетание; не изменяется.",
+    "translation": "местами, кое-где",
+    "example": "Rytoj kai kur lis.",
+    "exampleTranslation": "Завтра местами будет дождь.",
+    "symbol": "📍"
+  },
+  {
+    "id": "yra apsirengęs",
+    "word": "yra apsirengęs",
+    "displayWord": "yrà apsireñgęs",
+    "partOfSpeech": "phrase",
+    "forms": {
+      "masculine": "yra apsirengęs",
+      "feminine": "yra apsirengusi"
+    },
+    "grammarNote": "Форма yra глагола būti и действительное причастие прошедшего времени глагола apsirengti. Здесь: мужской род, именительный падеж единственного числа; описывает состояние «одет/одета».",
+    "translation": "одет",
+    "example": "Jis yra apsirengęs šiltai.",
+    "exampleTranslation": "Он тепло одет.",
+    "symbol": "🧥"
+  },
+  {
+    "id": "yra apsirengusi",
+    "word": "yra apsirengusi",
+    "displayWord": "yrà apsireñgusi",
+    "partOfSpeech": "phrase",
+    "forms": {
+      "masculine": "yra apsirengęs",
+      "feminine": "yra apsirengusi"
+    },
+    "grammarNote": "Форма yra глагола būti и действительное причастие прошедшего времени глагола apsirengti. Здесь: женский род, именительный падеж единственного числа; описывает состояние «одет/одета».",
+    "translation": "одета",
+    "example": "Ji yra apsirengusi šventiškai.",
+    "exampleTranslation": "Она празднично одета.",
+    "symbol": "🧥"
+  },
+  {
+    "id": "skrybėlė",
+    "word": "skrybėlė",
+    "displayWord": "skrybėlė̃",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "skrybėlė",
+      "genitive": "skrybėlės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "шляпа",
+    "example": "Vasarą nešioju skrybėlę.",
+    "exampleTranslation": "Летом я ношу шляпу.",
+    "symbol": "👒"
+  },
+  {
+    "id": "šalikėlis",
+    "word": "šalikėlis",
+    "displayWord": "šalikė̃lis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šalikėlis",
+      "genitive": "šalikėlio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "шейный платок",
+    "example": "Ji ryši šilkinį šalikėlį.",
+    "exampleTranslation": "Она носит шёлковый шейный платок.",
+    "symbol": "🧣"
+  },
+  {
+    "id": "kailiniai",
+    "word": "kailiniai",
+    "displayWord": "kailiniaĩ",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "kailiniai",
+      "genitive": "kailinių",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род. В указанном значении употребляется множественное число.",
+    "translation": "шуба",
+    "example": "Jos kailiniai labai šilti.",
+    "exampleTranslation": "Её шуба очень тёплая.",
+    "symbol": "🧥"
+  },
+  {
+    "id": "švarkas",
+    "word": "švarkas",
+    "displayWord": "švar̃kas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "švarkas",
+      "genitive": "švarko",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "пиджак",
+    "example": "Šis švarkas man tinka.",
+    "exampleTranslation": "Этот пиджак мне подходит.",
+    "symbol": "🧥"
+  },
+  {
+    "id": "liemenė",
+    "word": "liemenė",
+    "displayWord": "liemẽnė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "liemenė",
+      "genitive": "liemenės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "жилет",
+    "example": "Jis vilki šiltą liemenę.",
+    "exampleTranslation": "Он носит тёплый жилет.",
+    "symbol": "🦺"
+  },
+  {
+    "id": "kostiumas",
+    "word": "kostiumas",
+    "displayWord": "kostiùmas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "kostiumas",
+      "genitive": "kostiumo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "костюм",
+    "example": "Į šventę jis atėjo su kostiumu.",
+    "exampleTranslation": "На праздник он пришёл в костюме.",
+    "symbol": "👔"
+  },
+  {
+    "id": "kostiumėlis",
+    "word": "kostiumėlis",
+    "displayWord": "kostiumė̃lis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "kostiumėlis",
+      "genitive": "kostiumėlio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "костюмчик",
+    "example": "Ji nusipirko naują kostiumėlį.",
+    "exampleTranslation": "Она купила новый костюмчик.",
+    "symbol": "👗"
+  },
+  {
+    "id": "megztinis",
+    "word": "megztinis",
+    "displayWord": "megztìnis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "megztinis",
+      "genitive": "megztinio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "свитер",
+    "example": "Šis megztinis yra iš vilnos.",
+    "exampleTranslation": "Этот свитер из шерсти.",
+    "symbol": "🧶"
+  },
+  {
+    "id": "naktiniai marškiniai",
+    "word": "naktiniai marškiniai",
+    "displayWord": "naktìniai marškiniaĩ",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "naktiniai marškiniai",
+      "genitive": "naktinių marškinių",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род. В указанном значении употребляется множественное число. Словосочетание; род и число указаны по главному слову.",
+    "translation": "ночная рубашка",
+    "example": "Šie naktiniai marškiniai labai patogūs.",
+    "exampleTranslation": "Эта ночная рубашка очень удобная.",
+    "symbol": "🌙"
+  },
+  {
+    "id": "palaidinė",
+    "word": "palaidinė",
+    "displayWord": "palaidìnė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "palaidinė",
+      "genitive": "palaidinės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "блузка",
+    "example": "Ji vilki baltą palaidinę.",
+    "exampleTranslation": "Она носит белую блузку.",
+    "symbol": "👚"
+  },
+  {
+    "id": "marškinėliai",
+    "word": "marškinėliai",
+    "displayWord": "marškinė̃liai",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "marškinėliai",
+      "genitive": "marškinėlių",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род. В указанном значении употребляется множественное число.",
+    "translation": "футболка",
+    "example": "Man patinka šie marškinėliai.",
+    "exampleTranslation": "Мне нравится эта футболка.",
+    "symbol": "👕"
+  },
+  {
+    "id": "džinsai",
+    "word": "džinsai",
+    "displayWord": "džìnsai",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "džinsai",
+      "genitive": "džinsų",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род. В указанном значении употребляется множественное число.",
+    "translation": "джинсы",
+    "example": "Mano džinsai yra mėlyni.",
+    "exampleTranslation": "Мои джинсы синие.",
+    "symbol": "👖"
+  },
+  {
+    "id": "pižama",
+    "word": "pižama",
+    "displayWord": "pižamà",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "pižama",
+      "genitive": "pižamos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "пижама",
+    "example": "Prieš miegą apsivelku pižamą.",
+    "exampleTranslation": "Перед сном я надеваю пижаму.",
+    "symbol": "🌙"
+  },
+  {
+    "id": "apatiniai marškinėliai",
+    "word": "apatiniai marškinėliai",
+    "displayWord": "apatìniai marškinė̃liai",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "apatiniai marškinėliai",
+      "genitive": "apatinių marškinėlių",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род. В указанном значении употребляется множественное число. Словосочетание; род и число указаны по главному слову.",
+    "translation": "нижняя майка",
+    "example": "Šie apatiniai marškinėliai yra medvilniniai.",
+    "exampleTranslation": "Эта нижняя майка хлопчатобумажная.",
+    "symbol": "👕"
+  },
+  {
+    "id": "kelnaitės",
+    "word": "kelnaitės",
+    "displayWord": "kelnáitės",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "kelnaitės",
+      "genitive": "kelnaičių",
+      "gender": "f",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; женский род. В указанном значении употребляется множественное число.",
+    "translation": "трусики",
+    "example": "Parduotuvėje nusipirkau kelnaites.",
+    "exampleTranslation": "В магазине я купила трусики.",
+    "symbol": "🩲"
+  },
+  {
+    "id": "liemenėlė",
+    "word": "liemenėlė",
+    "displayWord": "liemenė̃lė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "liemenėlė",
+      "genitive": "liemenėlės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "бюстгальтер",
+    "example": "Ši liemenėlė man per maža.",
+    "exampleTranslation": "Этот бюстгальтер мне слишком мал.",
+    "symbol": "👙"
+  },
+  {
+    "id": "pėdkelnės",
+    "word": "pėdkelnės",
+    "displayWord": "pė́dkelnės",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "pėdkelnės",
+      "genitive": "pėdkelnių",
+      "gender": "f",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; женский род. В указанном значении употребляется множественное число.",
+    "translation": "колготки",
+    "example": "Prie suknelės ji mūvi juodas pėdkelnes.",
+    "exampleTranslation": "С платьем она носит чёрные колготки.",
+    "symbol": "🧦"
+  },
+  {
+    "id": "maudymosi kostiumėlis",
+    "word": "maudymosi kostiumėlis",
+    "displayWord": "máudymosi kostiumė̃lis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "maudymosi kostiumėlis",
+      "genitive": "maudymosi kostiumėlio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род. Словосочетание; род и число указаны по главному слову.",
+    "translation": "купальник",
+    "example": "Į baseiną pasiėmiau maudymosi kostiumėlį.",
+    "exampleTranslation": "В бассейн я взяла купальник.",
+    "symbol": "👙"
+  },
+  {
+    "id": "bateliai",
+    "word": "bateliai",
+    "displayWord": "batẽliai",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "bateliai",
+      "genitive": "batelių",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род.",
+    "translation": "туфли",
+    "example": "Šie bateliai labai patogūs.",
+    "exampleTranslation": "Эти туфли очень удобные.",
+    "symbol": "👞"
+  },
+  {
+    "id": "sportbačiai",
+    "word": "sportbačiai",
+    "displayWord": "spòrtbačiai",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "sportbačiai",
+      "genitive": "sportbačių",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род.",
+    "translation": "кроссовки",
+    "example": "Bėgioti reikia patogių sportbačių.",
+    "exampleTranslation": "Для бега нужны удобные кроссовки.",
+    "symbol": "👟"
+  },
+  {
+    "id": "guminiai batai",
+    "word": "guminiai batai",
+    "displayWord": "gumìniai bãtai",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "guminiai batai",
+      "genitive": "guminių batų",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род. Словосочетание; род и число указаны по главному слову.",
+    "translation": "резиновые сапоги",
+    "example": "Per lietų aviu guminius batus.",
+    "exampleTranslation": "В дождь я ношу резиновые сапоги.",
+    "symbol": "🥾"
+  },
+  {
+    "id": "šlepetės",
+    "word": "šlepetės",
+    "displayWord": "šlepẽtės",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šlepetės",
+      "genitive": "šlepečių",
+      "gender": "f",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; женский род.",
+    "translation": "тапочки",
+    "example": "Namuose aviu šlepetes.",
+    "exampleTranslation": "Дома я ношу тапочки.",
+    "symbol": "🩴"
+  },
+  {
+    "id": "basutės",
+    "word": "basutės",
+    "displayWord": "basùtės",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "basutės",
+      "genitive": "basučių",
+      "gender": "f",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; женский род.",
+    "translation": "сандалии",
+    "example": "Vasarą ji avi basutes.",
+    "exampleTranslation": "Летом она носит сандалии.",
+    "symbol": "👡"
+  },
+  {
+    "id": "saga",
+    "word": "saga",
+    "displayWord": "sagà",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "saga",
+      "genitive": "sagos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "пуговица",
+    "example": "Nuo palto nutrūko saga.",
+    "exampleTranslation": "От пальто оторвалась пуговица.",
+    "symbol": "🧵"
+  },
+  {
+    "id": "kišenė",
+    "word": "kišenė",
+    "displayWord": "kišẽnė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "kišenė",
+      "genitive": "kišenės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "карман",
+    "example": "Raktai yra mano kišenėje.",
+    "exampleTranslation": "Ключи у меня в кармане.",
+    "symbol": "👖"
+  },
+  {
+    "id": "užtrauktukas",
+    "word": "užtrauktukas",
+    "displayWord": "užtrauktùkas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "užtrauktukas",
+      "genitive": "užtrauktuko",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "молния",
+    "example": "Striukės užtrauktukas sugedo.",
+    "exampleTranslation": "Молния на куртке сломалась.",
+    "symbol": "🤐"
+  },
+  {
+    "id": "nosinė",
+    "word": "nosinė",
+    "displayWord": "nósinė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "nosinė",
+      "genitive": "nosinės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "носовой платок",
+    "example": "Kišenėje turiu švarią nosinę.",
+    "exampleTranslation": "В кармане у меня есть чистый носовой платок.",
+    "symbol": "🤧"
+  },
+  {
+    "id": "pirštinė",
+    "word": "pirštinė",
+    "displayWord": "pir̃štinė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "pirštinė",
+      "genitive": "pirštinės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "перчатка",
+    "example": "Pamečiau vieną pirštinę.",
+    "exampleTranslation": "Я потерял одну перчатку.",
+    "symbol": "🧤"
+  },
+  {
+    "id": "skara",
+    "word": "skara",
+    "displayWord": "skarà",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "skara",
+      "genitive": "skaros",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "шаль",
+    "example": "Močiutė apsigaubė šilta skara.",
+    "exampleTranslation": "Бабушка укуталась в тёплую шаль.",
+    "symbol": "🧣"
+  },
+  {
+    "id": "skarelė",
+    "word": "skarelė",
+    "displayWord": "skarẽlė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "skarelė",
+      "genitive": "skarelės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "косынка",
+    "example": "Ji užsirišo skarelę ant galvos.",
+    "exampleTranslation": "Она повязала косынку на голову.",
+    "symbol": "🧣"
+  },
+  {
+    "id": "auskarai",
+    "word": "auskarai",
+    "displayWord": "auskaraĩ",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "auskarai",
+      "genitive": "auskarų",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род.",
+    "translation": "серьги",
+    "example": "Šie auskarai yra sidabriniai.",
+    "exampleTranslation": "Эти серьги серебряные.",
+    "symbol": "💎"
+  },
+  {
+    "id": "grandinėlė",
+    "word": "grandinėlė",
+    "displayWord": "grandinė̃lė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "grandinėlė",
+      "genitive": "grandinėlės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "цепочка",
+    "example": "Ji nešioja auksinę grandinėlę.",
+    "exampleTranslation": "Она носит золотую цепочку.",
+    "symbol": "📿"
+  },
+  {
+    "id": "karoliai",
+    "word": "karoliai",
+    "displayWord": "karõliai",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "karoliai",
+      "genitive": "karolių",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род. В указанном значении употребляется множественное число.",
+    "translation": "бусы",
+    "example": "Man patinka gintariniai karoliai.",
+    "exampleTranslation": "Мне нравятся янтарные бусы.",
+    "symbol": "📿"
+  },
+  {
+    "id": "apyrankė",
+    "word": "apyrankė",
+    "displayWord": "apýrankė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "apyrankė",
+      "genitive": "apyrankės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "браслет",
+    "example": "Ant jos rankos yra apyrankė.",
+    "exampleTranslation": "На её руке браслет.",
+    "symbol": "💎"
+  },
+  {
+    "id": "segė",
+    "word": "segė",
+    "displayWord": "sẽgė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "segė",
+      "genitive": "segės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "брошь",
+    "example": "Prie švarko ji prisisegė segę.",
+    "exampleTranslation": "Она приколола брошь к пиджаку.",
+    "symbol": "💎"
+  },
+  {
+    "id": "žiedas",
+    "word": "žiedas",
+    "displayWord": "žíedas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "žiedas",
+      "genitive": "žiedo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род. Здесь: украшение на палец; также может означать «цветок».",
+    "translation": "кольцо",
+    "example": "Šis žiedas yra auksinis.",
+    "exampleTranslation": "Это кольцо золотое.",
+    "symbol": "💍"
+  },
+  {
+    "id": "krepšys",
+    "word": "krepšys",
+    "displayWord": "krepšỹs",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "krepšys",
+      "genitive": "krepšio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "сумка, корзина",
+    "example": "Į krepšį sudėjau pirkinius.",
+    "exampleTranslation": "Я сложил покупки в сумку.",
+    "symbol": "🛍️"
+  },
+  {
+    "id": "kuprinė",
+    "word": "kuprinė",
+    "displayWord": "kuprìnė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "kuprinė",
+      "genitive": "kuprinės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "рюкзак",
+    "example": "Knygos yra mano kuprinėje.",
+    "exampleTranslation": "Книги у меня в рюкзаке.",
+    "symbol": "🎒"
+  },
+  {
+    "id": "piniginė",
+    "word": "piniginė",
+    "displayWord": "pinigìnė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "piniginė",
+      "genitive": "piniginės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "кошелёк",
+    "example": "Piniginėje turiu dešimt eurų.",
+    "exampleTranslation": "В кошельке у меня десять евро.",
+    "symbol": "👛"
+  },
+  {
+    "id": "rankinė",
+    "word": "rankinė",
+    "displayWord": "rañkinė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "rankinė",
+      "genitive": "rankinės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "дамская сумочка",
+    "example": "Ji pasiėmė rankinę ir išėjo.",
+    "exampleTranslation": "Она взяла сумочку и вышла.",
+    "symbol": "👜"
+  },
+  {
+    "id": "dydis",
+    "word": "dydis",
+    "displayWord": "dỹdis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "dydis",
+      "genitive": "dydžio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "размер",
+    "example": "Koks jūsų batų dydis?",
+    "exampleTranslation": "Какой у вас размер обуви?",
+    "symbol": "📏"
+  },
+  {
+    "id": "madingas",
+    "word": "madingas",
+    "displayWord": "madìngas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "madingas",
+      "feminine": "madinga"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "модный",
+    "example": "Šis švarkas labai madingas.",
+    "exampleTranslation": "Этот пиджак очень модный.",
+    "symbol": "👔"
+  },
+  {
+    "id": "senamadiškas",
+    "word": "senamadiškas",
+    "displayWord": "senamãdiškas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "senamadiškas",
+      "feminine": "senamadiška"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "старомодный",
+    "example": "Šis kostiumas atrodo senamadiškas.",
+    "exampleTranslation": "Этот костюм выглядит старомодным.",
+    "symbol": "👔"
+  },
+  {
+    "id": "gėlėtas",
+    "word": "gėlėtas",
+    "displayWord": "gėlė́tas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "gėlėtas",
+      "feminine": "gėlėta"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "цветочный",
+    "example": "Ji vilki gėlėtą suknelę.",
+    "exampleTranslation": "Она носит платье в цветочек.",
+    "symbol": "🌸"
+  },
+  {
+    "id": "vienspalvis",
+    "word": "vienspalvis",
+    "displayWord": "vienspal̃vis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "vienspalvis",
+      "feminine": "vienspalvė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "однотонный",
+    "example": "Ieškau vienspalvio megztinio.",
+    "exampleTranslation": "Я ищу однотонный свитер.",
+    "symbol": "👕"
+  },
+  {
+    "id": "dryžuotas",
+    "word": "dryžuotas",
+    "displayWord": "dryžúotas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "dryžuotas",
+      "feminine": "dryžuota"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "полосатый",
+    "example": "Jis vilki dryžuotą megztinį.",
+    "exampleTranslation": "Он носит полосатый свитер.",
+    "symbol": "👕"
+  },
+  {
+    "id": "taškuotas",
+    "word": "taškuotas",
+    "displayWord": "taškúotas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "taškuotas",
+      "feminine": "taškuota"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "в горошек",
+    "example": "Man patinka taškuota suknelė.",
+    "exampleTranslation": "Мне нравится платье в горошек.",
+    "symbol": "👗"
+  },
+  {
+    "id": "raštuotas",
+    "word": "raštuotas",
+    "displayWord": "raštúotas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "raštuotas",
+      "feminine": "raštuota"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "узорчатый",
+    "example": "Šis šalikas yra raštuotas.",
+    "exampleTranslation": "Этот шарф узорчатый.",
+    "symbol": "🧣"
+  },
+  {
+    "id": "languotas",
+    "word": "languotas",
+    "displayWord": "langúotas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "languotas",
+      "feminine": "languota"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "клетчатый",
+    "example": "Jis vilki languotus marškinius.",
+    "exampleTranslation": "Он носит клетчатую рубашку.",
+    "symbol": "👔"
+  },
+  {
+    "id": "margas",
+    "word": "margas",
+    "displayWord": "márgas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "margas",
+      "feminine": "marga"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "пёстрый",
+    "example": "Ji išsirinko margą skarelę.",
+    "exampleTranslation": "Она выбрала пёструю косынку.",
+    "symbol": "🎨"
+  },
+  {
+    "id": "vilna",
+    "word": "vilna",
+    "displayWord": "vìlna",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "vilna",
+      "genitive": "vilnos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "шерсть",
+    "example": "Šis megztinis pagamintas iš vilnos.",
+    "exampleTranslation": "Этот свитер сделан из шерсти.",
+    "symbol": "🧶"
+  },
+  {
+    "id": "vilnonis",
+    "word": "vilnonis",
+    "displayWord": "vilnõnis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "vilnonis",
+      "feminine": "vilnonė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "шерстяной",
+    "example": "Šis megztinis yra vilnonis.",
+    "exampleTranslation": "Этот свитер шерстяной.",
+    "symbol": "🧶"
+  },
+  {
+    "id": "medvilnė",
+    "word": "medvilnė",
+    "displayWord": "mẽdvilnė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "medvilnė",
+      "genitive": "medvilnės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "хлопок",
+    "example": "Šie marškinėliai yra iš medvilnės.",
+    "exampleTranslation": "Эта футболка из хлопка.",
+    "symbol": "👕"
+  },
+  {
+    "id": "medvilninis",
+    "word": "medvilninis",
+    "displayWord": "medvilnìnis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "medvilninis",
+      "feminine": "medvilninė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "хлопчатобумажный",
+    "example": "Šie marškinėliai yra medvilniniai.",
+    "exampleTranslation": "Эта футболка хлопчатобумажная.",
+    "symbol": "👕"
+  },
+  {
+    "id": "šilkas",
+    "word": "šilkas",
+    "displayWord": "šil̃kas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šilkas",
+      "genitive": "šilko",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "шёлк",
+    "example": "Ši skarelė yra iš šilko.",
+    "exampleTranslation": "Эта косынка из шёлка.",
+    "symbol": "🧣"
+  },
+  {
+    "id": "šilkinis",
+    "word": "šilkinis",
+    "displayWord": "šilkìnis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "šilkinis",
+      "feminine": "šilkinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "шёлковый",
+    "example": "Ji ryši šilkinę skarelę.",
+    "exampleTranslation": "Она носит шёлковую косынку.",
+    "symbol": "🧣"
+  },
+  {
+    "id": "oda",
+    "word": "oda",
+    "displayWord": "óda",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "oda",
+      "genitive": "odos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "кожа",
+    "example": "Šie batai pagaminti iš odos.",
+    "exampleTranslation": "Эти ботинки сделаны из кожи.",
+    "symbol": "👞"
+  },
+  {
+    "id": "odinis",
+    "word": "odinis",
+    "displayWord": "ódinis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "odinis",
+      "feminine": "odinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "кожаный",
+    "example": "Jis nešioja odinį diržą.",
+    "exampleTranslation": "Он носит кожаный ремень.",
+    "symbol": "👞"
+  },
+  {
+    "id": "sintetika",
+    "word": "sintetika",
+    "displayWord": "sintètika",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "sintetika",
+      "genitive": "sintetikos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "синтетика",
+    "example": "Šis audinys yra sintetika.",
+    "exampleTranslation": "Эта ткань — синтетика.",
+    "symbol": "🧵"
+  },
+  {
+    "id": "sintetinis",
+    "word": "sintetinis",
+    "displayWord": "sintètinis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "sintetinis",
+      "feminine": "sintetinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "синтетический",
+    "example": "Šis audinys yra sintetinis.",
+    "exampleTranslation": "Эта ткань синтетическая.",
+    "symbol": "🧵"
+  },
+  {
+    "id": "kailis",
+    "word": "kailis",
+    "displayWord": "káilis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "kailis",
+      "genitive": "kailio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "мех",
+    "example": "Šio gyvūno kailis labai švelnus.",
+    "exampleTranslation": "Мех этого животного очень мягкий.",
+    "symbol": "🐑"
+  },
+  {
+    "id": "kailinis",
+    "word": "kailinis",
+    "displayWord": "káilinis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "kailinis",
+      "feminine": "kailinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "меховой",
+    "example": "Ji užsidėjo kailinę kepurę.",
+    "exampleTranslation": "Она надела меховую шапку.",
+    "symbol": "🧥"
+  },
+  {
+    "id": "sidabras",
+    "word": "sidabras",
+    "displayWord": "sidãbras",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "sidabras",
+      "genitive": "sidabro",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "серебро",
+    "example": "Šis žiedas pagamintas iš sidabro.",
+    "exampleTranslation": "Это кольцо сделано из серебра.",
+    "symbol": "💍"
+  },
+  {
+    "id": "sidabrinis",
+    "word": "sidabrinis",
+    "displayWord": "sidabrìnis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "sidabrinis",
+      "feminine": "sidabrinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "серебряный",
+    "example": "Šis žiedas yra sidabrinis.",
+    "exampleTranslation": "Это кольцо серебряное.",
+    "symbol": "💍"
+  },
+  {
+    "id": "auksas",
+    "word": "auksas",
+    "displayWord": "áuksas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "auksas",
+      "genitive": "aukso",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "золото",
+    "example": "Auksas yra brangus metalas.",
+    "exampleTranslation": "Золото — дорогой металл.",
+    "symbol": "🥇"
+  },
+  {
+    "id": "auksinis",
+    "word": "auksinis",
+    "displayWord": "auksìnis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "auksinis",
+      "feminine": "auksinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "золотой",
+    "example": "Ji nešioja auksinį žiedą.",
+    "exampleTranslation": "Она носит золотое кольцо.",
+    "symbol": "💍"
+  },
+  {
+    "id": "gintaras",
+    "word": "gintaras",
+    "displayWord": "giñtaras",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "gintaras",
+      "genitive": "gintaro",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "янтарь",
+    "example": "Prie jūros radau gintaro gabalėlį.",
+    "exampleTranslation": "У моря я нашёл кусочек янтаря.",
+    "symbol": "🟠"
+  },
+  {
+    "id": "gintarinis",
+    "word": "gintarinis",
+    "displayWord": "gintarìnis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "gintarinis",
+      "feminine": "gintarinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "янтарный",
+    "example": "Močiutė turi gintarinius karolius.",
+    "exampleTranslation": "У бабушки есть янтарные бусы.",
+    "symbol": "📿"
+  },
+  {
+    "id": "natūralus",
+    "word": "natūralus",
+    "displayWord": "natūralùs",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "natūralus",
+      "feminine": "natūrali"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "натуральный",
+    "example": "Šis audinys yra natūralus.",
+    "exampleTranslation": "Эта ткань натуральная.",
+    "symbol": "🌿"
+  },
+  {
+    "id": "dirbtinis",
+    "word": "dirbtinis",
+    "displayWord": "dirbtìnis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "dirbtinis",
+      "feminine": "dirbtinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "искусственный",
+    "example": "Šis kailis yra dirbtinis.",
+    "exampleTranslation": "Этот мех искусственный.",
+    "symbol": "🧵"
+  },
+  {
+    "id": "šiurkštus",
+    "word": "šiurkštus",
+    "displayWord": "šiurkštùs",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "šiurkštus",
+      "feminine": "šiurkšti"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "грубый, шероховатый",
+    "example": "Šis audinys labai šiurkštus.",
+    "exampleTranslation": "Эта ткань очень грубая.",
+    "symbol": "🧵"
+  },
+  {
+    "id": "apsigyventi",
+    "word": "apsigyventi",
+    "displayWord": "apsigyvénti, apsigyvẽna, apsigyvẽno",
+    "partOfSpeech": "verb",
+    "forms": {
+      "infinitive": "apsigyventi",
+      "present3": "apsigyvena",
+      "past3": "apsigyveno"
+    },
+    "grammarNote": "Инфинитив; 3-е лицо настоящего времени; 3-е лицо прошедшего однократного времени. Возвратный глагол.",
+    "translation": "поселиться",
+    "example": "Jie nusprendė apsigyventi Vilniuje.",
+    "exampleTranslation": "Они решили поселиться в Вильнюсе.",
+    "symbol": "🏠"
+  },
+  {
+    "id": "nakvoti",
+    "word": "nakvoti",
+    "displayWord": "nakvóti, nakvója, nakvójo",
+    "partOfSpeech": "verb",
+    "forms": {
+      "infinitive": "nakvoti",
+      "present3": "nakvoja",
+      "past3": "nakvojo"
+    },
+    "grammarNote": "Инфинитив; 3-е лицо настоящего времени; 3-е лицо прошедшего однократного времени.",
+    "translation": "ночевать",
+    "example": "Šiąnakt nakvosime viešbutyje.",
+    "exampleTranslation": "Сегодня ночью мы будем ночевать в гостинице.",
+    "symbol": "🌙"
+  },
+  {
+    "id": "garažas",
+    "word": "garažas",
+    "displayWord": "garãžas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "garažas",
+      "genitive": "garažo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "гараж",
+    "example": "Automobilis stovi garaže.",
+    "exampleTranslation": "Машина стоит в гараже.",
+    "symbol": "🚗"
+  },
+  {
+    "id": "laiptinė",
+    "word": "laiptinė",
+    "displayWord": "láiptinė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "laiptinė",
+      "genitive": "laiptinės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "подъезд",
+    "example": "Mūsų laiptinė visada švari.",
+    "exampleTranslation": "В нашем подъезде всегда чисто.",
+    "symbol": "🏢"
+  },
+  {
+    "id": "liftas",
+    "word": "liftas",
+    "displayWord": "lìftas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "liftas",
+      "genitive": "lifto",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "лифт",
+    "example": "Šiame name yra liftas.",
+    "exampleTranslation": "В этом доме есть лифт.",
+    "symbol": "🛗"
+  },
+  {
+    "id": "šildymas",
+    "word": "šildymas",
+    "displayWord": "šìldymas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šildymas",
+      "genitive": "šildymo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "отопление",
+    "example": "Žiemą už šildymą mokame daugiau.",
+    "exampleTranslation": "Зимой мы платим за отопление больше.",
+    "symbol": "♨️"
+  },
+  {
+    "id": "elektra",
+    "word": "elektra",
+    "displayWord": "elektrà",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "elektra",
+      "genitive": "elektros",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "электричество",
+    "example": "Šiandien namuose nėra elektros.",
+    "exampleTranslation": "Сегодня дома нет электричества.",
+    "symbol": "⚡"
+  },
+  {
+    "id": "dujos",
+    "word": "dujos",
+    "displayWord": "dùjos",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "dujos",
+      "genitive": "dujų",
+      "gender": "f",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; женский род. В указанном значении употребляется множественное число.",
+    "translation": "газ",
+    "example": "Maistą gaminame naudodami dujas.",
+    "exampleTranslation": "Мы готовим еду, используя газ.",
+    "symbol": "🔥"
+  },
+  {
+    "id": "lauke",
+    "word": "lauke",
+    "displayWord": "laukè",
+    "partOfSpeech": "adverb",
+    "forms": {},
+    "grammarNote": "Наречие места; в данном употреблении не изменяется. Совпадает с местным падежом единственного числа существительного laukas.",
+    "translation": "снаружи, на улице",
+    "example": "Vaikai žaidžia lauke.",
+    "exampleTranslation": "Дети играют на улице.",
+    "symbol": "🏡"
+  },
+  {
+    "id": "siena",
+    "word": "siena",
+    "displayWord": "síena",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "siena",
+      "genitive": "sienos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "стена",
+    "example": "Ant sienos kabo paveikslas.",
+    "exampleTranslation": "На стене висит картина.",
+    "symbol": "🧱"
+  },
+  {
+    "id": "lubos",
+    "word": "lubos",
+    "displayWord": "lùbos",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "lubos",
+      "genitive": "lubų",
+      "gender": "f",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; женский род. В указанном значении употребляется множественное число.",
+    "translation": "потолок",
+    "example": "Šiame kambaryje aukštos lubos.",
+    "exampleTranslation": "В этой комнате высокие потолки.",
+    "symbol": "🏠"
+  },
+  {
+    "id": "grindys",
+    "word": "grindys",
+    "displayWord": "griñdys",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "grindys",
+      "genitive": "grindų",
+      "gender": "f",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; женский род. В указанном значении употребляется множественное число.",
+    "translation": "пол",
+    "example": "Virtuvės grindys jau švarios.",
+    "exampleTranslation": "Пол на кухне уже чистый.",
+    "symbol": "🧹"
+  },
+  {
+    "id": "palangė",
+    "word": "palangė",
+    "displayWord": "palángė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "palangė",
+      "genitive": "palangės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "подоконник",
+    "example": "Ant palangės stovi gėlė.",
+    "exampleTranslation": "На подоконнике стоит цветок.",
+    "symbol": "🪴"
+  },
+  {
+    "id": "kaminas",
+    "word": "kaminas",
+    "displayWord": "kãminas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "kaminas",
+      "genitive": "kamino",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "дымоход",
+    "example": "Iš kamino kyla dūmai.",
+    "exampleTranslation": "Из дымохода идёт дым.",
+    "symbol": "🏠"
+  },
+  {
+    "id": "stogas",
+    "word": "stogas",
+    "displayWord": "stógas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "stogas",
+      "genitive": "stogo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "крыша",
+    "example": "Namo stogas yra raudonas.",
+    "exampleTranslation": "Крыша дома красная.",
+    "symbol": "🏠"
+  },
+  {
+    "id": "palėpė",
+    "word": "palėpė",
+    "displayWord": "palė́pė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "palėpė",
+      "genitive": "palėpės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "чердак",
+    "example": "Senus daiktus laikome palėpėje.",
+    "exampleTranslation": "Старые вещи мы храним на чердаке.",
+    "symbol": "🏠"
+  },
+  {
+    "id": "miegamasis",
+    "word": "miegamasis",
+    "displayWord": "miegamàsis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "miegamasis",
+      "genitive": "miegamojo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род. Субстантивированное прилагательное; склоняется как определённая форма прилагательного.",
+    "translation": "спальня",
+    "example": "Mūsų miegamasis yra antrame aukšte.",
+    "exampleTranslation": "Наша спальня на втором этаже.",
+    "symbol": "🛏️"
+  },
+  {
+    "id": "tualetas",
+    "word": "tualetas",
+    "displayWord": "tualètas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "tualetas",
+      "genitive": "tualeto",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "туалет",
+    "example": "Kur čia yra tualetas?",
+    "exampleTranslation": "Где здесь туалет?",
+    "symbol": "🚽"
+  },
+  {
+    "id": "balkonas",
+    "word": "balkonas",
+    "displayWord": "balkònas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "balkonas",
+      "genitive": "balkono",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "балкон",
+    "example": "Rytais geriame kavą balkone.",
+    "exampleTranslation": "По утрам мы пьём кофе на балконе.",
+    "symbol": "🏢"
+  },
+  {
+    "id": "svetainė",
+    "word": "svetainė",
+    "displayWord": "svetaĩnė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "svetainė",
+      "genitive": "svetainės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "гостиная",
+    "example": "Svečiai sėdi svetainėje.",
+    "exampleTranslation": "Гости сидят в гостиной.",
+    "symbol": "🛋️"
+  },
+  {
+    "id": "vaikų kambarys",
+    "word": "vaikų kambarys",
+    "displayWord": "vaikų̃ kambarỹs",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "vaikų kambarys",
+      "genitive": "vaikų kambario",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род. Словосочетание; род и число указаны по главному слову.",
+    "translation": "детская комната",
+    "example": "Vaikų kambarys yra šalia virtuvės.",
+    "exampleTranslation": "Детская комната находится рядом с кухней.",
+    "symbol": "🧸"
+  },
+  {
+    "id": "prieškambaris",
+    "word": "prieškambaris",
+    "displayWord": "príeškambaris",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "prieškambaris",
+      "genitive": "prieškambario",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "прихожая",
+    "example": "Batus paliekame prieškambaryje.",
+    "exampleTranslation": "Обувь мы оставляем в прихожей.",
+    "symbol": "🚪"
+  },
+  {
+    "id": "rūsys",
+    "word": "rūsys",
+    "displayWord": "rūsỹs",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "rūsys",
+      "genitive": "rūsio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "подвал",
+    "example": "Daržoves laikome rūsyje.",
+    "exampleTranslation": "Овощи мы храним в подвале.",
+    "symbol": "🏠"
+  },
+  {
+    "id": "laiptai",
+    "word": "laiptai",
+    "displayWord": "láiptai",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "laiptai",
+      "genitive": "laiptų",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род. В указанном значении употребляется множественное число.",
+    "translation": "лестница",
+    "example": "Į antrą aukštą veda laiptai.",
+    "exampleTranslation": "На второй этаж ведёт лестница.",
+    "symbol": "🪜"
+  },
+  {
+    "id": "pagalvė",
+    "word": "pagalvė",
+    "displayWord": "pagálvė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "pagalvė",
+      "genitive": "pagalvės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "подушка",
+    "example": "Ant lovos guli minkšta pagalvė.",
+    "exampleTranslation": "На кровати лежит мягкая подушка.",
+    "symbol": "🛏️"
+  },
+  {
+    "id": "antklodė",
+    "word": "antklodė",
+    "displayWord": "añtklodė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "antklodė",
+      "genitive": "antklodės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "одеяло",
+    "example": "Ši antklodė labai šilta.",
+    "exampleTranslation": "Это одеяло очень тёплое.",
+    "symbol": "🛏️"
+  },
+  {
+    "id": "paklodė",
+    "word": "paklodė",
+    "displayWord": "paklõdė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "paklodė",
+      "genitive": "paklodės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "простыня",
+    "example": "Ant lovos paklojau švarią paklodę.",
+    "exampleTranslation": "Я постелил на кровать чистую простыню.",
+    "symbol": "🛏️"
+  },
+  {
+    "id": "dušas",
+    "word": "dušas",
+    "displayWord": "dùšas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "dušas",
+      "genitive": "dušo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "душ",
+    "example": "Ryte prausiuosi po dušu.",
+    "exampleTranslation": "Утром я моюсь под душем.",
+    "symbol": "🚿"
+  },
+  {
+    "id": "rankšluostis",
+    "word": "rankšluostis",
+    "displayWord": "rañkšluostis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "rankšluostis",
+      "genitive": "rankšluosčio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "полотенце",
+    "example": "Vonioje kabo švarus rankšluostis.",
+    "exampleTranslation": "В ванной висит чистое полотенце.",
+    "symbol": "🛁"
+  },
+  {
+    "id": "muilas",
+    "word": "muilas",
+    "displayWord": "muĩlas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "muilas",
+      "genitive": "muilo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "мыло",
+    "example": "Rankas plaunu su muilu.",
+    "exampleTranslation": "Я мою руки с мылом.",
+    "symbol": "🧼"
+  },
+  {
+    "id": "dantų pasta",
+    "word": "dantų pasta",
+    "displayWord": "dantų̃ pastà",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "dantų pasta",
+      "genitive": "dantų pastos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род. Словосочетание; род и число указаны по главному слову.",
+    "translation": "зубная паста",
+    "example": "Pasibaigė dantų pasta.",
+    "exampleTranslation": "Закончилась зубная паста.",
+    "symbol": "🪥"
+  },
+  {
+    "id": "dantų šepetėlis",
+    "word": "dantų šepetėlis",
+    "displayWord": "dantų̃ šepetė̃lis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "dantų šepetėlis",
+      "genitive": "dantų šepetėlio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род. Словосочетание; род и число указаны по главному слову.",
+    "translation": "зубная щётка",
+    "example": "Man reikia naujo dantų šepetėlio.",
+    "exampleTranslation": "Мне нужна новая зубная щётка.",
+    "symbol": "🪥"
+  },
+  {
+    "id": "šviestuvas",
+    "word": "šviestuvas",
+    "displayWord": "šviestùvas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šviestuvas",
+      "genitive": "šviestuvo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "светильник",
+    "example": "Virš stalo kabo šviestuvas.",
+    "exampleTranslation": "Над столом висит светильник.",
+    "symbol": "💡"
+  },
+  {
+    "id": "užuolaidos",
+    "word": "užuolaidos",
+    "displayWord": "užúolaidos",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "užuolaidos",
+      "genitive": "užuolaidų",
+      "gender": "f",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; женский род.",
+    "translation": "шторы",
+    "example": "Vakare užtraukiame užuolaidas.",
+    "exampleTranslation": "Вечером мы задёргиваем шторы.",
+    "symbol": "🪟"
+  },
+  {
+    "id": "sofa",
+    "word": "sofa",
+    "displayWord": "sofà",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "sofa",
+      "genitive": "sofos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "диван",
+    "example": "Svetainėje stovi patogi sofa.",
+    "exampleTranslation": "В гостиной стоит удобный диван.",
+    "symbol": "🛋️"
+  },
+  {
+    "id": "staliukas",
+    "word": "staliukas",
+    "displayWord": "staliùkas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "staliukas",
+      "genitive": "staliuko",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "столик",
+    "example": "Prie sofos stovi mažas staliukas.",
+    "exampleTranslation": "У дивана стоит маленький столик.",
+    "symbol": "🛋️"
+  },
+  {
+    "id": "kilimas",
+    "word": "kilimas",
+    "displayWord": "kìlimas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "kilimas",
+      "genitive": "kilimo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "ковёр",
+    "example": "Ant grindų guli minkštas kilimas.",
+    "exampleTranslation": "На полу лежит мягкий ковёр.",
+    "symbol": "🏠"
+  },
+  {
+    "id": "fotelis",
+    "word": "fotelis",
+    "displayWord": "fòtelis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "fotelis",
+      "genitive": "fotelio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "кресло",
+    "example": "Senelis sėdi fotelyje.",
+    "exampleTranslation": "Дедушка сидит в кресле.",
+    "symbol": "🛋️"
+  },
+  {
+    "id": "paveikslas",
+    "word": "paveikslas",
+    "displayWord": "pavéikslas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "paveikslas",
+      "genitive": "paveikslo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "картина",
+    "example": "Šis paveikslas kabo virš sofos.",
+    "exampleTranslation": "Эта картина висит над диваном.",
+    "symbol": "🖼️"
+  },
+  {
+    "id": "šaldytuvas",
+    "word": "šaldytuvas",
+    "displayWord": "šaldytùvas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šaldytuvas",
+      "genitive": "šaldytuvo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "холодильник",
+    "example": "Pienas yra šaldytuve.",
+    "exampleTranslation": "Молоко в холодильнике.",
+    "symbol": "🧊"
+  },
+  {
+    "id": "kriauklė",
+    "word": "kriauklė",
+    "displayWord": "kriauklė̃",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "kriauklė",
+      "genitive": "kriauklės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "раковина",
+    "example": "Nešvarūs indai yra kriauklėje.",
+    "exampleTranslation": "Грязная посуда в раковине.",
+    "symbol": "🚰"
+  },
+  {
+    "id": "spintelė",
+    "word": "spintelė",
+    "displayWord": "spintẽlė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "spintelė",
+      "genitive": "spintelės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "шкафчик, тумбочка",
+    "example": "Puodeliai sudėti į spintelę.",
+    "exampleTranslation": "Чашки убраны в шкафчик.",
+    "symbol": "🗄️"
+  },
+  {
+    "id": "lentyna",
+    "word": "lentyna",
+    "displayWord": "lentýna",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "lentyna",
+      "genitive": "lentynos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "полка",
+    "example": "Knygos stovi lentynoje.",
+    "exampleTranslation": "Книги стоят на полке.",
+    "symbol": "📚"
+  },
+  {
+    "id": "viryklė",
+    "word": "viryklė",
+    "displayWord": "virỹklė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "viryklė",
+      "genitive": "viryklės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "плита",
+    "example": "Virtuvėje yra elektrinė viryklė.",
+    "exampleTranslation": "На кухне есть электрическая плита.",
+    "symbol": "🍳"
+  },
+  {
+    "id": "orkaitė",
+    "word": "orkaitė",
+    "displayWord": "órkaitė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "orkaitė",
+      "genitive": "orkaitės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "духовка",
+    "example": "Pyragas kepa orkaitėje.",
+    "exampleTranslation": "Пирог печётся в духовке.",
+    "symbol": "🥧"
+  },
+  {
+    "id": "kilimėlis",
+    "word": "kilimėlis",
+    "displayWord": "kilimė̃lis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "kilimėlis",
+      "genitive": "kilimėlio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "коврик",
+    "example": "Prie durų padėtas kilimėlis.",
+    "exampleTranslation": "У двери лежит коврик.",
+    "symbol": "🚪"
+  },
+  {
+    "id": "veidrodis",
+    "word": "veidrodis",
+    "displayWord": "véidrodis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "veidrodis",
+      "genitive": "veidrodžio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "зеркало",
+    "example": "Prieškambaryje kabo veidrodis.",
+    "exampleTranslation": "В прихожей висит зеркало.",
+    "symbol": "🪞"
+  },
+  {
+    "id": "kabykla",
+    "word": "kabykla",
+    "displayWord": "kabyklà",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "kabykla",
+      "genitive": "kabyklos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "вешалка",
+    "example": "Paltas kabo ant kabyklos.",
+    "exampleTranslation": "Пальто висит на вешалке.",
+    "symbol": "🧥"
+  },
+  {
+    "id": "šiukšlės",
+    "word": "šiukšlės",
+    "displayWord": "šiùkšlės",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šiukšlės",
+      "genitive": "šiukšlių",
+      "gender": "f",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; женский род. В указанном значении употребляется множественное число.",
+    "translation": "мусор",
+    "example": "Šiukšles reikia išnešti kasdien.",
+    "exampleTranslation": "Мусор нужно выносить каждый день.",
+    "symbol": "🗑️"
+  },
+  {
+    "id": "šiukšlių dėžė",
+    "word": "šiukšlių dėžė",
+    "displayWord": "šiùkšlių dėžė̃",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šiukšlių dėžė",
+      "genitive": "šiukšlių dėžės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род. Словосочетание; род и число указаны по главному слову.",
+    "translation": "мусорное ведро",
+    "example": "Po stalu stovi šiukšlių dėžė.",
+    "exampleTranslation": "Под столом стоит мусорное ведро.",
+    "symbol": "🗑️"
+  },
+  {
+    "id": "konteineris",
+    "word": "konteineris",
+    "displayWord": "kontéineris",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "konteineris",
+      "genitive": "konteinerio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "контейнер",
+    "example": "Prie namo stovi atliekų konteineris.",
+    "exampleTranslation": "У дома стоит контейнер для отходов.",
+    "symbol": "♻️"
+  },
+  {
+    "id": "rūšiuoti",
+    "word": "rūšiuoti",
+    "displayWord": "rūšiúoti, rūšiúoja, rūšiãvo",
+    "partOfSpeech": "verb",
+    "forms": {
+      "infinitive": "rūšiuoti",
+      "present3": "rūšiuoja",
+      "past3": "rūšiavo"
+    },
+    "grammarNote": "Инфинитив; 3-е лицо настоящего времени; 3-е лицо прошедшего однократного времени.",
+    "translation": "сортировать",
+    "example": "Namuose rūšiuojame atliekas.",
+    "exampleTranslation": "Дома мы сортируем отходы.",
+    "symbol": "♻️"
+  },
+  {
+    "id": "indaplovė",
+    "word": "indaplovė",
+    "displayWord": "indãplovė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "indaplovė",
+      "genitive": "indaplovės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "посудомоечная машина",
+    "example": "Po vakarienės įjungiau indaplovę.",
+    "exampleTranslation": "После ужина я включил посудомоечную машину.",
+    "symbol": "🍽️"
+  },
+  {
+    "id": "skalbyklė",
+    "word": "skalbyklė",
+    "displayWord": "skalbỹklė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "skalbyklė",
+      "genitive": "skalbyklės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "стиральная машина",
+    "example": "Drabužius sudėjau į skalbyklę.",
+    "exampleTranslation": "Я положил одежду в стиральную машину.",
+    "symbol": "🧺"
+  },
+  {
+    "id": "oro kondicionierius",
+    "word": "oro kondicionierius",
+    "displayWord": "óro kondicioniẽrius",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "oro kondicionierius",
+      "genitive": "oro kondicionieriaus",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род. Словосочетание; род и число указаны по главному слову.",
+    "translation": "кондиционер",
+    "example": "Vasarą naudojame oro kondicionierių.",
+    "exampleTranslation": "Летом мы пользуемся кондиционером.",
+    "symbol": "❄️"
+  },
+  {
+    "id": "ventiliatorius",
+    "word": "ventiliatorius",
+    "displayWord": "ventiliãtorius",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "ventiliatorius",
+      "genitive": "ventiliatoriaus",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "вентилятор",
+    "example": "Ant stalo stovi ventiliatorius.",
+    "exampleTranslation": "На столе стоит вентилятор.",
+    "symbol": "🌬️"
+  },
+  {
+    "id": "šildytuvas",
+    "word": "šildytuvas",
+    "displayWord": "šildytùvas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šildytuvas",
+      "genitive": "šildytuvo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "обогреватель",
+    "example": "Kai šalta, įjungiame šildytuvą.",
+    "exampleTranslation": "Когда холодно, мы включаем обогреватель.",
+    "symbol": "♨️"
+  },
+  {
+    "id": "dulkių siurblys",
+    "word": "dulkių siurblys",
+    "displayWord": "dùlkių siurblỹs",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "dulkių siurblys",
+      "genitive": "dulkių siurblio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род. Словосочетание; род и число указаны по главному слову.",
+    "translation": "пылесос",
+    "example": "Šis dulkių siurblys veikia tyliai.",
+    "exampleTranslation": "Этот пылесос работает тихо.",
+    "symbol": "🧹"
+  },
+  {
+    "id": "siurbti",
+    "word": "siurbti",
+    "displayWord": "siur̃bti, siur̃bia, siur̃bė",
+    "partOfSpeech": "verb",
+    "forms": {
+      "infinitive": "siurbti",
+      "present3": "siurbia",
+      "past3": "siurbė"
+    },
+    "grammarNote": "Инфинитив; 3-е лицо настоящего времени; 3-е лицо прошедшего однократного времени. Здесь: чистить пылесосом; также означает «всасывать, втягивать».",
+    "translation": "пылесосить",
+    "example": "Šeštadieniais siurbiu kilimus.",
+    "exampleTranslation": "По субботам я пылесошу ковры.",
+    "symbol": "🧹"
+  },
+  {
+    "id": "šepetys",
+    "word": "šepetys",
+    "displayWord": "šepetỹs",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šepetys",
+      "genitive": "šepečio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "щётка",
+    "example": "Batus valau šepečiu.",
+    "exampleTranslation": "Я чищу обувь щёткой.",
+    "symbol": "🪥"
+  },
+  {
+    "id": "šluota",
+    "word": "šluota",
+    "displayWord": "šlúota",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šluota",
+      "genitive": "šluotos",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "метла",
+    "example": "Grindis šluoju šluota.",
+    "exampleTranslation": "Я подметаю пол метлой.",
+    "symbol": "🧹"
+  },
+  {
+    "id": "šluostė",
+    "word": "šluostė",
+    "displayWord": "šluõstė",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "šluostė",
+      "genitive": "šluostės",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "тряпка",
+    "example": "Stalą nuvaliau drėgna šluoste.",
+    "exampleTranslation": "Я вытер стол влажной тряпкой.",
+    "symbol": "🧽"
+  },
+  {
+    "id": "kibiras",
+    "word": "kibiras",
+    "displayWord": "kìbiras",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "kibiras",
+      "genitive": "kibiro",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "ведро",
+    "example": "Kibire yra šilto vandens.",
+    "exampleTranslation": "В ведре тёплая вода.",
+    "symbol": "🪣"
+  },
+  {
+    "id": "aukštis",
+    "word": "aukštis",
+    "displayWord": "aũkštis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "aukštis",
+      "genitive": "aukščio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "высота",
+    "example": "Koks šio namo aukštis?",
+    "exampleTranslation": "Какова высота этого дома?",
+    "symbol": "📏"
+  },
+  {
+    "id": "ilgis",
+    "word": "ilgis",
+    "displayWord": "il̃gis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "ilgis",
+      "genitive": "ilgio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "длина",
+    "example": "Kambario ilgis yra penki metrai.",
+    "exampleTranslation": "Длина комнаты — пять метров.",
+    "symbol": "📏"
+  },
+  {
+    "id": "plotis",
+    "word": "plotis",
+    "displayWord": "plõtis",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "plotis",
+      "genitive": "pločio",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "ширина",
+    "example": "Stalo plotis yra vienas metras.",
+    "exampleTranslation": "Ширина стола — один метр.",
+    "symbol": "📏"
+  },
+  {
+    "id": "plotas",
+    "word": "plotas",
+    "displayWord": "plótas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "plotas",
+      "genitive": "ploto",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "площадь",
+    "example": "Buto plotas yra penkiasdešimt kvadratinių metrų.",
+    "exampleTranslation": "Площадь квартиры — пятьдесят квадратных метров.",
+    "symbol": "📐"
+  },
+  {
+    "id": "kvadratiniai metrai",
+    "word": "kvadratiniai metrai",
+    "displayWord": "kvadrãtiniai mètrai",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "kvadratiniai metrai",
+      "genitive": "kvadratinių metrų",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род. Словосочетание; род и число указаны по главному слову.",
+    "translation": "квадратные метры",
+    "example": "Šio kambario plotas yra dvidešimt kvadratinių metrų.",
+    "exampleTranslation": "Площадь этой комнаты — двадцать квадратных метров.",
+    "symbol": "📐"
+  },
+  {
+    "id": "tvarkingas",
+    "word": "tvarkingas",
+    "displayWord": "tvarkìngas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "tvarkingas",
+      "feminine": "tvarkinga"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "аккуратный, опрятный",
+    "example": "Jo kambarys visada tvarkingas.",
+    "exampleTranslation": "В его комнате всегда порядок.",
+    "symbol": "🧹"
+  },
+  {
+    "id": "jaukus",
+    "word": "jaukus",
+    "displayWord": "jaukùs",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "jaukus",
+      "feminine": "jauki"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "уютный",
+    "example": "Mūsų butas mažas, bet jaukus.",
+    "exampleTranslation": "Наша квартира маленькая, но уютная.",
+    "symbol": "🏡"
+  },
+  {
+    "id": "patogus",
+    "word": "patogus",
+    "displayWord": "patogùs",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "patogus",
+      "feminine": "patogi"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "удобный",
+    "example": "Šis fotelis labai patogus.",
+    "exampleTranslation": "Это кресло очень удобное.",
+    "symbol": "🛋️"
+  },
+  {
+    "id": "triukšmingas",
+    "word": "triukšmingas",
+    "displayWord": "triukšmìngas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "triukšmingas",
+      "feminine": "triukšminga"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "шумный",
+    "example": "Šis rajonas yra triukšmingas.",
+    "exampleTranslation": "Этот район шумный.",
+    "symbol": "📢"
+  },
+  {
+    "id": "atskiras",
+    "word": "atskiras",
+    "displayWord": "ãtskiras",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "atskiras",
+      "feminine": "atskira"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "отдельный",
+    "example": "Vaikui reikia atskiro kambario.",
+    "exampleTranslation": "Ребёнку нужна отдельная комната.",
+    "symbol": "🚪"
+  },
+  {
+    "id": "bendras",
+    "word": "bendras",
+    "displayWord": "beñdras",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "bendras",
+      "feminine": "bendra"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "общий",
+    "example": "Šis kiemas yra bendras.",
+    "exampleTranslation": "Этот двор общий.",
+    "symbol": "🏘️"
+  },
+  {
+    "id": "tvankus",
+    "word": "tvankus",
+    "displayWord": "tvankùs",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "tvankus",
+      "feminine": "tvanki"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "душный",
+    "example": "Kambaryje oras tvankus.",
+    "exampleTranslation": "В комнате душный воздух.",
+    "symbol": "🥵"
+  },
+  {
+    "id": "minkštas",
+    "word": "minkštas",
+    "displayWord": "mìnkštas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "minkštas",
+      "feminine": "minkšta"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "мягкий",
+    "example": "Šis kilimas labai minkštas.",
+    "exampleTranslation": "Этот ковёр очень мягкий.",
+    "symbol": "🧸"
+  },
+  {
+    "id": "kietas",
+    "word": "kietas",
+    "displayWord": "kíetas",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "kietas",
+      "feminine": "kieta"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "твёрдый",
+    "example": "Šis čiužinys man per kietas.",
+    "exampleTranslation": "Этот матрас для меня слишком твёрдый.",
+    "symbol": "🛏️"
+  },
+  {
+    "id": "medinis",
+    "word": "medinis",
+    "displayWord": "medìnis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "medinis",
+      "feminine": "medinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "деревянный",
+    "example": "Mūsų stalas yra medinis.",
+    "exampleTranslation": "Наш стол деревянный.",
+    "symbol": "🪵"
+  },
+  {
+    "id": "ąžuolinis",
+    "word": "ąžuolinis",
+    "displayWord": "ąžuolìnis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "ąžuolinis",
+      "feminine": "ąžuolinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "дубовый",
+    "example": "Kambaryje stovi ąžuolinis stalas.",
+    "exampleTranslation": "В комнате стоит дубовый стол.",
+    "symbol": "🌳"
+  },
+  {
+    "id": "plytinis",
+    "word": "plytinis",
+    "displayWord": "plỹtinis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "plytinis",
+      "feminine": "plytinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "кирпичный",
+    "example": "Mes gyvename plytiniame name.",
+    "exampleTranslation": "Мы живём в кирпичном доме.",
+    "symbol": "🧱"
+  },
+  {
+    "id": "blokinis",
+    "word": "blokinis",
+    "displayWord": "blòkinis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "blokinis",
+      "feminine": "blokinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "панельный",
+    "example": "Šis namas yra blokinis.",
+    "exampleTranslation": "Этот дом панельный.",
+    "symbol": "🏢"
+  },
+  {
+    "id": "stiklinis",
+    "word": "stiklinis",
+    "displayWord": "stiklìnis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "stiklinis",
+      "feminine": "stiklinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "стеклянный",
+    "example": "Ant stalo stovi stiklinis indas.",
+    "exampleTranslation": "На столе стоит стеклянный сосуд.",
+    "symbol": "🥛"
+  },
+  {
+    "id": "plastikinis",
+    "word": "plastikinis",
+    "displayWord": "plastikìnis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "plastikinis",
+      "feminine": "plastikinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "пластиковый",
+    "example": "Šis kibiras yra plastikinis.",
+    "exampleTranslation": "Это ведро пластиковое.",
+    "symbol": "🪣"
+  },
+  {
+    "id": "molinis",
+    "word": "molinis",
+    "displayWord": "molìnis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "molinis",
+      "feminine": "molinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "глиняный",
+    "example": "Gėlė auga moliniame vazone.",
+    "exampleTranslation": "Цветок растёт в глиняном горшке.",
+    "symbol": "🪴"
+  },
+  {
+    "id": "naminis",
+    "word": "naminis",
+    "displayWord": "namìnis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "naminis",
+      "feminine": "naminė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "домашний",
+    "example": "Šis pyragas yra naminis.",
+    "exampleTranslation": "Этот пирог домашний.",
+    "symbol": "🥧"
+  },
+  {
+    "id": "kambarinis",
+    "word": "kambarinis",
+    "displayWord": "kambarìnis",
+    "partOfSpeech": "adjective",
+    "forms": {
+      "masculine": "kambarinis",
+      "feminine": "kambarinė"
+    },
+    "grammarNote": "Мужской и женский род, именительный падеж единственного числа.",
+    "translation": "комнатный",
+    "example": "Ant palangės auga kambarinis augalas.",
+    "exampleTranslation": "На подоконнике растёт комнатное растение.",
+    "symbol": "🪴"
+  },
+  {
+    "id": "kiemas",
+    "word": "kiemas",
+    "displayWord": "kiẽmas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "kiemas",
+      "genitive": "kiemo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "двор",
+    "example": "Vaikai žaidžia kieme.",
+    "exampleTranslation": "Дети играют во дворе.",
+    "symbol": "🏡"
+  },
+  {
+    "id": "sodas",
+    "word": "sodas",
+    "displayWord": "sõdas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "sodas",
+      "genitive": "sodo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "сад",
+    "example": "Sode auga obelys.",
+    "exampleTranslation": "В саду растут яблони.",
+    "symbol": "🌳"
+  },
+  {
+    "id": "suolas",
+    "word": "suolas",
+    "displayWord": "súolas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "suolas",
+      "genitive": "suolo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "скамейка",
+    "example": "Parke atsisėdome ant suolo.",
+    "exampleTranslation": "В парке мы сели на скамейку.",
+    "symbol": "🪑"
+  },
+  {
+    "id": "tvora",
+    "word": "tvora",
+    "displayWord": "tvorà",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "tvora",
+      "genitive": "tvoros",
+      "gender": "f",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; женский род.",
+    "translation": "забор",
+    "example": "Aplink namą yra medinė tvora.",
+    "exampleTranslation": "Вокруг дома деревянный забор.",
+    "symbol": "🏡"
+  },
+  {
+    "id": "vartai",
+    "word": "vartai",
+    "displayWord": "var̃tai",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "vartai",
+      "genitive": "vartų",
+      "gender": "m",
+      "number": "plural"
+    },
+    "grammarNote": "Именительный и родительный падежи множественного числа; мужской род. В указанном значении употребляется множественное число.",
+    "translation": "ворота",
+    "example": "Kiemo vartai uždaryti.",
+    "exampleTranslation": "Ворота во двор закрыты.",
+    "symbol": "🚪"
+  },
+  {
+    "id": "krūmas",
+    "word": "krūmas",
+    "displayWord": "krū́mas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "krūmas",
+      "genitive": "krūmo",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "куст",
+    "example": "Prie tvoros auga krūmas.",
+    "exampleTranslation": "У забора растёт куст.",
+    "symbol": "🌿"
+  },
+  {
+    "id": "gėlynas",
+    "word": "gėlynas",
+    "displayWord": "gėlýnas",
+    "partOfSpeech": "noun",
+    "forms": {
+      "nominative": "gėlynas",
+      "genitive": "gėlyno",
+      "gender": "m",
+      "number": "singular"
+    },
+    "grammarNote": "Именительный и родительный падежи единственного числа; мужской род.",
+    "translation": "клумба",
+    "example": "Prie namo yra gražus gėlynas.",
+    "exampleTranslation": "У дома красивая клумба.",
+    "symbol": "🌷"
   }
 ]

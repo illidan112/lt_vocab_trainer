@@ -63,10 +63,20 @@ const checkCard = (word, headingSelector = '.card h1', hasTranslation = true) =>
   assert(style.whiteSpace === (values.length ? 'nowrap' : 'normal'), 'Forms or grammar note have incorrect wrapping');
   assert(forms.getBoundingClientRect().height > 0, 'Forms line has no height');
   assert(forms.getBoundingClientRect().top >= heading.getBoundingClientRect().bottom - 1, 'Forms overlap the heading');
+  const partOfSpeech = doc.querySelector('.word-part-of-speech');
+  if (word.partOfSpeech) {
+    assert(partOfSpeech?.textContent === word.partOfSpeech, 'Part of speech not displayed');
+    assert(forms.nextElementSibling === partOfSpeech, 'Part of speech must follow forms');
+    const partOfSpeechStyle = frame.contentWindow.getComputedStyle(partOfSpeech);
+    assert(partOfSpeechStyle.fontSize === style.fontSize && partOfSpeechStyle.color === style.color, 'Part of speech must use forms styling');
+    assert(partOfSpeech.getBoundingClientRect().height > 0, 'Part of speech line has no height');
+    assert(partOfSpeech.getBoundingClientRect().top >= forms.getBoundingClientRect().bottom - 1, 'Part of speech overlaps forms');
+  }
   if (hasTranslation) {
     const translation = doc.querySelector('.translation');
-    assert(forms.nextElementSibling === translation, 'Translation must follow forms');
-    assert(translation.getBoundingClientRect().top >= forms.getBoundingClientRect().bottom - 1, 'Translation overlaps forms');
+    const previousLine = partOfSpeech || forms;
+    assert(previousLine.nextElementSibling === translation, 'Translation must follow word details');
+    assert(translation.getBoundingClientRect().top >= previousLine.getBoundingClientRect().bottom - 1, 'Translation overlaps word details');
   }
 };
 (async () => {
