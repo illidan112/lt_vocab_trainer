@@ -1,11 +1,11 @@
 import { STORAGE_KEY, emptyProgress, localDay, addDays, readProgress, writeProgress, addWord, dueIds, reviewWord, moveToEnd, importProgress } from './core.js';
 
 const $ = (selector) => document.querySelector(selector);
-const APP_VERSION = '0.1.7';
+const APP_VERSION = '0.1.9';
 $('#app-version').textContent = APP_VERSION;
 const content = $('#content');
 const notice = $('#notice');
-const allowedViews = new Set(['new', 'review', 'mine']);
+const allowedViews = new Set(['new', 'review', 'mine', 'all']);
 const params = new URLSearchParams(location.search);
 const demo = params.get('demo') === '1';
 const demoOffset = Math.max(0, Math.min(60, Number(params.get('day') || 0) || 0));
@@ -14,6 +14,9 @@ const today = () => demo ? addDays(localDay(), demoOffset) : localDay();
 let words = [];
 let progress = emptyProgress();
 let view = 'new';
+let selectedWordId = null;
+let allScrollPosition = 0;
+let allSearchQuery = '';
 let queue = [];
 let revealed = false;
 let exampleVisible = false;
@@ -26,9 +29,13 @@ const due = () => dueIds(progress, today(), allowedIds());
 const symbol = word => word.image ? `<img src="${escape(word.image)}" alt="${escape(word.translation)}" width="110" height="110">` : escape(word.symbol || '📝');
 const formsLine = word => {
   const forms = Object.values(word.forms || {});
-  if (forms.length) return `<p class="word-forms muted" lang="lt">${escape(forms.join(', '))}</p>`;
-  return word.grammarNote ? `<p class="word-forms grammar-note muted">${escape(word.grammarNote)}</p>` : '';
+  const formsMarkup = forms.length
+    ? `<p class="word-forms muted" lang="lt">${escape(forms.join(', '))}</p>`
+    : word.grammarNote ? `<p class="word-forms grammar-note muted">${escape(word.grammarNote)}</p>` : '';
+  const partOfSpeechMarkup = word.partOfSpeech ? `<p class="word-forms word-part-of-speech muted" lang="en">${escape(word.partOfSpeech)}</p>` : '';
+  return formsMarkup + partOfSpeechMarkup;
 };
+const cardMarkup = word => `<article class="panel card"><div class="illustration" aria-hidden="true">${symbol(word)}</div><h1 lang="lt">${escape(word.displayWord || word.word)}</h1>${formsLine(word)}<p class="translation">${escape(word.translation)}</p><p class="example" lang="lt">${escape(word.example)}</p><p class="example-translation">${exampleVisible ? escape(word.exampleTranslation) : ' '}</p><div class="actions"><button class="secondary" data-action="translate">${exampleVisible ? 'Скрыть перевод' : 'Перевод примера'}</button><button class="secondary" data-action="speak" data-id="${escape(word.id)}">🔊 Слушать</button><button class="primary" data-action="add" data-id="${escape(word.id)}" ${progress.words[word.id] ? 'disabled' : ''}>${progress.words[word.id] ? 'Уже добавлено' : 'Изучать'}</button></div></article>`;
 
 function message(text) { notice.textContent = text; notice.hidden = false; }
 function clearMessage() { notice.hidden = true; notice.textContent = ''; }
@@ -38,6 +45,7 @@ function save(next) {
 }
 function chooseView(next) {
   view = next;
+  selectedWordId = null;
   if (view === 'review') { queue = due(); revealed = false; }
   exampleVisible = false;
   clearMessage();
@@ -51,8 +59,7 @@ function renderNew() {
   if (!words.length) { content.innerHTML = '<div class="panel empty"><h2>Словарь пуст</h2></div>'; return; }
   const position = Math.min(progress.position, words.length - 1);
   const word = words[position];
-  const added = progress.words[word.id];
-  content.innerHTML = `<p class="eyebrow">Новые слова</p><article class="panel card"><div class="illustration" aria-hidden="true">${symbol(word)}</div><h1 lang="lt">${escape(word.displayWord || word.word)}</h1>${formsLine(word)}<p class="translation">${escape(word.translation)}</p><p class="example" lang="lt">${escape(word.example)}</p><p class="example-translation">${exampleVisible ? escape(word.exampleTranslation) : ' '}</p><div class="actions"><button class="secondary" data-action="translate">${exampleVisible ? 'Скрыть перевод' : 'Перевод примера'}</button><button class="secondary" data-action="speak" data-id="${escape(word.id)}">🔊 Слушать</button><button class="primary" data-action="add" ${added ? 'disabled' : ''}>${added ? 'Уже добавлено' : 'Изучать'}</button></div></article><div class="navigation"><button data-action="previous" ${position === 0 ? 'disabled' : ''}>← Назад</button><span>${position + 1} из ${words.length}</span><button data-action="next" ${position === words.length - 1 ? 'disabled' : ''}>Далее →</button></div>`;
+  content.innerHTML = `<p class="eyebrow">Новые слова</p>${cardMarkup(word)}<div class="navigation"><button data-action="previous" ${position === 0 ? 'disabled' : ''}>← Назад</button><span>${position + 1} из ${words.length}</span><button data-action="next" ${position === words.length - 1 ? 'disabled' : ''}>Далее →</button></div>`;
 }
 function renderReview() {
   if (!queue.length) {
@@ -68,7 +75,23 @@ function renderMine() {
   const studying = entries.filter(([, item]) => item.status === 'learning').length;
   content.innerHTML = `<h1 class="section-title">Мои слова</h1><div class="stats"><div class="stat"><strong>${words.length}</strong><span>всего в словаре</span></div><div class="stat"><strong>${studying}</strong><span>изучается</span></div><div class="stat"><strong>${entries.length - studying}</strong><span>выучено</span></div><div class="stat"><strong>${due().length}</strong><span>повторить сегодня</span></div></div>${entries.length ? `<div class="word-list">${entries.map(([id, item]) => { const word = byId(id); return `<div class="word-row"><div><strong lang="lt">${escape(word.displayWord || word.word)} — ${escape(word.translation)}</strong><small>${item.status === 'learned' ? 'Выучено' : `Повторить: ${escape(item.nextReviewDate)}`} · повторений: ${item.repetitions}</small></div><div class="row-actions">${item.status === 'learned' ? `<button data-action="restore" data-id="${escape(id)}">Вернуть</button>` : ''}<button class="remove" data-action="remove" data-id="${escape(id)}">Убрать</button></div></div>`; }).join('')}</div>` : `<div class="panel empty"><h2>Здесь пока пусто</h2><p>Добавьте слова из каталога, чтобы начать изучение.</p><button class="primary" data-action="open-new">Новые слова</button></div>`}`;
 }
-function render() { updateNav(); if (view === 'new') renderNew(); else if (view === 'review') renderReview(); else renderMine(); }
+function renderAllList() {
+  const normalize = value => String(value ?? '').normalize('NFC').toLowerCase();
+  const query = normalize(allSearchQuery.trim());
+  const matches = words.filter(word => ['word', 'displayWord', 'translation'].some(field => normalize(word[field]).startsWith(query)));
+  $('#all-word-count').textContent = query ? `Найдено: ${matches.length} из ${words.length}` : `Всего в словаре: ${words.length}`;
+  $('#all-word-list').innerHTML = matches.length ? matches.map(word => `<li><button type="button" class="word-row catalog-word" data-action="open-word" data-id="${escape(word.id)}"><span class="catalog-word-main"><strong lang="lt">${escape(word.displayWord || word.word)}</strong><small lang="en">${escape(word.partOfSpeech)}</small></span><span class="catalog-translation">${escape(word.translation)}</span></button></li>`).join('') : '<li class="panel empty catalog-empty"><p>Ничего не найдено. Попробуйте другое начало слова или перевода.</p></li>';
+}
+function renderAll() {
+  const selected = selectedWordId ? byId(selectedWordId) : null;
+  if (selected) {
+    content.innerHTML = `<button type="button" class="secondary catalog-back" data-action="back-to-all">← Все слова</button>${cardMarkup(selected)}`;
+    return;
+  }
+  content.innerHTML = `<h1 class="section-title">Все слова</h1><input type="search" id="all-search" class="catalog-search" aria-label="Поиск по началу слова или перевода" aria-controls="all-word-list" placeholder="Начните вводить слово или перевод" autocomplete="off" value="${escape(allSearchQuery)}"><p class="muted" id="all-word-count" role="status"></p><ul class="word-list catalog-list" id="all-word-list"></ul>`;
+  renderAllList();
+}
+function render() { updateNav(); if (view === 'new') renderNew(); else if (view === 'review') renderReview(); else if (view === 'all') renderAll(); else renderMine(); }
 
 async function speak(word) {
   if (word.audio) {
@@ -87,10 +110,34 @@ async function speak(word) {
 }
 
 document.querySelectorAll('[data-view]').forEach(tab => tab.addEventListener('click', () => chooseView(tab.dataset.view)));
+content.addEventListener('input', event => {
+  if (event.target.id !== 'all-search') return;
+  allSearchQuery = event.target.value;
+  allScrollPosition = 0;
+  renderAllList();
+});
 content.addEventListener('click', event => {
   const button = event.target.closest('button[data-action]'); if (!button || button.disabled) return;
   const action = button.dataset.action;
   if (action === 'open-new') return chooseView('new');
+  if (action === 'open-word') {
+    if (!byId(button.dataset.id)) return;
+    allScrollPosition = window.scrollY;
+    selectedWordId = button.dataset.id;
+    exampleVisible = false;
+    clearMessage(); render(); window.scrollTo(0, 0);
+    content.querySelector('[data-action="back-to-all"]').focus({ preventScroll: true });
+    return;
+  }
+  if (action === 'back-to-all') {
+    const previousId = selectedWordId;
+    selectedWordId = null;
+    exampleVisible = false;
+    clearMessage(); render();
+    content.querySelector(`.catalog-word[data-id="${CSS.escape(previousId)}"]`)?.focus({ preventScroll: true });
+    window.scrollTo(0, allScrollPosition);
+    return;
+  }
   if (action === 'translate') { exampleVisible = !exampleVisible; return render(); }
   if (action === 'speak') return speak(byId(button.dataset.id));
   if (action === 'reveal') { revealed = true; return render(); }
@@ -99,8 +146,8 @@ content.addEventListener('click', event => {
     if (save({ ...progress, position })) { exampleVisible = false; render(); } return;
   }
   if (action === 'add') {
-    const next = addWord(progress, words[progress.position].id, today());
-    const position = Math.min(progress.position + 1, words.length - 1);
+    const next = addWord(progress, button.dataset.id, today());
+    const position = view === 'new' ? Math.min(progress.position + 1, words.length - 1) : progress.position;
     if (save({ ...next, position })) { exampleVisible = false; render(); }
     return;
   }
