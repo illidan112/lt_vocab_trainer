@@ -1,0 +1,14 @@
+[
+  { "id": "identity-family", "nameLt": "Asmens tapatybė ir šeima", "nameRu": "Личность и семья" },
+  { "id": "housing-home", "nameLt": "Būstas ir namai", "nameRu": "Жильё и дом" },
+  { "id": "nature-weather", "nameLt": "Gamta, regionas ir oras", "nameRu": "Природа, местность и погода" },
+  { "id": "daily-life", "nameLt": "Kasdienis gyvenimas", "nameRu": "Повседневная жизнь" },
+  { "id": "leisure-hobbies", "nameLt": "Laisvalaikis ir pomėgiai", "nameRu": "Свободное время и увлечения" },
+  { "id": "travel-transport", "nameLt": "Kelionės ir transportas", "nameRu": "Путешествия и транспорт" },
+  { "id": "relationships-communication", "nameLt": "Santykiai su žmonėmis", "nameRu": "Отношения и общение" },
+  { "id": "health-hygiene", "nameLt": "Sveikata ir higiena", "nameRu": "Здоровье и гигиена" },
+  { "id": "education-science", "nameLt": "Švietimas ir mokslas", "nameRu": "Образование и наука" },
+  { "id": "shopping-trade", "nameLt": "Prekyba ir apsipirkimas", "nameRu": "Покупки и торговля" },
+  { "id": "food-drinks", "nameLt": "Maistas ir gėrimai", "nameRu": "Еда и напитки" },
+  { "id": "services", "nameLt": "Paslaugos", "nameRu": "Услуги" }
+]
