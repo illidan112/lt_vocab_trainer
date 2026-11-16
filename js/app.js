@@ -1,7 +1,19 @@
-import { STORAGE_KEY, emptyProgress, localDay, addDays, readProgress, writeProgress, addWord, dueIds, reviewWord, moveToEnd, importProgress } from './core.js';
+import {
+  STORAGE_KEY,
+  emptyProgress,
+  localDay,
+  addDays,
+  readProgress,
+  writeProgress,
+  addWord,
+  dueIds,
+  reviewWord,
+  moveToEnd,
+  importProgress,
+} from './core.js';
 
 const $ = (selector) => document.querySelector(selector);
-const APP_VERSION = '0.1.9';
+const APP_VERSION = '0.1.12';
 $('#app-version').textContent = APP_VERSION;
 const content = $('#content');
 const notice = $('#notice');
@@ -9,9 +21,16 @@ const allowedViews = new Set(['new', 'review', 'mine', 'all']);
 const params = new URLSearchParams(location.search);
 const demo = params.get('demo') === '1';
 const demoOffset = Math.max(0, Math.min(60, Number(params.get('day') || 0) || 0));
-const storage = demo ? { getItem: () => sessionStorage.getItem(STORAGE_KEY + '-demo'), setItem: (_, value) => sessionStorage.setItem(STORAGE_KEY + '-demo', value) } : localStorage;
-const today = () => demo ? addDays(localDay(), demoOffset) : localDay();
+const storage = demo
+  ? {
+      getItem: () => sessionStorage.getItem(STORAGE_KEY + '-demo'),
+      setItem: (_, value) => sessionStorage.setItem(STORAGE_KEY + '-demo', value),
+    }
+  : localStorage;
+const today = () => (demo ? addDays(localDay(), demoOffset) : localDay());
 let words = [];
+let themes = [];
+let selectedThemes = new Set();
 let progress = emptyProgress();
 let view = 'new';
 let selectedWordId = null;
@@ -22,102 +41,425 @@ let revealed = false;
 let exampleVisible = false;
 let lastRemoved = null;
 let voices = [];
-const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
-const byId = id => words.find(word => word.id === id);
-const allowedIds = () => new Set(words.map(word => word.id));
+const escape = (value) =>
+  String(value ?? '').replace(
+    /[&<>"']/g,
+    (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char],
+  );
+const byId = (id) => words.find((word) => word.id === id);
+const allowedIds = () => new Set(words.map((word) => word.id));
 const due = () => dueIds(progress, today(), allowedIds());
-const symbol = word => word.image ? `<img src="${escape(word.image)}" alt="${escape(word.translation)}" width="110" height="110">` : escape(word.symbol || '📝');
-const formsLine = word => {
+const symbol = (word) =>
+  word.image
+    ? /* HTML */ `
+        <img
+          src="${escape(word.image)}"
+          alt="${escape(word.translation)}"
+          width="110"
+          height="110"
+        />
+      `
+    : escape(word.symbol || '📝');
+const formsLine = (word) => {
   const forms = Object.values(word.forms || {});
   const formsMarkup = forms.length
-    ? `<p class="word-forms muted" lang="lt">${escape(forms.join(', '))}</p>`
-    : word.grammarNote ? `<p class="word-forms grammar-note muted">${escape(word.grammarNote)}</p>` : '';
-  const partOfSpeechMarkup = word.partOfSpeech ? `<p class="word-forms word-part-of-speech muted" lang="en">${escape(word.partOfSpeech)}</p>` : '';
+    ? /* HTML */ `
+        <p class="word-forms muted" lang="lt">${escape(forms.join(', '))}</p>
+      `
+    : word.grammarNote
+      ? /* HTML */ `
+          <p class="word-forms grammar-note muted">${escape(word.grammarNote)}</p>
+        `
+      : '';
+  const partOfSpeechMarkup = word.partOfSpeech
+    ? /* HTML */ `
+        <p class="word-forms word-part-of-speech muted" lang="en">${escape(word.partOfSpeech)}</p>
+      `
+    : '';
   return formsMarkup + partOfSpeechMarkup;
 };
-const cardMarkup = word => `<article class="panel card"><div class="illustration" aria-hidden="true">${symbol(word)}</div><h1 lang="lt">${escape(word.displayWord || word.word)}</h1>${formsLine(word)}<p class="translation">${escape(word.translation)}</p><p class="example" lang="lt">${escape(word.example)}</p><p class="example-translation">${exampleVisible ? escape(word.exampleTranslation) : ' '}</p><div class="actions"><button class="secondary" data-action="translate">${exampleVisible ? 'Скрыть перевод' : 'Перевод примера'}</button><button class="secondary" data-action="speak" data-id="${escape(word.id)}">🔊 Слушать</button><button class="primary" data-action="add" data-id="${escape(word.id)}" ${progress.words[word.id] ? 'disabled' : ''}>${progress.words[word.id] ? 'Уже добавлено' : 'Изучать'}</button></div></article>`;
+const cardMarkup = (word) => /* HTML */ `
+  <article class="panel card">
+    <div class="illustration" aria-hidden="true">${symbol(word)}</div>
+    <h1 lang="lt">${escape(word.displayWord || word.word)}</h1>
+    ${formsLine(word)}
+    <p class="translation">${escape(word.translation)}</p>
+    <p class="example" lang="lt">${escape(word.example)}</p>
+    <p class="example-translation">${exampleVisible ? escape(word.exampleTranslation) : ' '}</p>
+    <div class="actions">
+      <button class="secondary" data-action="translate">
+        ${exampleVisible ? 'Скрыть перевод' : 'Перевод примера'}
+      </button>
+      <button class="secondary" data-action="speak" data-id="${escape(word.id)}">🔊 Слушать</button>
+      <button
+        class="primary"
+        data-action="add"
+        data-id="${escape(word.id)}"
+        ${progress.words[word.id] ? 'disabled' : ''}
+      >
+        ${progress.words[word.id] ? 'Уже добавлено' : 'Изучать'}
+      </button>
+    </div>
+  </article>
+`;
 
-function message(text) { notice.textContent = text; notice.hidden = false; }
-function clearMessage() { notice.hidden = true; notice.textContent = ''; }
+function message(text) {
+  notice.textContent = text;
+  notice.hidden = false;
+}
+function clearMessage() {
+  notice.hidden = true;
+  notice.textContent = '';
+}
 function save(next) {
-  try { writeProgress(storage, next); progress = next; clearMessage(); return true; }
-  catch (error) { message(error.message); return false; }
+  try {
+    writeProgress(storage, next);
+    progress = next;
+    clearMessage();
+    return true;
+  } catch (error) {
+    message(error.message);
+    return false;
+  }
 }
 function chooseView(next) {
   view = next;
   selectedWordId = null;
-  if (view === 'review') { queue = due(); revealed = false; }
+  if (view === 'review') {
+    queue = due();
+    revealed = false;
+  }
   exampleVisible = false;
   clearMessage();
   render();
 }
 function updateNav() {
   $('#due-tab').textContent = due().length;
-  document.querySelectorAll('[data-view]').forEach(tab => { tab.classList.toggle('active', tab.dataset.view === view); tab.setAttribute('aria-current', tab.dataset.view === view ? 'page' : 'false'); });
+  document.querySelectorAll('[data-view]').forEach((tab) => {
+    tab.classList.toggle('active', tab.dataset.view === view);
+    tab.setAttribute('aria-current', tab.dataset.view === view ? 'page' : 'false');
+  });
 }
 function renderNew() {
-  if (!words.length) { content.innerHTML = '<div class="panel empty"><h2>Словарь пуст</h2></div>'; return; }
+  if (!words.length) {
+    content.innerHTML = '<div class="panel empty"><h2>Словарь пуст</h2></div>';
+    return;
+  }
   const position = Math.min(progress.position, words.length - 1);
   const word = words[position];
-  content.innerHTML = `<p class="eyebrow">Новые слова</p>${cardMarkup(word)}<div class="navigation"><button data-action="previous" ${position === 0 ? 'disabled' : ''}>← Назад</button><span>${position + 1} из ${words.length}</span><button data-action="next" ${position === words.length - 1 ? 'disabled' : ''}>Далее →</button></div>`;
+  content.innerHTML = /* HTML */ `
+    <p class="eyebrow">Новые слова</p>
+    ${cardMarkup(word)}
+    <div class="navigation">
+      <button data-action="previous" ${position === 0 ? 'disabled' : ''}>← Назад</button>
+      <span>${position + 1} из ${words.length}</span>
+      <button data-action="next" ${position === words.length - 1 ? 'disabled' : ''}>Далее →</button>
+    </div>
+  `;
 }
 function renderReview() {
   if (!queue.length) {
-    content.innerHTML = `<div class="panel empty"><h2>На сегодня всё</h2><p>Сейчас нет слов для повторения. Можно посмотреть новые карточки.</p><button class="primary" data-action="open-new">Новые слова</button></div>`;
+    content.innerHTML = /* HTML */ `
+      <div class="panel empty">
+        <h2>На сегодня всё</h2>
+        <p>Сейчас нет слов для повторения. Можно посмотреть новые карточки.</p>
+        <button class="primary" data-action="open-new">Новые слова</button>
+      </div>
+    `;
     return;
   }
   const word = byId(queue[0]);
-  if (!word) { queue.shift(); renderReview(); return; }
-  content.innerHTML = `<p class="eyebrow">Повторение · осталось ${queue.length}</p><article class="panel card"><div class="illustration" aria-hidden="true">${symbol(word)}</div><p class="review-prompt">Вспомните слово по-литовски</p><p class="review-face">${escape(word.translation)}</p>${revealed ? `<div class="answer"><h2 lang="lt">${escape(word.displayWord || word.word)}</h2>${formsLine(word)}<p class="example" lang="lt">${escape(word.example)}</p><p class="example-translation">${escape(word.exampleTranslation)}</p><button class="secondary" data-action="speak" data-id="${escape(word.id)}">🔊 Слушать</button><div class="choices"><button data-action="rate" data-choice="again">Не помню · сегодня</button><button data-action="rate" data-choice="1">Трудно · 1 день</button><button data-action="rate" data-choice="3">Нормально · 3 дня</button><button data-action="rate" data-choice="7">Легко · 7 дней</button><button data-action="rate" data-choice="learned">Выучено</button></div></div>` : `<div class="actions"><button class="primary" data-action="reveal">Показать ответ</button></div>`}</article><p class="hint">Можно перейти в другой раздел и продолжить позже.</p>`;
+  if (!word) {
+    queue.shift();
+    renderReview();
+    return;
+  }
+  content.innerHTML = /* HTML */ `
+    <p class="eyebrow">Повторение · осталось ${queue.length}</p>
+    <article class="panel card">
+      <div class="illustration" aria-hidden="true">${symbol(word)}</div>
+      <p class="review-prompt">Вспомните слово по-литовски</p>
+      <p class="review-face">${escape(word.translation)}</p>
+      ${
+        revealed
+          ? /* HTML */ `
+              <div class="answer">
+                <h2 lang="lt">${escape(word.displayWord || word.word)}</h2>
+                ${formsLine(word)}
+                <p class="example" lang="lt">${escape(word.example)}</p>
+                <p class="example-translation">${escape(word.exampleTranslation)}</p>
+                <button class="secondary" data-action="speak" data-id="${escape(word.id)}">
+                  🔊 Слушать
+                </button>
+                <div class="choices">
+                  <button data-action="rate" data-choice="again">Не помню · сегодня</button>
+                  <button data-action="rate" data-choice="1">Трудно · 1 день</button>
+                  <button data-action="rate" data-choice="3">Нормально · 3 дня</button>
+                  <button data-action="rate" data-choice="7">Легко · 7 дней</button>
+                  <button data-action="rate" data-choice="learned">Выучено</button>
+                </div>
+              </div>
+            `
+          : /* HTML */ `
+              <div class="actions">
+                <button class="primary" data-action="reveal">Показать ответ</button>
+              </div>
+            `
+      }
+    </article>
+    <p class="hint">Можно перейти в другой раздел и продолжить позже.</p>
+  `;
 }
 function renderMine() {
-  const entries = Object.entries(progress.words).filter(([id]) => byId(id)).sort((a, b) => (a[1].status === b[1].status ? a[1].nextReviewDate.localeCompare(b[1].nextReviewDate) : a[1].status === 'learning' ? -1 : 1));
+  const entries = Object.entries(progress.words)
+    .filter(([id]) => byId(id))
+    .sort((a, b) =>
+      a[1].status === b[1].status
+        ? a[1].nextReviewDate.localeCompare(b[1].nextReviewDate)
+        : a[1].status === 'learning'
+          ? -1
+          : 1,
+    );
   const studying = entries.filter(([, item]) => item.status === 'learning').length;
-  content.innerHTML = `<h1 class="section-title">Мои слова</h1><div class="stats"><div class="stat"><strong>${words.length}</strong><span>всего в словаре</span></div><div class="stat"><strong>${studying}</strong><span>изучается</span></div><div class="stat"><strong>${entries.length - studying}</strong><span>выучено</span></div><div class="stat"><strong>${due().length}</strong><span>повторить сегодня</span></div></div>${entries.length ? `<div class="word-list">${entries.map(([id, item]) => { const word = byId(id); return `<div class="word-row"><div><strong lang="lt">${escape(word.displayWord || word.word)} — ${escape(word.translation)}</strong><small>${item.status === 'learned' ? 'Выучено' : `Повторить: ${escape(item.nextReviewDate)}`} · повторений: ${item.repetitions}</small></div><div class="row-actions">${item.status === 'learned' ? `<button data-action="restore" data-id="${escape(id)}">Вернуть</button>` : ''}<button class="remove" data-action="remove" data-id="${escape(id)}">Убрать</button></div></div>`; }).join('')}</div>` : `<div class="panel empty"><h2>Здесь пока пусто</h2><p>Добавьте слова из каталога, чтобы начать изучение.</p><button class="primary" data-action="open-new">Новые слова</button></div>`}`;
+  content.innerHTML = /* HTML */ `
+    <h1 class="section-title">Мои слова</h1>
+    <div class="stats">
+      <div class="stat">
+        <strong>${words.length}</strong>
+        <span>всего в словаре</span>
+      </div>
+      <div class="stat">
+        <strong>${studying}</strong>
+        <span>изучается</span>
+      </div>
+      <div class="stat">
+        <strong>${entries.length - studying}</strong>
+        <span>выучено</span>
+      </div>
+      <div class="stat">
+        <strong>${due().length}</strong>
+        <span>повторить сегодня</span>
+      </div>
+    </div>
+    ${
+      entries.length
+        ? /* HTML */ `
+            <div class="word-list">
+              ${entries
+                .map(([id, item]) => {
+                  const word = byId(id);
+                  return /* HTML */ `
+                    <div class="word-row">
+                      <div>
+                        <strong lang="lt">
+                          ${escape(word.displayWord || word.word)} — ${escape(word.translation)}
+                        </strong>
+                        <small>
+                          ${item.status === 'learned' ? 'Выучено' : `Повторить: ${escape(item.nextReviewDate)}`}
+                          · повторений: ${item.repetitions}
+                        </small>
+                      </div>
+                      <div class="row-actions">
+                        ${
+                          item.status === 'learned'
+                            ? /* HTML */ `
+                                <button data-action="restore" data-id="${escape(id)}">
+                                  Вернуть
+                                </button>
+                              `
+                            : ''
+                        }
+                        <button class="remove" data-action="remove" data-id="${escape(id)}">
+                          Убрать
+                        </button>
+                      </div>
+                    </div>
+                  `;
+                })
+                .join('')}
+            </div>
+          `
+        : /* HTML */ `
+            <div class="panel empty">
+              <h2>Здесь пока пусто</h2>
+              <p>Добавьте слова из каталога, чтобы начать изучение.</p>
+              <button class="primary" data-action="open-new">Новые слова</button>
+            </div>
+          `
+    }
+  `;
 }
 function renderAllList() {
-  const normalize = value => String(value ?? '').normalize('NFC').toLowerCase();
+  const normalize = (value) =>
+    String(value ?? '')
+      .normalize('NFC')
+      .toLowerCase();
   const query = normalize(allSearchQuery.trim());
-  const matches = words.filter(word => ['word', 'displayWord', 'translation'].some(field => normalize(word[field]).startsWith(query)));
-  $('#all-word-count').textContent = query ? `Найдено: ${matches.length} из ${words.length}` : `Всего в словаре: ${words.length}`;
-  $('#all-word-list').innerHTML = matches.length ? matches.map(word => `<li><button type="button" class="word-row catalog-word" data-action="open-word" data-id="${escape(word.id)}"><span class="catalog-word-main"><strong lang="lt">${escape(word.displayWord || word.word)}</strong><small lang="en">${escape(word.partOfSpeech)}</small></span><span class="catalog-translation">${escape(word.translation)}</span></button></li>`).join('') : '<li class="panel empty catalog-empty"><p>Ничего не найдено. Попробуйте другое начало слова или перевода.</p></li>';
+  const matches = words.filter(
+    (word) =>
+      selectedThemes.has(word.theme) &&
+      ['word', 'displayWord', 'translation'].some((field) =>
+        normalize(word[field]).startsWith(query),
+      ),
+  );
+  $('#all-word-count').textContent =
+    query || selectedThemes.size !== themes.length
+      ? `Найдено: ${matches.length} из ${words.length}`
+      : `Всего в словаре: ${words.length}`;
+  $('#all-word-list').innerHTML = matches.length
+    ? matches
+        .map(
+          (word) => /* HTML */ `
+            <li>
+              <button
+                type="button"
+                class="word-row catalog-word"
+                data-action="open-word"
+                data-id="${escape(word.id)}"
+              >
+                <span class="catalog-word-main">
+                  <strong lang="lt">${escape(word.displayWord || word.word)}</strong>
+                  <small lang="en">${escape(word.partOfSpeech)}</small>
+                </span>
+                <span class="catalog-translation">${escape(word.translation)}</span>
+              </button>
+            </li>
+          `,
+        )
+        .join('')
+    : /* HTML */ `
+        <li class="panel empty catalog-empty">
+          <p>
+            ${selectedThemes.size ? 'Ничего не найдено. Измените запрос или выберите другие темы.' : 'Выберите хотя бы одну тему, чтобы увидеть слова.'}
+          </p>
+        </li>
+      `;
 }
 function renderAll() {
   const selected = selectedWordId ? byId(selectedWordId) : null;
   if (selected) {
-    content.innerHTML = `<button type="button" class="secondary catalog-back" data-action="back-to-all">← Все слова</button>${cardMarkup(selected)}`;
+    content.innerHTML = /* HTML */ `
+      <button type="button" class="secondary catalog-back" data-action="back-to-all">
+        ← Все слова
+      </button>
+      ${cardMarkup(selected)}
+    `;
     return;
   }
-  content.innerHTML = `<h1 class="section-title">Все слова</h1><input type="search" id="all-search" class="catalog-search" aria-label="Поиск по началу слова или перевода" aria-controls="all-word-list" placeholder="Начните вводить слово или перевод" autocomplete="off" value="${escape(allSearchQuery)}"><p class="muted" id="all-word-count" role="status"></p><ul class="word-list catalog-list" id="all-word-list"></ul>`;
+  content.innerHTML = /* HTML */ `
+    <h1 class="section-title">Все слова</h1>
+    <input
+      type="search"
+      id="all-search"
+      class="catalog-search"
+      aria-label="Поиск по началу слова или перевода"
+      aria-controls="all-word-list"
+      placeholder="Начните вводить слово или перевод"
+      autocomplete="off"
+      value="${escape(allSearchQuery)}"
+    />
+    <details class="catalog-theme-filter">
+      <summary>Темы</summary>
+      <fieldset class="catalog-themes" aria-label="Темы слов">
+        <label class="catalog-theme catalog-theme-all">
+          <input type="checkbox" id="all-themes" aria-controls="all-word-list" />
+          Все темы
+        </label>
+        <div class="catalog-theme-options">
+          ${themes
+            .map(
+              (theme) => /* HTML */ `
+                <label class="catalog-theme">
+                  <input
+                    type="checkbox"
+                    data-theme-id="${escape(theme.id)}"
+                    aria-controls="all-word-list"
+                    ${selectedThemes.has(theme.id) ? 'checked' : ''}
+                  />
+                  ${escape(theme.nameRu)}
+                </label>
+              `,
+            )
+            .join('')}
+        </div>
+      </fieldset>
+    </details>
+    <p class="muted" id="all-word-count" role="status"></p>
+    <ul class="word-list catalog-list" id="all-word-list"></ul>
+  `;
+  updateThemeSelection();
   renderAllList();
 }
-function render() { updateNav(); if (view === 'new') renderNew(); else if (view === 'review') renderReview(); else if (view === 'all') renderAll(); else renderMine(); }
+function updateThemeSelection() {
+  $('#all-themes').checked = selectedThemes.size === themes.length;
+  $('#all-themes').indeterminate = selectedThemes.size > 0 && selectedThemes.size < themes.length;
+}
+function render() {
+  updateNav();
+  if (view === 'new') renderNew();
+  else if (view === 'review') renderReview();
+  else if (view === 'all') renderAll();
+  else renderMine();
+}
 
 async function speak(word) {
   if (word.audio) {
-    try { const audio = new Audio(word.audio); await audio.play(); return; }
-    catch { message('Аудиофайл не воспроизвёлся. Попробуем литовский голос устройства.'); }
+    try {
+      const audio = new Audio(word.audio);
+      await audio.play();
+      return;
+    } catch {
+      message('Аудиофайл не воспроизвёлся. Попробуем литовский голос устройства.');
+    }
   }
-  if (!('speechSynthesis' in window)) { message('Озвучка не поддерживается этим браузером.'); return; }
+  if (!('speechSynthesis' in window)) {
+    message('Озвучка не поддерживается этим браузером.');
+    return;
+  }
   voices = speechSynthesis.getVoices();
-  const voice = voices.find(v => v.lang.toLowerCase().startsWith('lt'));
-  if (!voice) { message('Литовский голос не найден на устройстве. Можно добавить готовые аудиофайлы в будущей версии.'); return; }
+  const voice = voices.find((v) => v.lang.toLowerCase().startsWith('lt'));
+  if (!voice) {
+    message(
+      'Литовский голос не найден на устройстве. Можно добавить готовые аудиофайлы в будущей версии.',
+    );
+    return;
+  }
   speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(word.word);
-  utterance.lang = 'lt-LT'; utterance.voice = voice; utterance.rate = 0.85;
+  utterance.lang = 'lt-LT';
+  utterance.voice = voice;
+  utterance.rate = 0.85;
   utterance.onerror = () => message('Не удалось воспроизвести литовский голос.');
   speechSynthesis.speak(utterance);
 }
 
-document.querySelectorAll('[data-view]').forEach(tab => tab.addEventListener('click', () => chooseView(tab.dataset.view)));
-content.addEventListener('input', event => {
+document
+  .querySelectorAll('[data-view]')
+  .forEach((tab) => tab.addEventListener('click', () => chooseView(tab.dataset.view)));
+content.addEventListener('input', (event) => {
   if (event.target.id !== 'all-search') return;
   allSearchQuery = event.target.value;
   allScrollPosition = 0;
   renderAllList();
 });
-content.addEventListener('click', event => {
-  const button = event.target.closest('button[data-action]'); if (!button || button.disabled) return;
+content.addEventListener('change', (event) => {
+  const input = event.target;
+  if (input.id === 'all-themes') {
+    selectedThemes = new Set(input.checked ? themes.map((theme) => theme.id) : []);
+    content.querySelectorAll('[data-theme-id]').forEach((checkbox) => {
+      checkbox.checked = input.checked;
+    });
+  } else if (input.matches('input[data-theme-id]')) {
+    if (input.checked) selectedThemes.add(input.dataset.themeId);
+    else selectedThemes.delete(input.dataset.themeId);
+  } else return;
+  allScrollPosition = 0;
+  updateThemeSelection();
+  renderAllList();
+});
+content.addEventListener('click', (event) => {
+  const button = event.target.closest('button[data-action]');
+  if (!button || button.disabled) return;
   const action = button.dataset.action;
   if (action === 'open-new') return chooseView('new');
   if (action === 'open-word') {
@@ -125,7 +467,9 @@ content.addEventListener('click', event => {
     allScrollPosition = window.scrollY;
     selectedWordId = button.dataset.id;
     exampleVisible = false;
-    clearMessage(); render(); window.scrollTo(0, 0);
+    clearMessage();
+    render();
+    window.scrollTo(0, 0);
     content.querySelector('[data-action="back-to-all"]').focus({ preventScroll: true });
     return;
   }
@@ -133,85 +477,200 @@ content.addEventListener('click', event => {
     const previousId = selectedWordId;
     selectedWordId = null;
     exampleVisible = false;
-    clearMessage(); render();
-    content.querySelector(`.catalog-word[data-id="${CSS.escape(previousId)}"]`)?.focus({ preventScroll: true });
+    clearMessage();
+    render();
+    content
+      .querySelector(`.catalog-word[data-id="${CSS.escape(previousId)}"]`)
+      ?.focus({ preventScroll: true });
     window.scrollTo(0, allScrollPosition);
     return;
   }
-  if (action === 'translate') { exampleVisible = !exampleVisible; return render(); }
+  if (action === 'translate') {
+    exampleVisible = !exampleVisible;
+    return render();
+  }
   if (action === 'speak') return speak(byId(button.dataset.id));
-  if (action === 'reveal') { revealed = true; return render(); }
+  if (action === 'reveal') {
+    revealed = true;
+    return render();
+  }
   if (action === 'previous' || action === 'next') {
-    const position = Math.min(words.length - 1, Math.max(0, progress.position + (action === 'next' ? 1 : -1)));
-    if (save({ ...progress, position })) { exampleVisible = false; render(); } return;
+    const position = Math.min(
+      words.length - 1,
+      Math.max(0, progress.position + (action === 'next' ? 1 : -1)),
+    );
+    if (save({ ...progress, position })) {
+      exampleVisible = false;
+      render();
+    }
+    return;
   }
   if (action === 'add') {
     const next = addWord(progress, button.dataset.id, today());
-    const position = view === 'new' ? Math.min(progress.position + 1, words.length - 1) : progress.position;
-    if (save({ ...next, position })) { exampleVisible = false; render(); }
+    const position =
+      view === 'new' ? Math.min(progress.position + 1, words.length - 1) : progress.position;
+    if (save({ ...next, position })) {
+      exampleVisible = false;
+      render();
+    }
     return;
   }
   if (action === 'rate') {
-    const id = queue[0]; const choice = button.dataset.choice;
+    const id = queue[0];
+    const choice = button.dataset.choice;
     if (choice === 'again') queue = moveToEnd(queue, id);
-    else if (save(reviewWord(progress, id, choice === 'learned' ? 'learned' : Number(choice), today()))) queue.shift();
-    revealed = false; render(); return;
+    else if (
+      save(reviewWord(progress, id, choice === 'learned' ? 'learned' : Number(choice), today()))
+    )
+      queue.shift();
+    revealed = false;
+    render();
+    return;
   }
   if (action === 'remove') {
-    const id = button.dataset.id; const previous = progress.words[id];
-    const updated = { ...progress, words: { ...progress.words } }; delete updated.words[id];
-    if (save(updated)) { lastRemoved = { id, previous }; render(); message('Слово убрано. Нажмите «Отменить», чтобы восстановить.'); const undo = document.createElement('button'); undo.textContent = 'Отменить'; undo.className = 'secondary'; undo.style.marginLeft = '10px'; undo.onclick = () => { if (lastRemoved && save({ ...progress, words: { ...progress.words, [lastRemoved.id]: lastRemoved.previous } })) { lastRemoved = null; render(); } }; notice.append(undo); }
+    const id = button.dataset.id;
+    const previous = progress.words[id];
+    const updated = { ...progress, words: { ...progress.words } };
+    delete updated.words[id];
+    if (save(updated)) {
+      lastRemoved = { id, previous };
+      render();
+      message('Слово убрано. Нажмите «Отменить», чтобы восстановить.');
+      const undo = document.createElement('button');
+      undo.textContent = 'Отменить';
+      undo.className = 'secondary';
+      undo.style.marginLeft = '10px';
+      undo.onclick = () => {
+        if (
+          lastRemoved &&
+          save({
+            ...progress,
+            words: { ...progress.words, [lastRemoved.id]: lastRemoved.previous },
+          })
+        ) {
+          lastRemoved = null;
+          render();
+        }
+      };
+      notice.append(undo);
+    }
     return;
   }
   if (action === 'restore') {
-    const id = button.dataset.id; const item = progress.words[id];
-    if (save({ ...progress, words: { ...progress.words, [id]: { ...item, status: 'learning', nextReviewDate: today() } } })) render();
+    const id = button.dataset.id;
+    const item = progress.words[id];
+    if (
+      save({
+        ...progress,
+        words: {
+          ...progress.words,
+          [id]: { ...item, status: 'learning', nextReviewDate: today() },
+        },
+      })
+    )
+      render();
   }
 });
 
 $('#backup').onclick = () => $('#backup-dialog').showModal();
 $('#export').onclick = () => {
-  const blob = new Blob([JSON.stringify({ app: 'lt-words', exportedAt: new Date().toISOString(), progress }, null, 2)], { type: 'application/json' });
-  const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = `lt-words-backup-${today()}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+  const blob = new Blob(
+    [JSON.stringify({ app: 'lt-words', exportedAt: new Date().toISOString(), progress }, null, 2)],
+    { type: 'application/json' },
+  );
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `lt-words-backup-${today()}.json`;
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 };
-$('#import').onchange = async event => {
-  const file = event.target.files?.[0]; if (!file) return;
+$('#import').onchange = async (event) => {
+  const file = event.target.files?.[0];
+  if (!file) return;
   try {
     if (file.size > 2_000_000) throw new Error('Файл слишком большой для резервной копии.');
     const imported = importProgress(JSON.parse(await file.text()), allowedIds());
     if (!confirm('Заменить текущий прогресс данными из файла?')) return;
-    if (save(imported)) { $('#backup-dialog').close(); queue = []; render(); message('Прогресс восстановлен.'); }
-  } catch (error) { message(error instanceof SyntaxError ? 'Неверный формат JSON-файла.' : error.message); $('#backup-dialog').close(); }
-  finally { event.target.value = ''; }
+    if (save(imported)) {
+      $('#backup-dialog').close();
+      queue = [];
+      render();
+      message('Прогресс восстановлен.');
+    }
+  } catch (error) {
+    message(error instanceof SyntaxError ? 'Неверный формат JSON-файла.' : error.message);
+    $('#backup-dialog').close();
+  } finally {
+    event.target.value = '';
+  }
 };
 
 async function registerOffline() {
-  if (!('serviceWorker' in navigator)) { $('#offline-label').textContent = 'Офлайн-режим недоступен.'; return; }
+  if (!('serviceWorker' in navigator)) {
+    $('#offline-label').textContent = 'Офлайн-режим недоступен.';
+    return;
+  }
   // An activated worker cannot replace JavaScript already running in this page.
   const wasControlled = Boolean(navigator.serviceWorker.controller);
   let reloading = false;
   navigator.serviceWorker.addEventListener('controllerchange', () => {
-    if (wasControlled && !reloading) { reloading = true; location.reload(); }
+    if (wasControlled && !reloading) {
+      reloading = true;
+      location.reload();
+    }
   });
   try {
     await navigator.serviceWorker.register('/sw.js', { updateViaCache: 'none' });
     const ready = await navigator.serviceWorker.ready;
     $('#offline-label').textContent = 'Приложение доступно офлайн после первой загрузки.';
     ready.update().catch(() => {});
-  } catch { $('#offline-label').textContent = 'Офлайн-режим пока недоступен.'; }
+  } catch {
+    $('#offline-label').textContent = 'Офлайн-режим пока недоступен.';
+  }
 }
 
 async function start() {
   try {
-    const response = await fetch('/data/words.json', { cache: 'no-store' }); if (!response.ok) throw Error('Словарь не загрузился. Проверьте подключение и обновите страницу.');
-    words = await response.json();
-    if (!Array.isArray(words) || !words.length || words.some(word => !word.id || !word.word || !word.translation || !word.example)) throw Error('Файл словаря повреждён.');
-    if (demo) { const label = document.createElement('p'); label.className = 'hint'; label.textContent = `Режим проверки · дата ${today()} · отдельный временный прогресс`; content.before(label); }
+    const responses = await Promise.all(
+      ['/data/words.json', '/data/themes.json'].map((url) => fetch(url, { cache: 'no-store' })),
+    );
+    if (responses.some((response) => !response.ok))
+      throw Error('Словарь не загрузился. Проверьте подключение и обновите страницу.');
+    [words, themes] = await Promise.all(responses.map((response) => response.json()));
+    if (
+      !Array.isArray(words) ||
+      !words.length ||
+      words.some((word) => !word.id || !word.word || !word.translation || !word.example)
+    )
+      throw Error('Файл словаря повреждён.');
+    if (
+      !Array.isArray(themes) ||
+      !themes.length ||
+      themes.some((theme) => !theme.id || !theme.nameRu)
+    )
+      throw Error('Файл тем повреждён.');
+    selectedThemes = new Set(themes.map((theme) => theme.id));
+    if (demo) {
+      const label = document.createElement('p');
+      label.className = 'hint';
+      label.textContent = `Режим проверки · дата ${today()} · отдельный временный прогресс`;
+      content.before(label);
+    }
     progress = readProgress(storage);
     if (progress.position >= words.length) progress.position = 0;
     view = allowedViews.has(location.hash.slice(1)) ? location.hash.slice(1) : 'new';
     if (view === 'review') queue = due();
-    render(); registerOffline();
-  } catch (error) { content.innerHTML = `<div class="panel empty"><h2>Не удалось открыть приложение</h2><p>${escape(error.message)}</p></div>`; message(error.message); }
+    render();
+    registerOffline();
+  } catch (error) {
+    content.innerHTML = /* HTML */ `
+      <div class="panel empty">
+        <h2>Не удалось открыть приложение</h2>
+        <p>${escape(error.message)}</p>
+      </div>
+    `;
+    message(error.message);
+  }
 }
 start();
