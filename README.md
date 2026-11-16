@@ -39,3 +39,12 @@ npm run version:set -- 0.1.12
 ```
 
 This updates `package.json`, `package-lock.json`, the version shown in the app, the asset URLs in `index.html`, and the service worker cache and asset URLs. The command preserves Prettier formatting and does not create a Git commit or tag. Run `npm run version:check` to check that all version references are consistent.
+
+## TODO
+
+- [ ] **Improve the project overview.** Add a screenshot, a demo link, key features, and quick-start instructions near the beginning of this README. State that the app is intended for Russian-speaking learners.
+- [ ] **Add GitHub Actions checks.** Run tests and dictionary validation on every push and pull request, with browser smoke checks as a separate step.
+- [ ] **Preserve compatibility with older progress.** Add migration of the legacy `ačiū` and `nėra už ką` IDs in `js/core.js` so backups created before the cards were merged can still be imported.
+- [ ] **Strengthen data validation.** Extend `scripts/check-assets.js` to validate required text fields and field types. Reject impossible calendar dates such as `2026-99-99` when validating progress.
+- [ ] **Make browser tests reflect user interactions.** Check visibility and expand the theme dropdown before interacting with its checkboxes. Document the browser test command in this README and add a script for it to `package.json`.
+- [ ] **Add a license and dictionary provenance.** Include a `LICENSE` file and document the dictionary sources and usage terms for both code and data.
