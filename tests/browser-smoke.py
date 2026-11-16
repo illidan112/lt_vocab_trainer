@@ -83,6 +83,7 @@ const checkCard = (word, headingSelector = '.card h1', hasTranslation = true) =>
   await ready();
   assert(frame.contentDocument.getElementById('app-version').textContent === expectedVersion, 'Wrong version');
   const words = await (await fetch('/data/words.json')).json();
+  const themes = await (await fetch('/data/themes.json')).json();
   assert(Object.keys(words[0].forms || {}).length > 0, 'First fixture needs forms');
   checkCard(words[0]);
   frame.contentDocument.getElementById('theme-toggle').click();
@@ -165,6 +166,57 @@ const checkCard = (word, headingSelector = '.card h1', hasTranslation = true) =>
   assert(searchCatalog('<img src=x onerror=alert(1)>').length === 0 && !frame.contentDocument.querySelector('.catalog-list img'), 'Search query was interpreted as HTML');
   searchCatalog('');
   checkCatalog();
+  const themeCheckboxes = () => [...frame.contentDocument.querySelectorAll('[data-theme-id]')];
+  const checkThemes = (ids, query = '') => {
+    const expected = words.filter(word => ids.includes(word.theme) && ['word', 'displayWord', 'translation'].some(field => String(word[field] || '').normalize('NFC').toLowerCase().startsWith(query)));
+    const actual = [...frame.contentDocument.querySelectorAll('.catalog-word')];
+    assert(actual.map(row => row.dataset.id).join('|') === expected.map(word => word.id).join('|'), 'Theme filter returned incorrect words');
+    assert(frame.contentDocument.getElementById('all-word-count').textContent.includes(String(expected.length)), 'Filtered count is incorrect');
+  };
+  assert(themeCheckboxes().length === themes.length, 'Catalog does not list every theme');
+  const themeFilter = frame.contentDocument.querySelector('.catalog-theme-filter');
+  assert(!themeFilter.open, 'Theme list must be collapsed by default');
+  themeFilter.querySelector('summary').click();
+  assert(themeFilter.open, 'Theme list did not expand');
+  themeCheckboxes().forEach((checkbox, index) => {
+    assert(checkbox.checked && checkbox.dataset.themeId === themes[index].id, 'Themes must initially be selected');
+    assert(checkbox.parentElement.textContent === themes[index].nameRu, 'Theme label is incorrect');
+  });
+  frame.contentDocument.getElementById('all-themes').click();
+  checkThemes([]);
+  assert(frame.contentDocument.querySelector('.catalog-empty'), 'No-theme selection needs an empty state');
+  const firstTheme = themeCheckboxes()[0];
+  firstTheme.focus();
+  firstTheme.click();
+  assert(frame.contentDocument.activeElement === firstTheme, 'Theme selection lost keyboard focus');
+  checkThemes([themes[0].id]);
+  assert(frame.contentDocument.getElementById('all-themes').indeterminate, 'Partial selection is not indicated');
+  themeCheckboxes()[1].click();
+  const selectedThemeIds = themes.slice(0, 2).map(theme => theme.id);
+  checkThemes(selectedThemeIds);
+  themeFilter.querySelector('summary').click();
+  assert(!themeFilter.open, 'Theme list did not collapse');
+  checkThemes(selectedThemeIds);
+  themeFilter.querySelector('summary').click();
+  const filteredWord = words.find(word => selectedThemeIds.includes(word.theme));
+  const themeQuery = filteredWord.word.slice(0, 2).normalize('NFC').toLowerCase();
+  searchCatalog(themeQuery);
+  checkThemes(selectedThemeIds, themeQuery);
+  frame.contentDocument.querySelector('.catalog-word').click();
+  click('back-to-all');
+  assert(themeCheckboxes().filter(checkbox => checkbox.checked).map(checkbox => checkbox.dataset.themeId).join('|') === selectedThemeIds.join('|'), 'Returning from a card lost selected themes');
+  checkThemes(selectedThemeIds, themeQuery);
+  frame.contentDocument.querySelector('[data-view="new"]').click();
+  frame.contentDocument.querySelector('[data-view="all"]').click();
+  checkThemes(selectedThemeIds, themeQuery);
+  searchCatalog('');
+  themeCheckboxes().filter(checkbox => !checkbox.checked).forEach(checkbox => checkbox.click());
+  assert(frame.contentDocument.getElementById('all-themes').checked && !frame.contentDocument.getElementById('all-themes').indeterminate, 'Selecting each theme did not select all themes');
+  checkCatalog();
+  frame.contentDocument.getElementById('all-themes').click();
+  frame.contentDocument.getElementById('all-themes').click();
+  assert(themeCheckboxes().every(checkbox => checkbox.checked), 'Select all did not check every theme');
+  checkCatalog();
   assert(localStorage.getItem(STORAGE_KEY) === progressBeforeCatalog, 'Searching changed progress');
   for (const width of [320, 760]) {
     frame.style.width = width + 'px';
@@ -215,7 +267,7 @@ const checkCard = (word, headingSelector = '.card h1', hasTranslation = true) =>
   for (let i = 0; i < 100 && !frame.contentWindow.navigator.serviceWorker.controller; i++) await pause();
   assert(registration.active && frame.contentWindow.navigator.serviceWorker.controller, 'Service worker did not take control');
   const cache = await caches.open('lt-words-v' + expectedVersion);
-  for (const path of ['/index.html', '/js/app.js?v=' + expectedVersion, '/styles.css?v=' + expectedVersion]) {
+  for (const path of ['/index.html', '/js/app.js?v=' + expectedVersion, '/styles.css?v=' + expectedVersion, '/data/themes.json']) {
     assert(await cache.match(path), 'Current offline asset missing: ' + path);
   }
   await reload();
@@ -238,6 +290,10 @@ const checkCard = (word, headingSelector = '.card h1', hasTranslation = true) =>
     checkCatalog();
     assert(searchCatalog('ap').length > 0, 'Catalog search is unavailable offline');
     searchCatalog('');
+    frame.contentDocument.getElementById('all-themes').click();
+    themeCheckboxes()[0].click();
+    checkThemes([themes[0].id]);
+    frame.contentDocument.getElementById('all-themes').click();
     frame.contentDocument.querySelector('.catalog-word').click();
     checkCard(words[0]);
     frame.contentDocument.querySelector('[data-view="new"]').click();
@@ -273,7 +329,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         finished.set()
 
     def do_GET(self):
-        if self.path == '/data/words.json' and not dictionary_available:
+        if self.path in ('/data/words.json', '/data/themes.json') and not dictionary_available:
             self.send_error(503, 'Dictionary unavailable for offline fallback check')
         elif self.path == '/__smoke':
             self.send_response(200)

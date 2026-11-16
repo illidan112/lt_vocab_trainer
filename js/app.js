@@ -1,7 +1,7 @@
 import { STORAGE_KEY, emptyProgress, localDay, addDays, readProgress, writeProgress, addWord, dueIds, reviewWord, moveToEnd, importProgress } from './core.js';
 
 const $ = (selector) => document.querySelector(selector);
-const APP_VERSION = '0.1.9';
+const APP_VERSION = '0.1.11';
 $('#app-version').textContent = APP_VERSION;
 const content = $('#content');
 const notice = $('#notice');
@@ -12,6 +12,8 @@ const demoOffset = Math.max(0, Math.min(60, Number(params.get('day') || 0) || 0)
 const storage = demo ? { getItem: () => sessionStorage.getItem(STORAGE_KEY + '-demo'), setItem: (_, value) => sessionStorage.setItem(STORAGE_KEY + '-demo', value) } : localStorage;
 const today = () => demo ? addDays(localDay(), demoOffset) : localDay();
 let words = [];
+let themes = [];
+let selectedThemes = new Set();
 let progress = emptyProgress();
 let view = 'new';
 let selectedWordId = null;
@@ -78,9 +80,9 @@ function renderMine() {
 function renderAllList() {
   const normalize = value => String(value ?? '').normalize('NFC').toLowerCase();
   const query = normalize(allSearchQuery.trim());
-  const matches = words.filter(word => ['word', 'displayWord', 'translation'].some(field => normalize(word[field]).startsWith(query)));
-  $('#all-word-count').textContent = query ? `Найдено: ${matches.length} из ${words.length}` : `Всего в словаре: ${words.length}`;
-  $('#all-word-list').innerHTML = matches.length ? matches.map(word => `<li><button type="button" class="word-row catalog-word" data-action="open-word" data-id="${escape(word.id)}"><span class="catalog-word-main"><strong lang="lt">${escape(word.displayWord || word.word)}</strong><small lang="en">${escape(word.partOfSpeech)}</small></span><span class="catalog-translation">${escape(word.translation)}</span></button></li>`).join('') : '<li class="panel empty catalog-empty"><p>Ничего не найдено. Попробуйте другое начало слова или перевода.</p></li>';
+  const matches = words.filter(word => selectedThemes.has(word.theme) && ['word', 'displayWord', 'translation'].some(field => normalize(word[field]).startsWith(query)));
+  $('#all-word-count').textContent = query || selectedThemes.size !== themes.length ? `Найдено: ${matches.length} из ${words.length}` : `Всего в словаре: ${words.length}`;
+  $('#all-word-list').innerHTML = matches.length ? matches.map(word => `<li><button type="button" class="word-row catalog-word" data-action="open-word" data-id="${escape(word.id)}"><span class="catalog-word-main"><strong lang="lt">${escape(word.displayWord || word.word)}</strong><small lang="en">${escape(word.partOfSpeech)}</small></span><span class="catalog-translation">${escape(word.translation)}</span></button></li>`).join('') : `<li class="panel empty catalog-empty"><p>${selectedThemes.size ? 'Ничего не найдено. Измените запрос или выберите другие темы.' : 'Выберите хотя бы одну тему, чтобы увидеть слова.'}</p></li>`;
 }
 function renderAll() {
   const selected = selectedWordId ? byId(selectedWordId) : null;
@@ -88,8 +90,13 @@ function renderAll() {
     content.innerHTML = `<button type="button" class="secondary catalog-back" data-action="back-to-all">← Все слова</button>${cardMarkup(selected)}`;
     return;
   }
-  content.innerHTML = `<h1 class="section-title">Все слова</h1><input type="search" id="all-search" class="catalog-search" aria-label="Поиск по началу слова или перевода" aria-controls="all-word-list" placeholder="Начните вводить слово или перевод" autocomplete="off" value="${escape(allSearchQuery)}"><p class="muted" id="all-word-count" role="status"></p><ul class="word-list catalog-list" id="all-word-list"></ul>`;
+  content.innerHTML = `<h1 class="section-title">Все слова</h1><input type="search" id="all-search" class="catalog-search" aria-label="Поиск по началу слова или перевода" aria-controls="all-word-list" placeholder="Начните вводить слово или перевод" autocomplete="off" value="${escape(allSearchQuery)}"><details class="catalog-theme-filter"><summary>Темы</summary><fieldset class="catalog-themes" aria-label="Темы слов"><label class="catalog-theme catalog-theme-all"><input type="checkbox" id="all-themes" aria-controls="all-word-list">Все темы</label><div class="catalog-theme-options">${themes.map(theme => `<label class="catalog-theme"><input type="checkbox" data-theme-id="${escape(theme.id)}" aria-controls="all-word-list" ${selectedThemes.has(theme.id) ? 'checked' : ''}>${escape(theme.nameRu)}</label>`).join('')}</div></fieldset></details><p class="muted" id="all-word-count" role="status"></p><ul class="word-list catalog-list" id="all-word-list"></ul>`;
+  updateThemeSelection();
   renderAllList();
+}
+function updateThemeSelection() {
+  $('#all-themes').checked = selectedThemes.size === themes.length;
+  $('#all-themes').indeterminate = selectedThemes.size > 0 && selectedThemes.size < themes.length;
 }
 function render() { updateNav(); if (view === 'new') renderNew(); else if (view === 'review') renderReview(); else if (view === 'all') renderAll(); else renderMine(); }
 
@@ -114,6 +121,19 @@ content.addEventListener('input', event => {
   if (event.target.id !== 'all-search') return;
   allSearchQuery = event.target.value;
   allScrollPosition = 0;
+  renderAllList();
+});
+content.addEventListener('change', event => {
+  const input = event.target;
+  if (input.id === 'all-themes') {
+    selectedThemes = new Set(input.checked ? themes.map(theme => theme.id) : []);
+    content.querySelectorAll('[data-theme-id]').forEach(checkbox => { checkbox.checked = input.checked; });
+  } else if (input.matches('input[data-theme-id]')) {
+    if (input.checked) selectedThemes.add(input.dataset.themeId);
+    else selectedThemes.delete(input.dataset.themeId);
+  } else return;
+  allScrollPosition = 0;
+  updateThemeSelection();
   renderAllList();
 });
 content.addEventListener('click', event => {
@@ -203,9 +223,12 @@ async function registerOffline() {
 
 async function start() {
   try {
-    const response = await fetch('/data/words.json', { cache: 'no-store' }); if (!response.ok) throw Error('Словарь не загрузился. Проверьте подключение и обновите страницу.');
-    words = await response.json();
+    const responses = await Promise.all(['/data/words.json', '/data/themes.json'].map(url => fetch(url, { cache: 'no-store' })));
+    if (responses.some(response => !response.ok)) throw Error('Словарь не загрузился. Проверьте подключение и обновите страницу.');
+    [words, themes] = await Promise.all(responses.map(response => response.json()));
     if (!Array.isArray(words) || !words.length || words.some(word => !word.id || !word.word || !word.translation || !word.example)) throw Error('Файл словаря повреждён.');
+    if (!Array.isArray(themes) || !themes.length || themes.some(theme => !theme.id || !theme.nameRu)) throw Error('Файл тем повреждён.');
+    selectedThemes = new Set(themes.map(theme => theme.id));
     if (demo) { const label = document.createElement('p'); label.className = 'hint'; label.textContent = `Режим проверки · дата ${today()} · отдельный временный прогресс`; content.before(label); }
     progress = readProgress(storage);
     if (progress.position >= words.length) progress.position = 0;

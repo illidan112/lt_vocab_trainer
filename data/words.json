@@ -4792,16 +4792,17 @@
     "exampleTranslation": "Мы оба пойдем."
   },
   {
-    "id": "ačiū",
-    "word": "ačiū",
-    "displayWord": "ãčiū",
-    "partOfSpeech": "interjection",
+    "id": "ačiū nėra už ką",
+    "word": "Ačiū, nėra už ką",
+    "displayWord": "Ãčiū, nėrà ùž ką̃",
+    "partOfSpeech": "phrase",
     "theme": "relationships-communication",
     "forms": {},
-    "grammarNote": "Этикетное слово или междометие; в данном употреблении не изменяется.",
-    "translation": "спасибо",
-    "example": "Labai ačiū.",
-    "exampleTranslation": "Большое спасибо."
+    "grammarNote": "Этикетные реплики благодарности и ответа на неё, объединённые в одну карточку; единая парадигма отсутствует.",
+    "translation": "Спасибо, не за что",
+    "example": "Ačiū už pagalbą! — Nėra už ką.",
+    "exampleTranslation": "Спасибо за помощь! — Не за что.",
+    "symbol": "🙂"
   },
   {
     "id": "aiškinti",
@@ -40925,19 +40926,6 @@
     "example": "Kaip tai vadinama lietuviškai? — Tai puodelis.",
     "exampleTranslation": "Как это называется по-литовски? — Это чашка.",
     "symbol": "🗣️"
-  },
-  {
-    "id": "nėra už ką",
-    "word": "Nėra už ką.",
-    "displayWord": "Nėrà ùž ką̃.",
-    "partOfSpeech": "phrase",
-    "theme": "relationships-communication",
-    "forms": {},
-    "grammarNote": "Устойчивая этикетная формула в ответ на благодарность; nėra — отрицательная форма yra, už ką — предлог с винительным падежом.",
-    "translation": "Не за что.",
-    "example": "Ačiū už pagalbą! — Nėra už ką.",
-    "exampleTranslation": "Спасибо за помощь! — Не за что.",
-    "symbol": "🙂"
   },
   {
     "id": "man patinka",

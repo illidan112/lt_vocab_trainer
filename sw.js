@@ -1,5 +1,5 @@
-const CACHE = 'lt-words-v0.1.9';
-const CORE = ['/', '/index.html', '/styles.css?v=0.1.9', '/js/app.js?v=0.1.9', '/js/theme.js?v=0.1.3', '/js/core.js', '/data/words.json', '/manifest.webmanifest', '/icon.svg', '/icons/icon-192.png', '/icons/icon-512.png'];
+const CACHE = 'lt-words-v0.1.11';
+const CORE = ['/', '/index.html', '/styles.css?v=0.1.11', '/js/app.js?v=0.1.11', '/js/theme.js?v=0.1.3', '/js/core.js', '/data/words.json', '/data/themes.json', '/manifest.webmanifest', '/icon.svg', '/icons/icon-192.png', '/icons/icon-512.png'];
 // Activate only after the complete new offline bundle has been cached.
 self.addEventListener('install', event => { event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', event => { event.waitUntil(Promise.all([caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('lt-words-') && key !== CACHE).map(key => caches.delete(key)))), self.clients.claim()])); });
@@ -8,14 +8,15 @@ self.addEventListener('fetch', event => {
   event.respondWith((async () => {
     const cache = await caches.open(CACHE);
     // Dictionary edits must appear online without clearing the offline cache.
-    if (new URL(event.request.url).pathname === '/data/words.json') {
+    const pathname = new URL(event.request.url).pathname;
+    if (['/data/words.json', '/data/themes.json'].includes(pathname)) {
       try {
         const response = await fetch(event.request, { cache: 'no-store' });
         if (!response.ok) throw new Error('Dictionary unavailable');
-        await cache.put('/data/words.json', response.clone());
+        await cache.put(pathname, response.clone());
         return response;
       } catch {
-        return (await cache.match('/data/words.json')) || Response.error();
+        return (await cache.match(pathname)) || Response.error();
       }
     }
     // Online navigation must see the latest HTML and its versioned scripts.

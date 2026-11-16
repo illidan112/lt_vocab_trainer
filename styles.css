@@ -5,6 +5,14 @@ body{min-width:0}
 .word-forms.grammar-note{white-space:normal;overflow-wrap:anywhere}
 .catalog-list{grid-template-columns:minmax(0,1fr);list-style:none;margin:0;padding:0}
 .catalog-search{display:block;width:100%;min-width:0;min-height:46px;padding:12px 14px;border:1px solid #cbd8e7;border-radius:12px;background:#fff;color:inherit}
+.catalog-theme-filter{margin-top:16px;border:1px solid #cbd8e7;border-radius:12px}
+.catalog-theme-filter summary{padding:12px 14px;font-weight:650;cursor:pointer}
+.catalog-theme-filter summary:focus-visible{outline:3px solid #f6a72b;outline-offset:3px;border-radius:12px}
+.catalog-themes{min-width:0;margin:0;padding:0 14px 14px;border:0}
+.catalog-theme-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:2px 16px}
+.catalog-theme{display:flex;align-items:center;gap:9px;min-height:44px;font-size:.9rem;line-height:1.4;cursor:pointer}
+.catalog-theme input{flex:0 0 18px;width:18px;height:18px;margin:0;accent-color:#135c91;cursor:pointer}
+.catalog-theme-all{font-weight:650}
 .catalog-word{width:100%;text-align:left;color:inherit}
 .catalog-word-main{min-width:0;max-width:100%}
 .catalog-word strong,.catalog-translation{overflow-wrap:anywhere}
@@ -53,6 +61,8 @@ dialog{color:#14273e;background:#fff}
 [data-theme="dark"] dialog{background:#1b2638;color:#e5edf7;border:1px solid #42536b;box-shadow:0 25px 80px #0008}
 [data-theme="dark"] dialog::backdrop{background:#030712b3}
 [data-theme="dark"] input{background:#152033;color:#e5edf7;border-color:#465a73}
+[data-theme="dark"] .catalog-theme-filter{border-color:#465a73}
+[data-theme="dark"] .catalog-theme input{accent-color:#8cc9fa}
 [data-theme="dark"] input::file-selector-button{background:#2a405a;color:#d3eaff;border:1px solid #465a73;border-radius:8px;padding:8px;cursor:pointer}
 [data-theme="dark"] #notice{background:#45351c;color:#ffe0a3}
 [data-theme="dark"] ::selection{background:#38658b;color:#fff}
