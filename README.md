@@ -20,9 +20,22 @@ The Backup button ("Резервная копия") lets you download your progr
 
 Run `python3 -m http.server 8000` from the project directory, then open `http://localhost:8000`. On Windows, you can use `py -m http.server 8000`. A modern browser is required. Opening `index.html` via `file://` will not work: JSON loading and PWA features require a web server.
 
-Run `node --test tests/*.test.js` to execute the tests (Node.js 20+). Run `node scripts/check-assets.js` to validate the dictionary and files before publishing. No dependencies need to be installed.
+The app runs without installing any dependencies. For development, run `npm ci` to install the local formatting tool. Run `npm test` to execute the tests (Node.js 20.11+), and `npm run check` to validate the dictionary and files before publishing.
 
 ### Testing dates
 
 Open `http://localhost:8000/?demo=1&day=1` to simulate tomorrow, or use `?demo=1&day=7` to simulate a week from today. This mode uses separate, temporary storage for the tab and leaves your regular progress unchanged. To switch dates within the same tab, change the URL parameter. This also works on a test deployment.
 
+## Code style
+
+Run `npm run format` to format the source files with Prettier, or `npm run format:check` to check formatting without modifying files. The configuration uses two-space indentation, single quotes in JavaScript, and LF line endings. Dictionary data in `data/` is excluded from automatic formatting. Prettier is a local development dependency and is not loaded by the app.
+
+## Updating the version
+
+Use `package.json` as the source of truth for the release version. Run one command to set a new version:
+
+```sh
+npm run version:set -- 0.1.12
+```
+
+This updates `package.json`, `package-lock.json`, the version shown in the app, the asset URLs in `index.html`, and the service worker cache and asset URLs. The command preserves Prettier formatting and does not create a Git commit or tag. Run `npm run version:check` to check that all version references are consistent.

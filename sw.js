@@ -1,41 +1,87 @@
-const CACHE = 'lt-words-v0.1.11';
-const CORE = ['/', '/index.html', '/styles.css?v=0.1.11', '/js/app.js?v=0.1.11', '/js/theme.js?v=0.1.3', '/js/core.js', '/data/words.json', '/data/themes.json', '/manifest.webmanifest', '/icon.svg', '/icons/icon-192.png', '/icons/icon-512.png'];
+const CACHE = 'lt-words-v0.1.12';
+const CORE = [
+  '/',
+  '/index.html',
+  '/styles.css?v=0.1.12',
+  '/js/app.js?v=0.1.12',
+  '/js/theme.js?v=0.1.12',
+  '/js/core.js',
+  '/data/words.json',
+  '/data/themes.json',
+  '/manifest.webmanifest',
+  '/icon.svg',
+  '/icons/icon-192.png',
+  '/icons/icon-512.png',
+];
 // Activate only after the complete new offline bundle has been cached.
-self.addEventListener('install', event => { event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(CORE)).then(() => self.skipWaiting())); });
-self.addEventListener('activate', event => { event.waitUntil(Promise.all([caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('lt-words-') && key !== CACHE).map(key => caches.delete(key)))), self.clients.claim()])); });
-self.addEventListener('fetch', event => {
-  if (event.request.method !== 'GET' || new URL(event.request.url).origin !== self.location.origin) return;
-  event.respondWith((async () => {
-    const cache = await caches.open(CACHE);
-    // Dictionary edits must appear online without clearing the offline cache.
-    const pathname = new URL(event.request.url).pathname;
-    if (['/data/words.json', '/data/themes.json'].includes(pathname)) {
+self.addEventListener('install', (event) => {
+  event.waitUntil(
+    caches
+      .open(CACHE)
+      .then((cache) => cache.addAll(CORE))
+      .then(() => self.skipWaiting()),
+  );
+});
+self.addEventListener('activate', (event) => {
+  event.waitUntil(
+    Promise.all([
+      caches
+        .keys()
+        .then((keys) =>
+          Promise.all(
+            keys
+              .filter((key) => key.startsWith('lt-words-') && key !== CACHE)
+              .map((key) => caches.delete(key)),
+          ),
+        ),
+      self.clients.claim(),
+    ]),
+  );
+});
+self.addEventListener('fetch', (event) => {
+  if (event.request.method !== 'GET' || new URL(event.request.url).origin !== self.location.origin)
+    return;
+  event.respondWith(
+    (async () => {
+      const cache = await caches.open(CACHE);
+      // Dictionary edits must appear online without clearing the offline cache.
+      const pathname = new URL(event.request.url).pathname;
+      if (['/data/words.json', '/data/themes.json'].includes(pathname)) {
+        try {
+          const response = await fetch(event.request, { cache: 'no-store' });
+          if (!response.ok) throw new Error('Dictionary unavailable');
+          await cache.put(pathname, response.clone());
+          return response;
+        } catch {
+          return (await cache.match(pathname)) || Response.error();
+        }
+      }
+      // Online navigation must see the latest HTML and its versioned scripts.
+      if (event.request.mode === 'navigate') {
+        try {
+          const response = await fetch(event.request, { cache: 'no-store' });
+          if (response.ok) return response;
+        } catch {
+          /* Fall back to the installed offline page. */
+        }
+        return (await cache.match('/index.html')) || Response.error();
+      }
+      const cached = await cache.match(event.request, {
+        ignoreSearch: event.request.mode === 'navigate',
+      });
+      if (cached) return cached;
       try {
-        const response = await fetch(event.request, { cache: 'no-store' });
-        if (!response.ok) throw new Error('Dictionary unavailable');
-        await cache.put(pathname, response.clone());
+        const response = await fetch(event.request);
+        if (
+          response.ok &&
+          (event.request.destination === 'image' || event.request.destination === 'audio')
+        )
+          cache.put(event.request, response.clone()).catch(() => {});
         return response;
       } catch {
-        return (await cache.match(pathname)) || Response.error();
+        if (event.request.mode === 'navigate') return cache.match('/index.html');
+        return Response.error();
       }
-    }
-    // Online navigation must see the latest HTML and its versioned scripts.
-    if (event.request.mode === 'navigate') {
-      try {
-        const response = await fetch(event.request, { cache: 'no-store' });
-        if (response.ok) return response;
-      } catch { /* Fall back to the installed offline page. */ }
-      return (await cache.match('/index.html')) || Response.error();
-    }
-    const cached = await cache.match(event.request, { ignoreSearch: event.request.mode === 'navigate' });
-    if (cached) return cached;
-    try {
-      const response = await fetch(event.request);
-      if (response.ok && (event.request.destination === 'image' || event.request.destination === 'audio')) cache.put(event.request, response.clone()).catch(() => {});
-      return response;
-    } catch {
-      if (event.request.mode === 'navigate') return cache.match('/index.html');
-      return Response.error();
-    }
-  })());
+    })(),
+  );
 });

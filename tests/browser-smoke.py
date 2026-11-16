@@ -65,7 +65,7 @@ const checkCard = (word, headingSelector = '.card h1', hasTranslation = true) =>
   assert(forms.getBoundingClientRect().top >= heading.getBoundingClientRect().bottom - 1, 'Forms overlap the heading');
   const partOfSpeech = doc.querySelector('.word-part-of-speech');
   if (word.partOfSpeech) {
-    assert(partOfSpeech?.textContent === word.partOfSpeech, 'Part of speech not displayed');
+    assert(partOfSpeech?.textContent.trim() === word.partOfSpeech, 'Part of speech not displayed');
     assert(forms.nextElementSibling === partOfSpeech, 'Part of speech must follow forms');
     const partOfSpeechStyle = frame.contentWindow.getComputedStyle(partOfSpeech);
     assert(partOfSpeechStyle.fontSize === style.fontSize && partOfSpeechStyle.color === style.color, 'Part of speech must use forms styling');
@@ -180,7 +180,7 @@ const checkCard = (word, headingSelector = '.card h1', hasTranslation = true) =>
   assert(themeFilter.open, 'Theme list did not expand');
   themeCheckboxes().forEach((checkbox, index) => {
     assert(checkbox.checked && checkbox.dataset.themeId === themes[index].id, 'Themes must initially be selected');
-    assert(checkbox.parentElement.textContent === themes[index].nameRu, 'Theme label is incorrect');
+    assert(checkbox.parentElement.textContent.trim() === themes[index].nameRu, 'Theme label is incorrect');
   });
   frame.contentDocument.getElementById('all-themes').click();
   checkThemes([]);
